@@ -7,11 +7,11 @@ Pod::Spec.new do |s|
     An ordinary iconfont cocoapods package helps you to use iconfont more easily in your project, in Swift.
     DESC
     
-    s.homepage         = 'https://github.com/EyreFree/EFIconFont'
-    s.screenshots     = 'https://github.com/EFPrefix/EFIconFont/blob/master/Assets/EFIconFont.png?raw=true'
+    s.homepage         = 'https://github.com/EFPrefix/EFIconFont'
+    s.screenshots      = 'https://github.com/EFPrefix/EFIconFont/blob/master/Assets/EFIconFont.png?raw=true'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'EyreFree' => 'eyrefree@eyrefree.org' }
-    s.source           = { :git => 'https://github.com/EyreFree/EFIconFont.git', :tag => s.version.to_s }
+    s.source           = { :git => 'https://github.com/EFPrefix/EFIconFont.git', :tag => s.version.to_s }
     s.social_media_url = 'https://twitter.com/EyreFree777'
     
     s.ios.deployment_target = '8.0'
