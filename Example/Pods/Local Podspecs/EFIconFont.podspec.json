@@ -1,9 +1,9 @@
 {
   "name": "EFIconFont",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "summary": "Yet another stupid wrapper of icon font.",
   "description": "An ordinary iconfont cocoapods package helps you to use iconfont more easily in your project, in Swift.",
-  "homepage": "https://github.com/EyreFree/EFIconFont",
+  "homepage": "https://github.com/EFPrefix/EFIconFont",
   "screenshots": "https://github.com/EFPrefix/EFIconFont/blob/master/Assets/EFIconFont.png?raw=true",
   "license": {
     "type": "MIT",
@@ -13,8 +13,8 @@
     "EyreFree": "eyrefree@eyrefree.org"
   },
   "source": {
-    "git": "https://github.com/EyreFree/EFIconFont.git",
-    "tag": "0.5.1"
+    "git": "https://github.com/EFPrefix/EFIconFont.git",
+    "tag": "0.5.2"
   },
   "social_media_url": "https://twitter.com/EyreFree777",
   "platforms": {

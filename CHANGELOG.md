@@ -2,6 +2,12 @@
 
 -----
 
+## [0.5.2](https://github.com/EFPrefix/EFIconFont/releases/tag/0.5.2) (2019-08-26)
+
+- Fix.
+
+---
+
 ## [0.5.1](https://github.com/EFPrefix/EFIconFont/releases/tag/0.5.1) (2019-08-26)
 
 - Add IcoMoon.
