@@ -151,6 +151,7 @@ PS: Although the libraries below are all free, please make sure that your way of
 | Name | Version | Count | File Size | Description | License | Preview |
 |:-|:-|:-|:-|:-|:-|:-|
 | AntDesign | | 557 | 127KB | Ant Design | [MIT](https://github.com/ant-design/ant-design/blob/master/LICENSE) | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=9402) |
+| Dashicons  | 0.9.0 | 203 | 51 KB | Official icon font of the WordPress admin | [GPLv2](https://github.com/WordPress/dashicons) | [https://developer.wordpress.org/](https://developer.wordpress.org/resource/dashicons) |
 | ElusiveIcons | 2.0.0 | 304 | 53KB | Elusive Icons | [OFL](http://elusiveicons.com/license/) | [elusiveicons.com](http://elusiveicons.com/icons/) |
 | FontAwesome | 5.8.1 | 1516 | 356KB | Font Awesome | [Font Awesome Free License](https://fontawesome.com/license/free) | [fontawesome.com](https://fontawesome.com/icons?d=gallery&m=free) |
 | IcoMoon | 1.0 | 490 | 94KB | IcoMoon free icons | [CC BY 4.0 / GPL](https://github.com/Keyamoon/IcoMoon-Free/blob/master/License.txt) | [ionicons.com](https://icomoon.io/#preview-free) |

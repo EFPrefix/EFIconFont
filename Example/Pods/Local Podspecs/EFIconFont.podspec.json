@@ -37,6 +37,16 @@
       }
     },
     {
+      "name": "Dashicons",
+      "source_files": "EFIconFont/Classes/Dashicons/**/*",
+      "resources": "EFIconFont/Assets/Dashicons/**/*",
+      "dependencies": {
+        "EFIconFont/Core": [
+
+        ]
+      }
+    },
+    {
       "name": "ElusiveIcons",
       "source_files": "EFIconFont/Classes/ElusiveIcons/**/*",
       "resources": "EFIconFont/Assets/ElusiveIcons/**/*",
@@ -133,6 +143,9 @@
 
         ],
         "EFIconFont/AntDesign": [
+
+        ],
+        "EFIconFont/Dashicons": [
 
         ],
         "EFIconFont/ElusiveIcons": [

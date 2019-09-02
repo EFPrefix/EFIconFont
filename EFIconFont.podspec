@@ -27,6 +27,12 @@ Pod::Spec.new do |s|
         antdesign.dependency 'EFIconFont/Core'
     end
 
+    s.subspec 'Dashicons' do |dashicons|
+        dashicons.source_files = 'EFIconFont/Classes/Dashicons/**/*'
+        dashicons.resources = 'EFIconFont/Assets/Dashicons/**/*'
+        dashicons.dependency 'EFIconFont/Core'
+    end
+
     s.subspec 'ElusiveIcons' do |elusiveicons|
         elusiveicons.source_files = 'EFIconFont/Classes/ElusiveIcons/**/*'
         elusiveicons.resources = 'EFIconFont/Assets/ElusiveIcons/**/*'
@@ -84,6 +90,7 @@ Pod::Spec.new do |s|
     s.subspec 'Complete' do |complete|
         complete.dependency 'EFIconFont/Core'
         complete.dependency 'EFIconFont/AntDesign'
+        complete.dependency 'EFIconFont/Dashicons'
         complete.dependency 'EFIconFont/ElusiveIcons'
         complete.dependency 'EFIconFont/FontAwesome'
         complete.dependency 'EFIconFont/IcoMoon'

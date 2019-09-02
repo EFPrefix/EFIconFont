@@ -17,6 +17,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         ("AwesomeBrands", "\(EFIconFont.awesomeBrands)", EFIconFont.awesomeBrands.dictionary),
         ("AwesomeRegular", "\(EFIconFont.awesomeRegular)", EFIconFont.awesomeRegular.dictionary),
         ("AwesomeSolid", "\(EFIconFont.awesomeSolid)", EFIconFont.awesomeSolid.dictionary),
+        ("Dashicons", "\(EFIconFont.dashicons)", EFIconFont.dashicons.dictionary),
         ("ElusiveIcons", "\(EFIconFont.elusiveIcons)", EFIconFont.elusiveIcons.dictionary),
         ("IcoMoon", "\(EFIconFont.icomoon)", EFIconFont.icomoon.dictionary),
         ("Ionicons", "\(EFIconFont.ionicons)", EFIconFont.ionicons.dictionary),
