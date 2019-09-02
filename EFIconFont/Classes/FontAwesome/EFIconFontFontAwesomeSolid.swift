@@ -28,7 +28,7 @@ import Foundation
 
 public extension EFIconFont {
     
-    static let awesomeSolid = EFIconFontFontAwesomeSolid.self
+    static let fontAwesomeSolid = EFIconFontFontAwesomeSolid.self
 }
 
 extension EFIconFontFontAwesomeSolid: EFIconFontCaseIterableProtocol {

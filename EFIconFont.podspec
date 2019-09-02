@@ -45,6 +45,12 @@ Pod::Spec.new do |s|
         fontawesome.dependency 'EFIconFont/Core'
     end
 
+    s.subspec 'Hawcons' do |hawcons|
+        hawcons.source_files = 'EFIconFont/Classes/Hawcons/**/*'
+        hawcons.resources = 'EFIconFont/Assets/Hawcons/**/*'
+        hawcons.dependency 'EFIconFont/Core'
+    end
+
     s.subspec 'IcoMoon' do |icomoon|
         icomoon.source_files = 'EFIconFont/Classes/IcoMoon/**/*'
         icomoon.resources = 'EFIconFont/Assets/IcoMoon/**/*'
@@ -93,6 +99,7 @@ Pod::Spec.new do |s|
         complete.dependency 'EFIconFont/Dashicons'
         complete.dependency 'EFIconFont/ElusiveIcons'
         complete.dependency 'EFIconFont/FontAwesome'
+        complete.dependency 'EFIconFont/Hawcons'
         complete.dependency 'EFIconFont/IcoMoon'
         complete.dependency 'EFIconFont/Ionicons'
         complete.dependency 'EFIconFont/MaterialIcons'

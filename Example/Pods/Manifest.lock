@@ -7,6 +7,7 @@ PODS:
     - EFIconFont/Dashicons
     - EFIconFont/ElusiveIcons
     - EFIconFont/FontAwesome
+    - EFIconFont/Hawcons
     - EFIconFont/IcoMoon
     - EFIconFont/Ionicons
     - EFIconFont/MaterialIcons
@@ -20,6 +21,8 @@ PODS:
   - EFIconFont/ElusiveIcons (0.5.2):
     - EFIconFont/Core
   - EFIconFont/FontAwesome (0.5.2):
+    - EFIconFont/Core
+  - EFIconFont/Hawcons (0.5.2):
     - EFIconFont/Core
   - EFIconFont/IcoMoon (0.5.2):
     - EFIconFont/Core
@@ -44,7 +47,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EFIconFont: 6fcaae81fbfcad43d42f013a4480a12da5c24484
+  EFIconFont: 314c53ca53902dc9e0238dded2b20e82c512fd7f
 
 PODFILE CHECKSUM: 377b34526d3e9857b28e9885a58c59c640f11ab8
 

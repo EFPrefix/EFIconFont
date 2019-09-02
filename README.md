@@ -150,10 +150,11 @@ PS: Although the libraries below are all free, please make sure that your way of
 
 | Name | Version | Count | File Size | Description | License | Preview |
 |:-|:-|:-|:-|:-|:-|:-|
-| AntDesign | | 557 | 127KB | Ant Design | [MIT](https://github.com/ant-design/ant-design/blob/master/LICENSE) | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=9402) |
-| Dashicons  | 0.9.0 | 203 | 51 KB | Official icon font of the WordPress admin | [GPLv2](https://github.com/WordPress/dashicons) | [https://developer.wordpress.org/](https://developer.wordpress.org/resource/dashicons) |
+| AntDesign | 1.0 | 557 | 127KB | Ant Design | [MIT](https://github.com/ant-design/ant-design/blob/master/LICENSE) | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=9402) |
+| Dashicons  | 0.9.0 | 203 | 51 KB | Official icon font of the WordPress admin | [GPLv2](https://github.com/WordPress/dashicons) | [wordpress.org/](https://developer.wordpress.org/resource/dashicons) |
 | ElusiveIcons | 2.0.0 | 304 | 53KB | Elusive Icons | [OFL](http://elusiveicons.com/license/) | [elusiveicons.com](http://elusiveicons.com/icons/) |
 | FontAwesome | 5.8.1 | 1516 | 356KB | Font Awesome | [Font Awesome Free License](https://fontawesome.com/license/free) | [fontawesome.com](https://fontawesome.com/icons?d=gallery&m=free) |
+| Hawcons | 1.0 | 1035 | 1143KB | Hawcons, includes icons of Documents, Sports, Weather, Emoji, Gestures, Filetypes, etc. | [Free](http://hawcons.com/faq/) | [hawcons.com](http://hawcons.com/preview/) |
 | IcoMoon | 1.0 | 490 | 94KB | IcoMoon free icons | [CC BY 4.0 / GPL](https://github.com/Keyamoon/IcoMoon-Free/blob/master/License.txt) | [ionicons.com](https://icomoon.io/#preview-free) |
 | Ionicons | 4.5.5 | 696 | 143KB | Ionicons | [MIT](https://github.com/ionic-team/ionicons/blob/master/LICENSE) | [ionicons.com](https://ionicons.com/) |
 | MaterialIcons | 3.0.1 | 932 | 128KB | Google's material design icons | [Apache-2.0](https://github.com/google/material-design-icons/blob/master/LICENSE) | [material.io](https://material.io/tools/icons) |

@@ -67,6 +67,16 @@
       }
     },
     {
+      "name": "Hawcons",
+      "source_files": "EFIconFont/Classes/Hawcons/**/*",
+      "resources": "EFIconFont/Assets/Hawcons/**/*",
+      "dependencies": {
+        "EFIconFont/Core": [
+
+        ]
+      }
+    },
+    {
       "name": "IcoMoon",
       "source_files": "EFIconFont/Classes/IcoMoon/**/*",
       "resources": "EFIconFont/Assets/IcoMoon/**/*",
@@ -152,6 +162,9 @@
 
         ],
         "EFIconFont/FontAwesome": [
+
+        ],
+        "EFIconFont/Hawcons": [
 
         ],
         "EFIconFont/IcoMoon": [

@@ -14,12 +14,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     let tableView: UITableView = UITableView()
     let iconfonts: [(name: String, `enum`: String, dictionary: [String : EFIconFontProtocol])] = [
         ("AntDesign", "\(EFIconFont.antDesign)", EFIconFont.antDesign.dictionary),
-        ("AwesomeBrands", "\(EFIconFont.awesomeBrands)", EFIconFont.awesomeBrands.dictionary),
-        ("AwesomeRegular", "\(EFIconFont.awesomeRegular)", EFIconFont.awesomeRegular.dictionary),
-        ("AwesomeSolid", "\(EFIconFont.awesomeSolid)", EFIconFont.awesomeSolid.dictionary),
         ("Dashicons", "\(EFIconFont.dashicons)", EFIconFont.dashicons.dictionary),
         ("ElusiveIcons", "\(EFIconFont.elusiveIcons)", EFIconFont.elusiveIcons.dictionary),
-        ("IcoMoon", "\(EFIconFont.icomoon)", EFIconFont.icomoon.dictionary),
+        ("FontAwesomeBrands", "\(EFIconFont.fontAwesomeBrands)", EFIconFont.fontAwesomeBrands.dictionary),
+        ("FontAwesomeRegular", "\(EFIconFont.fontAwesomeRegular)", EFIconFont.fontAwesomeRegular.dictionary),
+        ("FontAwesomeSolid", "\(EFIconFont.fontAwesomeSolid)", EFIconFont.fontAwesomeSolid.dictionary),
+        ("HawconsFilled", "\(EFIconFont.hawconsFilled)", EFIconFont.hawconsFilled.dictionary),
+        ("HawconsStroke", "\(EFIconFont.hawconsStroke)", EFIconFont.hawconsStroke.dictionary),
+        ("IcoMoon", "\(EFIconFont.icoMoon)", EFIconFont.icoMoon.dictionary),
         ("Ionicons", "\(EFIconFont.ionicons)", EFIconFont.ionicons.dictionary),
         ("MaterialIcons", "\(EFIconFont.materialIcons)", EFIconFont.materialIcons.dictionary),
         ("Meteocons", "\(EFIconFont.meteocons)", EFIconFont.meteocons.dictionary),

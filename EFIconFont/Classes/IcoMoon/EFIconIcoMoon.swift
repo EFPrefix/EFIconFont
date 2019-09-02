@@ -28,7 +28,7 @@ import Foundation
 
 public extension EFIconFont {
 
-    static let icomoon = EFIconFontIcoMoon.self
+    static let icoMoon = EFIconFontIcoMoon.self
 }
 
 extension EFIconFontIcoMoon: EFIconFontCaseIterableProtocol {

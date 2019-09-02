@@ -28,7 +28,7 @@ import Foundation
 
 public extension EFIconFont {
 
-    static let awesomeBrands = EFIconFontFontAwesomeBrands.self
+    static let fontAwesomeBrands = EFIconFontFontAwesomeBrands.self
 }
 
 extension EFIconFontFontAwesomeBrands: EFIconFontCaseIterableProtocol {
