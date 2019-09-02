@@ -2,6 +2,13 @@
 
 -----
 
+## [0.6.0](https://github.com/EFPrefix/EFIconFont/releases/tag/0.6.0) (2019-09-02)
+
+- Add Hawcons;
+- Add Dashicons.
+
+---
+
 ## [0.5.2](https://github.com/EFPrefix/EFIconFont/releases/tag/0.5.2) (2019-08-26)
 
 - Fix.
