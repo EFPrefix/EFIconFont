@@ -107,6 +107,16 @@
       }
     },
     {
+      "name": "LigatureSymbols",
+      "source_files": "EFIconFont/Classes/LigatureSymbols/**/*",
+      "resources": "EFIconFont/Assets/LigatureSymbols/**/*",
+      "dependencies": {
+        "EFIconFont/Core": [
+
+        ]
+      }
+    },
+    {
       "name": "MaterialIcons",
       "source_files": "EFIconFont/Classes/MaterialIcons/**/*",
       "resources": "EFIconFont/Assets/MaterialIcons/**/*",
@@ -204,6 +214,9 @@
 
         ],
         "EFIconFont/Ionicons": [
+
+        ],
+        "EFIconFont/LigatureSymbols": [
 
         ],
         "EFIconFont/MaterialIcons": [

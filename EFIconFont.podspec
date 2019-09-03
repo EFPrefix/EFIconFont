@@ -69,6 +69,12 @@ Pod::Spec.new do |s|
         ionicons.dependency 'EFIconFont/Core'
     end
 
+    s.subspec 'LigatureSymbols' do |ligaturesymbols|
+        ligaturesymbols.source_files = 'EFIconFont/Classes/LigatureSymbols/**/*'
+        ligaturesymbols.resources = 'EFIconFont/Assets/LigatureSymbols/**/*'
+        ligaturesymbols.dependency 'EFIconFont/Core'
+    end
+
     s.subspec 'MaterialIcons' do |materialicons|
         materialicons.source_files = 'EFIconFont/Classes/MaterialIcons/**/*'
         materialicons.resources = 'EFIconFont/Assets/MaterialIcons/**/*'
@@ -121,6 +127,7 @@ Pod::Spec.new do |s|
         complete.dependency 'EFIconFont/Hawcons'
         complete.dependency 'EFIconFont/IcoMoon'
         complete.dependency 'EFIconFont/Ionicons'
+        complete.dependency 'EFIconFont/LigatureSymbols'
         complete.dependency 'EFIconFont/MaterialIcons'
         complete.dependency 'EFIconFont/Meteocons'
         complete.dependency 'EFIconFont/MetrizeIcons'

@@ -163,6 +163,7 @@ EFIconFont.antDesign.dictionary
 | Hawcons | 1.0 | 1035 | 1143KB | Hawcons 免费图标库，包括文档、体育、天气、表情、手势、文件类型等 | [Free](http://hawcons.com/faq/) | [hawcons.com](http://hawcons.com/preview/) |
 | IcoMoon | 1.0 | 490 | 94KB | IcoMoon 免费图标库 | [CC BY 4.0 / GPL](https://github.com/Keyamoon/IcoMoon-Free/blob/master/License.txt) | [ionicons.com](https://icomoon.io/#preview-free) |
 | Ionicons | 4.5.5 | 696 | 143KB | Ionicons 免费图标库 | [MIT](https://github.com/ionic-team/ionicons/blob/master/LICENSE) | [ionicons.com](https://ionicons.com/) |
+| LigatureSymbols | 2.11 | 239 | 84KB | Ligature Symbols | [OFL](http://kudakurage.com/ligature_symbols/)| [kudakurage.com/ligature_symbols](http://kudakurage.com/ligature_symbols/) |
 | MaterialIcons | 3.0.1 | 932 | 128KB | Google 的 Material 图标库 | [Apache-2.0](https://github.com/google/material-design-icons/blob/master/LICENSE) | [material.io](https://material.io/tools/icons) |
 | Meteocons |  | 47 | 15KB | 一个天气图标库 | [Free](https://www.alessioatzeni.com/meteocons/) | [alessioatzeni.com/meteocons](https://www.alessioatzeni.com/meteocons/) |
 | MetrizeIcons | 1.0 | 300 | 74KB | 300 个给设计和开发人员的免费图标 | [Free](https://www.alessioatzeni.com/metrize-icons/) | [alessioatzeni.com/metrize-icons](https://www.alessioatzeni.com/metrize-icons/) |
