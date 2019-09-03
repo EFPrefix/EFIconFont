@@ -35,7 +35,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         ("OpenIconic", "\(EFIconFont.openIconic)", EFIconFont.openIconic.dictionary),
         ("Stroke7", "\(EFIconFont.stroke7)", EFIconFont.stroke7.dictionary),
         ("ThemifyIcons", "\(EFIconFont.themifyIcons)", EFIconFont.themifyIcons.dictionary),
-        ("Typicons", "\(EFIconFont.typicons)", EFIconFont.typicons.dictionary)
+        ("Typicons", "\(EFIconFont.typicons)", EFIconFont.typicons.dictionary),
+        ("WeatherIcons", "\(EFIconFont.weatherIcons)", EFIconFont.weatherIcons.dictionary)
     ]
     
     override func viewDidLoad() {

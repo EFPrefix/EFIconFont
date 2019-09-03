@@ -174,6 +174,7 @@ EFIconFont.antDesign.dictionary
 | Stroke7 | 1.2.0 | 202 | 44KB | Stroke 7 免费图标集 | [Free](https://www.pixeden.com/icon-fonts/filled-7-icon-font-set) | [themes-pixeden.com/font-demos](http://themes-pixeden.com/font-demos/7-stroke/index.html) |
 | ThemifyIcons | 1.0 | 352 | 68KB | Handcrafted 免费图标库 | [Free](https://themify.me/themify-icons) | [themify.me](https://themify.me/themify-icons) |
 | Typicons | 2.0.9 | 336 | 82KB | 336 个矢量图标集合在一个库内 | [OFL](https://github.com/stephenhutchings/typicons.font/blob/master/README.md) | [s-ings.com/typicons](https://www.s-ings.com/typicons/) |
+| WeatherIcons | 2.0.10 | 219 | 64KB | 天气相关图标 | [OFL](https://github.com/erikflowers/weather-icons) | [erikflowers.github.io/weather-icons](http://erikflowers.github.io/weather-icons/) |
 
 ### 3. 自定义图标库
 

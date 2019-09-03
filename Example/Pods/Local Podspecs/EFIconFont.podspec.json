@@ -217,6 +217,16 @@
       }
     },
     {
+      "name": "WeatherIcons",
+      "source_files": "EFIconFont/Classes/WeatherIcons/**/*",
+      "resources": "EFIconFont/Assets/WeatherIcons/**/*",
+      "dependencies": {
+        "EFIconFont/Core": [
+
+        ]
+      }
+    },
+    {
       "name": "Complete",
       "dependencies": {
         "EFIconFont/Core": [
@@ -277,6 +287,9 @@
 
         ],
         "EFIconFont/Typicons": [
+
+        ],
+        "EFIconFont/WeatherIcons": [
 
         ]
       }
