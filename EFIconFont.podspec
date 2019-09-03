@@ -87,6 +87,12 @@ Pod::Spec.new do |s|
         openiconic.dependency 'EFIconFont/Core'
     end
 
+    s.subspec 'ThemifyIcons' do |themifyicons|
+        themifyicons.source_files = 'EFIconFont/Classes/ThemifyIcons/**/*'
+        themifyicons.resources = 'EFIconFont/Assets/ThemifyIcons/**/*'
+        themifyicons.dependency 'EFIconFont/Core'
+    end
+
     s.subspec 'Typicons' do |typicons|
         typicons.source_files = 'EFIconFont/Classes/Typicons/**/*'
         typicons.resources = 'EFIconFont/Assets/Typicons/**/*'
@@ -106,6 +112,7 @@ Pod::Spec.new do |s|
         complete.dependency 'EFIconFont/Meteocons'
         complete.dependency 'EFIconFont/MetrizeIcons'
         complete.dependency 'EFIconFont/OpenIconic'
+        complete.dependency 'EFIconFont/ThemifyIcons'
         complete.dependency 'EFIconFont/Typicons'
     end
 end

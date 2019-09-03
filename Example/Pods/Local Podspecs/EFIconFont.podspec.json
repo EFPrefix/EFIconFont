@@ -137,6 +137,16 @@
       }
     },
     {
+      "name": "ThemifyIcons",
+      "source_files": "EFIconFont/Classes/ThemifyIcons/**/*",
+      "resources": "EFIconFont/Assets/ThemifyIcons/**/*",
+      "dependencies": {
+        "EFIconFont/Core": [
+
+        ]
+      }
+    },
+    {
       "name": "Typicons",
       "source_files": "EFIconFont/Classes/Typicons/**/*",
       "resources": "EFIconFont/Assets/Typicons/**/*",
@@ -183,6 +193,9 @@
 
         ],
         "EFIconFont/OpenIconic": [
+
+        ],
+        "EFIconFont/ThemifyIcons": [
 
         ],
         "EFIconFont/Typicons": [

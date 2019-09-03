@@ -28,6 +28,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         ("MetrizeIcons", "\(EFIconFont.metrizeIcons)", EFIconFont.metrizeIcons.dictionary),
         ("Octicons", "\(EFIconFont.octicons)", EFIconFont.octicons.dictionary),
         ("OpenIconic", "\(EFIconFont.openIconic)", EFIconFont.openIconic.dictionary),
+        ("ThemifyIcons", "\(EFIconFont.themifyIcons)", EFIconFont.themifyIcons.dictionary),
         ("Typicons", "\(EFIconFont.typicons)", EFIconFont.typicons.dictionary)
     ]
     
