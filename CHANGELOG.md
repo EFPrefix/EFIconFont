@@ -2,6 +2,17 @@
 
 -----
 
+## [0.6.2](https://github.com/EFPrefix/EFIconFont/releases/tag/0.6.2) (2019-09-03)
+
+- Add WeatherIcons;
+- Add EvilIcons;
+- Add MapIcons;
+- Add Genericons;
+- Add LigatureSymbols;
+- Add Devicons.
+
+---
+
 ## [0.6.1](https://github.com/EFPrefix/EFIconFont/releases/tag/0.6.1) (2019-09-03)
 
 - Add ThemifyIcons;
