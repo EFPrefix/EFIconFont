@@ -13,6 +13,7 @@ PODS:
     - EFIconFont/IcoMoon
     - EFIconFont/Ionicons
     - EFIconFont/LigatureSymbols
+    - EFIconFont/MapIcons
     - EFIconFont/MaterialIcons
     - EFIconFont/Meteocons
     - EFIconFont/MetrizeIcons
@@ -39,6 +40,8 @@ PODS:
     - EFIconFont/Core
   - EFIconFont/LigatureSymbols (0.6.1):
     - EFIconFont/Core
+  - EFIconFont/MapIcons (0.6.1):
+    - EFIconFont/Core
   - EFIconFont/MaterialIcons (0.6.1):
     - EFIconFont/Core
   - EFIconFont/Meteocons (0.6.1):
@@ -62,7 +65,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EFIconFont: 2282eebf8b29d9a68ae4c03f870e1f6b70d794f5
+  EFIconFont: 390587ef8da8149c0e31da050209f1fa05570aa0
 
 PODFILE CHECKSUM: 377b34526d3e9857b28e9885a58c59c640f11ab8
 

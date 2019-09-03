@@ -81,6 +81,12 @@ Pod::Spec.new do |s|
         ligaturesymbols.dependency 'EFIconFont/Core'
     end
 
+    s.subspec 'MapIcons' do |mapicons|
+        mapicons.source_files = 'EFIconFont/Classes/MapIcons/**/*'
+        mapicons.resources = 'EFIconFont/Assets/MapIcons/**/*'
+        mapicons.dependency 'EFIconFont/Core'
+    end
+
     s.subspec 'MaterialIcons' do |materialicons|
         materialicons.source_files = 'EFIconFont/Classes/MaterialIcons/**/*'
         materialicons.resources = 'EFIconFont/Assets/MaterialIcons/**/*'
@@ -135,6 +141,7 @@ Pod::Spec.new do |s|
         complete.dependency 'EFIconFont/IcoMoon'
         complete.dependency 'EFIconFont/Ionicons'
         complete.dependency 'EFIconFont/LigatureSymbols'
+        complete.dependency 'EFIconFont/MapIcons'
         complete.dependency 'EFIconFont/MaterialIcons'
         complete.dependency 'EFIconFont/Meteocons'
         complete.dependency 'EFIconFont/MetrizeIcons'

@@ -127,6 +127,16 @@
       }
     },
     {
+      "name": "MapIcons",
+      "source_files": "EFIconFont/Classes/MapIcons/**/*",
+      "resources": "EFIconFont/Assets/MapIcons/**/*",
+      "dependencies": {
+        "EFIconFont/Core": [
+
+        ]
+      }
+    },
+    {
       "name": "MaterialIcons",
       "source_files": "EFIconFont/Classes/MaterialIcons/**/*",
       "resources": "EFIconFont/Assets/MaterialIcons/**/*",
@@ -230,6 +240,9 @@
 
         ],
         "EFIconFont/LigatureSymbols": [
+
+        ],
+        "EFIconFont/MapIcons": [
 
         ],
         "EFIconFont/MaterialIcons": [

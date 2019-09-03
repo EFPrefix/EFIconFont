@@ -26,6 +26,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         ("IcoMoon", "\(EFIconFont.icoMoon)", EFIconFont.icoMoon.dictionary),
         ("Ionicons", "\(EFIconFont.ionicons)", EFIconFont.ionicons.dictionary),
         ("LigatureSymbols", "\(EFIconFont.ligatureSymbols)", EFIconFont.ligatureSymbols.dictionary),
+        ("MapIcons", "\(EFIconFont.mapIcons)", EFIconFont.mapIcons.dictionary),
         ("MaterialIcons", "\(EFIconFont.materialIcons)", EFIconFont.materialIcons.dictionary),
         ("Meteocons", "\(EFIconFont.meteocons)", EFIconFont.meteocons.dictionary),
         ("MetrizeIcons", "\(EFIconFont.metrizeIcons)", EFIconFont.metrizeIcons.dictionary),
