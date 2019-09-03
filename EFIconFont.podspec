@@ -51,6 +51,12 @@ Pod::Spec.new do |s|
         fontawesome.dependency 'EFIconFont/Core'
     end
 
+    s.subspec 'GenericonsNeue' do |genericonsneue|
+        genericonsneue.source_files = 'EFIconFont/Classes/GenericonsNeue/**/*'
+        genericonsneue.resources = 'EFIconFont/Assets/GenericonsNeue/**/*'
+        genericonsneue.dependency 'EFIconFont/Core'
+    end
+
     s.subspec 'Hawcons' do |hawcons|
         hawcons.source_files = 'EFIconFont/Classes/Hawcons/**/*'
         hawcons.resources = 'EFIconFont/Assets/Hawcons/**/*'
@@ -124,6 +130,7 @@ Pod::Spec.new do |s|
         complete.dependency 'EFIconFont/Devicons'
         complete.dependency 'EFIconFont/ElusiveIcons'
         complete.dependency 'EFIconFont/FontAwesome'
+        complete.dependency 'EFIconFont/GenericonsNeue'
         complete.dependency 'EFIconFont/Hawcons'
         complete.dependency 'EFIconFont/IcoMoon'
         complete.dependency 'EFIconFont/Ionicons'

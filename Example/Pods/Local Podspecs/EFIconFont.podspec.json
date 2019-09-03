@@ -77,6 +77,16 @@
       }
     },
     {
+      "name": "GenericonsNeue",
+      "source_files": "EFIconFont/Classes/GenericonsNeue/**/*",
+      "resources": "EFIconFont/Assets/GenericonsNeue/**/*",
+      "dependencies": {
+        "EFIconFont/Core": [
+
+        ]
+      }
+    },
+    {
       "name": "Hawcons",
       "source_files": "EFIconFont/Classes/Hawcons/**/*",
       "resources": "EFIconFont/Assets/Hawcons/**/*",
@@ -205,6 +215,9 @@
 
         ],
         "EFIconFont/FontAwesome": [
+
+        ],
+        "EFIconFont/GenericonsNeue": [
 
         ],
         "EFIconFont/Hawcons": [
