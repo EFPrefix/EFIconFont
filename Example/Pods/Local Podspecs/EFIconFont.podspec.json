@@ -67,6 +67,16 @@
       }
     },
     {
+      "name": "EvilIcons",
+      "source_files": "EFIconFont/Classes/EvilIcons/**/*",
+      "resources": "EFIconFont/Assets/EvilIcons/**/*",
+      "dependencies": {
+        "EFIconFont/Core": [
+
+        ]
+      }
+    },
+    {
       "name": "FontAwesome",
       "source_files": "EFIconFont/Classes/FontAwesome/**/*",
       "resources": "EFIconFont/Assets/FontAwesome/**/*",
@@ -222,6 +232,9 @@
 
         ],
         "EFIconFont/ElusiveIcons": [
+
+        ],
+        "EFIconFont/EvilIcons": [
 
         ],
         "EFIconFont/FontAwesome": [

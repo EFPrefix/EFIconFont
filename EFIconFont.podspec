@@ -45,6 +45,12 @@ Pod::Spec.new do |s|
         elusiveicons.dependency 'EFIconFont/Core'
     end
 
+    s.subspec 'EvilIcons' do |evilicons|
+        evilicons.source_files = 'EFIconFont/Classes/EvilIcons/**/*'
+        evilicons.resources = 'EFIconFont/Assets/EvilIcons/**/*'
+        evilicons.dependency 'EFIconFont/Core'
+    end
+
     s.subspec 'FontAwesome' do |fontawesome|
         fontawesome.source_files = 'EFIconFont/Classes/FontAwesome/**/*'
         fontawesome.resources = 'EFIconFont/Assets/FontAwesome/**/*'
@@ -135,6 +141,7 @@ Pod::Spec.new do |s|
         complete.dependency 'EFIconFont/Dashicons'
         complete.dependency 'EFIconFont/Devicons'
         complete.dependency 'EFIconFont/ElusiveIcons'
+        complete.dependency 'EFIconFont/EvilIcons'
         complete.dependency 'EFIconFont/FontAwesome'
         complete.dependency 'EFIconFont/GenericonsNeue'
         complete.dependency 'EFIconFont/Hawcons'
