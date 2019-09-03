@@ -2,6 +2,13 @@
 
 -----
 
+## [0.6.1](https://github.com/EFPrefix/EFIconFont/releases/tag/0.6.1) (2019-09-03)
+
+- Add ThemifyIcons;
+- Add Stroke7.
+
+---
+
 ## [0.6.0](https://github.com/EFPrefix/EFIconFont/releases/tag/0.6.0) (2019-09-02)
 
 - Add Hawcons;
