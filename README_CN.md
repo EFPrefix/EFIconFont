@@ -157,6 +157,7 @@ EFIconFont.antDesign.dictionary
 |:-|:-|:-|:-|:-|:-|:-|
 | AntDesign | | 557 | 127KB | AntDesign 所属图标库 | [MIT](https://github.com/ant-design/ant-design/blob/master/LICENSE) | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=9402) |
 | Dashicons  | 0.9.0 | 203 | 51 KB | WordPress admin 官方图标库 | [GPLv2](https://github.com/WordPress/dashicons) | [wordpress.org](https://developer.wordpress.org/resource/dashicons) |
+| Devicons | 1.8.0 | 192 | 92KB | 各种开发工具、编程语言的图标 | [MIT](https://github.com/vorillaz/devicons) | [vorillaz.github.io/devicons](http://vorillaz.github.io/devicons/#/cheat) |
 | ElusiveIcons | 2.0.0 | 304 | 53KB | Elusive Icons | [OFL](http://elusiveicons.com/license/) | [elusiveicons.com](http://elusiveicons.com/icons/) |
 | FontAwesome | 5.8.1 | 1516 | 356KB | FontAwesome 所属的免费图标库 | [Font Awesome Free License](https://fontawesome.com/license/free) | [fontawesome.com](https://fontawesome.com/icons?d=gallery&m=free) |
 | Hawcons | 1.0 | 1035 | 1143KB | Hawcons 免费图标库，包括文档、体育、天气、表情、手势、文件类型等 | [Free](http://hawcons.com/faq/) | [hawcons.com](http://hawcons.com/preview/) |

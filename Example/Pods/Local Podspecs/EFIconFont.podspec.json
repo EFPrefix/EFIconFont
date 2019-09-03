@@ -47,6 +47,16 @@
       }
     },
     {
+      "name": "Devicons",
+      "source_files": "EFIconFont/Classes/Devicons/**/*",
+      "resources": "EFIconFont/Assets/Devicons/**/*",
+      "dependencies": {
+        "EFIconFont/Core": [
+
+        ]
+      }
+    },
+    {
       "name": "ElusiveIcons",
       "source_files": "EFIconFont/Classes/ElusiveIcons/**/*",
       "resources": "EFIconFont/Assets/ElusiveIcons/**/*",
@@ -176,6 +186,9 @@
 
         ],
         "EFIconFont/Dashicons": [
+
+        ],
+        "EFIconFont/Devicons": [
 
         ],
         "EFIconFont/ElusiveIcons": [
