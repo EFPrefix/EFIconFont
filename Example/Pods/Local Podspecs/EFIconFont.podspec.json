@@ -137,6 +137,16 @@
       }
     },
     {
+      "name": "Stroke7",
+      "source_files": "EFIconFont/Classes/Stroke7/**/*",
+      "resources": "EFIconFont/Assets/Stroke7/**/*",
+      "dependencies": {
+        "EFIconFont/Core": [
+
+        ]
+      }
+    },
+    {
       "name": "ThemifyIcons",
       "source_files": "EFIconFont/Classes/ThemifyIcons/**/*",
       "resources": "EFIconFont/Assets/ThemifyIcons/**/*",
@@ -193,6 +203,9 @@
 
         ],
         "EFIconFont/OpenIconic": [
+
+        ],
+        "EFIconFont/Stroke7": [
 
         ],
         "EFIconFont/ThemifyIcons": [

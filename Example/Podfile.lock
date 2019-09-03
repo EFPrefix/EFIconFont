@@ -14,6 +14,7 @@ PODS:
     - EFIconFont/Meteocons
     - EFIconFont/MetrizeIcons
     - EFIconFont/OpenIconic
+    - EFIconFont/Stroke7
     - EFIconFont/ThemifyIcons
     - EFIconFont/Typicons
   - EFIconFont/Core (0.6.0)
@@ -37,6 +38,8 @@ PODS:
     - EFIconFont/Core
   - EFIconFont/OpenIconic (0.6.0):
     - EFIconFont/Core
+  - EFIconFont/Stroke7 (0.6.0):
+    - EFIconFont/Core
   - EFIconFont/ThemifyIcons (0.6.0):
     - EFIconFont/Core
   - EFIconFont/Typicons (0.6.0):
@@ -50,7 +53,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EFIconFont: 5c8ac5648889a0ac99d60ed58053bb5a4c5402df
+  EFIconFont: 777700d3f43f5e24650dd4bb3ca3c428cef12ee6
 
 PODFILE CHECKSUM: 377b34526d3e9857b28e9885a58c59c640f11ab8
 
