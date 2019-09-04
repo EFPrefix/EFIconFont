@@ -14,7 +14,7 @@ extension CGFloat {
     static let screenHeight = UIScreen.main.bounds.size.height
     
     static let statusBarHeight: CGFloat = 20 + topSafeAreaHeight
-    static let navigationBarHeight: CGFloat = 44
+    static let navigationBarHeight: CGFloat = 46
     static let statusAndNavigationHeight: CGFloat = statusBarHeight + navigationBarHeight
     
     static let topSafeAreaHeight: CGFloat = UIDevice.isiPhoneX ? 22 : 0

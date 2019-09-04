@@ -9,40 +9,59 @@
 import UIKit
 import EFIconFont
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+struct IconFont {
+    
+    let `enum`: String
+    let dictionary: [String : EFIconFontProtocol]
+    
+    init<T: EFIconFontCaseIterableProtocol>(_ iconFont: T.Type) {
+        `enum` = "\(iconFont)"
+        dictionary = iconFont.dictionary
+    }
+}
+
+class ViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    static let iconfonts: [(name: String, font: IconFont)] = [
+        ("AntDesign", IconFont(EFIconFont.antDesign)),
+        ("Dashicons", IconFont(EFIconFont.dashicons)),
+        ("Devicons", IconFont(EFIconFont.devicons)),
+        ("ElusiveIcons", IconFont(EFIconFont.elusiveIcons)),
+        ("EvilIcons", IconFont(EFIconFont.evilIcons)),
+        ("FontAwesomeBrands", IconFont(EFIconFont.fontAwesomeBrands)),
+        ("FontAwesomeRegular", IconFont(EFIconFont.fontAwesomeRegular)),
+        ("FontAwesomeSolid", IconFont(EFIconFont.fontAwesomeSolid)),
+        ("GenericonsNeue", IconFont(EFIconFont.genericonsNeue)),
+        ("HawconsFilled", IconFont(EFIconFont.hawconsFilled)),
+        ("HawconsStroke", IconFont(EFIconFont.hawconsStroke)),
+        ("IcoMoon", IconFont(EFIconFont.icoMoon)),
+        ("Ionicons", IconFont(EFIconFont.ionicons)),
+        ("LigatureSymbols", IconFont(EFIconFont.ligatureSymbols)),
+        ("MapIcons", IconFont(EFIconFont.mapIcons)),
+        ("MaterialIcons", IconFont(EFIconFont.materialIcons)),
+        ("Meteocons", IconFont(EFIconFont.meteocons)),
+        ("MetrizeIcons", IconFont(EFIconFont.metrizeIcons)),
+        ("Octicons", IconFont(EFIconFont.octicons)),
+        ("OpenIconic", IconFont(EFIconFont.openIconic)),
+        ("Stroke7", IconFont(EFIconFont.stroke7)),
+        ("ThemifyIcons", IconFont(EFIconFont.themifyIcons)),
+        ("Typicons", IconFont(EFIconFont.typicons)),
+        ("WeatherIcons", IconFont(EFIconFont.weatherIcons))
+    ]
     
     let tableView: UITableView = UITableView()
-    let iconfonts: [(name: String, `enum`: String, dictionary: [String : EFIconFontProtocol])] = [
-        ("AntDesign", "\(EFIconFont.antDesign)", EFIconFont.antDesign.dictionary),
-        ("Dashicons", "\(EFIconFont.dashicons)", EFIconFont.dashicons.dictionary),
-        ("Devicons", "\(EFIconFont.devicons)", EFIconFont.devicons.dictionary),
-        ("ElusiveIcons", "\(EFIconFont.elusiveIcons)", EFIconFont.elusiveIcons.dictionary),
-        ("EvilIcons", "\(EFIconFont.evilIcons)", EFIconFont.evilIcons.dictionary),
-        ("FontAwesomeBrands", "\(EFIconFont.fontAwesomeBrands)", EFIconFont.fontAwesomeBrands.dictionary),
-        ("FontAwesomeRegular", "\(EFIconFont.fontAwesomeRegular)", EFIconFont.fontAwesomeRegular.dictionary),
-        ("FontAwesomeSolid", "\(EFIconFont.fontAwesomeSolid)", EFIconFont.fontAwesomeSolid.dictionary),
-        ("GenericonsNeue", "\(EFIconFont.genericonsNeue)", EFIconFont.genericonsNeue.dictionary),
-        ("HawconsFilled", "\(EFIconFont.hawconsFilled)", EFIconFont.hawconsFilled.dictionary),
-        ("HawconsStroke", "\(EFIconFont.hawconsStroke)", EFIconFont.hawconsStroke.dictionary),
-        ("IcoMoon", "\(EFIconFont.icoMoon)", EFIconFont.icoMoon.dictionary),
-        ("Ionicons", "\(EFIconFont.ionicons)", EFIconFont.ionicons.dictionary),
-        ("LigatureSymbols", "\(EFIconFont.ligatureSymbols)", EFIconFont.ligatureSymbols.dictionary),
-        ("MapIcons", "\(EFIconFont.mapIcons)", EFIconFont.mapIcons.dictionary),
-        ("MaterialIcons", "\(EFIconFont.materialIcons)", EFIconFont.materialIcons.dictionary),
-        ("Meteocons", "\(EFIconFont.meteocons)", EFIconFont.meteocons.dictionary),
-        ("MetrizeIcons", "\(EFIconFont.metrizeIcons)", EFIconFont.metrizeIcons.dictionary),
-        ("Octicons", "\(EFIconFont.octicons)", EFIconFont.octicons.dictionary),
-        ("OpenIconic", "\(EFIconFont.openIconic)", EFIconFont.openIconic.dictionary),
-        ("Stroke7", "\(EFIconFont.stroke7)", EFIconFont.stroke7.dictionary),
-        ("ThemifyIcons", "\(EFIconFont.themifyIcons)", EFIconFont.themifyIcons.dictionary),
-        ("Typicons", "\(EFIconFont.typicons)", EFIconFont.typicons.dictionary),
-        ("WeatherIcons", "\(EFIconFont.weatherIcons)", EFIconFont.weatherIcons.dictionary)
-    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "EFIconFont"
+        self.view.backgroundColor = UIColor.white
+        navigationItem.title = "EFIconFont"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: UIBarButtonItem.SystemItem.search,
+            target: self,
+            action: #selector(gotoSearch)
+        )
+        
         setupControls()
     }
     
@@ -50,15 +69,25 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         if #available(iOS 11.0, *) {
             tableView.contentInsetAdjustmentBehavior = .never
         }
-        tableView.contentInset = UIEdgeInsets(top: CGFloat.statusAndNavigationHeight, left: 0, bottom: 0, right: 0)
-        tableView.contentOffset = CGPoint(x: 0, y: -CGFloat.statusAndNavigationHeight)
+        tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: CGFloat.bottomSafeAreaHeight, right: 0)
+        tableView.contentOffset = CGPoint(x: 0, y: 0)
         tableView.estimatedRowHeight = 0
         tableView.estimatedSectionHeaderHeight = 0
         tableView.estimatedSectionFooterHeight = 0
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.frame = CGRect(x: 0, y: 0, width: CGFloat.screenWidth, height: CGFloat.screenHeight)
+        tableView.frame = CGRect(
+            x: 0,
+            y: CGFloat.statusAndNavigationHeight,
+            width: CGFloat.screenWidth,
+            height: CGFloat.screenHeight - CGFloat.statusAndNavigationHeight
+        )
         self.view.addSubview(tableView)
+    }
+    
+    @objc func gotoSearch() {
+        let searchViewController: SearchViewController = SearchViewController(iconfonts: ViewController.iconfonts)
+        self.navigationController?.pushViewController(searchViewController, animated: true)
     }
     
     // MARK:- UITableView
@@ -67,13 +96,15 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return iconfonts.count
+        return ViewController.iconfonts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let reuseIdentifier: String = "Title"
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) ?? UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: reuseIdentifier)
-        cell.textLabel?.text = iconfonts[indexPath.row].name
+        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) ?? UITableViewCell(
+            style: UITableViewCell.CellStyle.default, reuseIdentifier: reuseIdentifier
+        )
+        cell.textLabel?.text = ViewController.iconfonts[indexPath.row].name
         return cell
     }
     
@@ -84,9 +115,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let item = iconfonts[indexPath.row]
-        let title: String = item.enum
-        let subViewController: SubViewController = SubViewController(title: title, dictionary: item.dictionary)
+        let item = ViewController.iconfonts[indexPath.row]
+        let subViewController: SubViewController = SubViewController(name: item.name, iconfont: item.font)
         self.navigationController?.pushViewController(subViewController, animated: true)
     }
 }

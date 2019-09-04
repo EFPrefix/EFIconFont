@@ -2,6 +2,13 @@
 
 -----
 
+## [0.6.3](https://github.com/EFPrefix/EFIconFont/releases/tag/0.6.3) (2019-09-05)
+
+- Reduce hawconstroke.ttf file size;
+- Update demo project.
+
+---
+
 ## [0.6.2](https://github.com/EFPrefix/EFIconFont/releases/tag/0.6.2) (2019-09-03)
 
 - Add WeatherIcons;
