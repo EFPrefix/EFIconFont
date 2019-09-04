@@ -157,7 +157,7 @@ PS: Although the libraries below are all free, please make sure that your way of
 | EvilIcons | 1.10.1 | 70 | 16 KB | Simple and clean SVG icon pack | [MIT](https://github.com/evil-icons/evil-icons/blob/master/LICENSE.txt) | [evil-icons.io](https://evil-icons.io/) |    
 | FontAwesome | 5.8.1 | 1516 | 356KB | Font Awesome | [Font Awesome Free License](https://fontawesome.com/license/free) | [fontawesome.com](https://fontawesome.com/icons?d=gallery&m=free) |
 | Genericons | 4.0.4 | 103 | 16KB | Genericons Neue are generic looking icons, suitable for a blog or simple website | [GPLv2](https://github.com/Automattic/genericons-neue/blob/master/COPYING.md) | [genericons.com](http://genericons.com/) |
-| Hawcons | 1.0 | 1035 | 1143KB | Hawcons, includes icons of Documents, Sports, Weather, Emoji, Gestures, Filetypes, etc. | [Free](http://hawcons.com/faq/) | [hawcons.com](http://hawcons.com/preview/) |
+| Hawcons | 1.0 | 1035 | 685KB | Hawcons, includes icons of Documents, Sports, Weather, Emoji, Gestures, Filetypes, etc. | [Free](http://hawcons.com/faq/) | [hawcons.com](http://hawcons.com/preview/) |
 | IcoMoon | 1.0 | 490 | 94KB | IcoMoon free icons | [CC BY 4.0 / GPL](https://github.com/Keyamoon/IcoMoon-Free/blob/master/License.txt) | [ionicons.com](https://icomoon.io/#preview-free) |
 | Ionicons | 4.5.5 | 696 | 143KB | Ionicons | [MIT](https://github.com/ionic-team/ionicons/blob/master/LICENSE) | [ionicons.com](https://ionicons.com/) |
 | LigatureSymbols | 2.11 | 239 | 84KB | Ligature Symbols | [OFL](http://kudakurage.com/ligature_symbols/)| [kudakurage.com/ligature_symbols](http://kudakurage.com/ligature_symbols/) |

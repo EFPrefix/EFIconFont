@@ -162,7 +162,7 @@ EFIconFont.antDesign.dictionary
 | EvilIcons | 1.10.1 | 70 | 16 KB | 简洁的图标库 | [MIT](https://github.com/evil-icons/evil-icons/blob/master/LICENSE.txt) | [evil-icons.io](https://evil-icons.io/) |    
 | FontAwesome | 5.8.1 | 1516 | 356KB | FontAwesome 所属的免费图标库 | [Font Awesome Free License](https://fontawesome.com/license/free) | [fontawesome.com](https://fontawesome.com/icons?d=gallery&m=free) |
 | Genericons | 4.0.4 | 103 | 16KB | 通用外观图标库，适用于博客 / 简单网站 | [GPLv2](https://github.com/Automattic/genericons-neue/blob/master/COPYING.md) | [genericons.com](http://genericons.com/) |
-| Hawcons | 1.0 | 1035 | 1143KB | Hawcons 免费图标库，包括文档、体育、天气、表情、手势、文件类型等 | [Free](http://hawcons.com/faq/) | [hawcons.com](http://hawcons.com/preview/) |
+| Hawcons | 1.0 | 1035 | 685KB | Hawcons 免费图标库，包括文档、体育、天气、表情、手势、文件类型等 | [Free](http://hawcons.com/faq/) | [hawcons.com](http://hawcons.com/preview/) |
 | IcoMoon | 1.0 | 490 | 94KB | IcoMoon 免费图标库 | [CC BY 4.0 / GPL](https://github.com/Keyamoon/IcoMoon-Free/blob/master/License.txt) | [ionicons.com](https://icomoon.io/#preview-free) |
 | Ionicons | 4.5.5 | 696 | 143KB | Ionicons 免费图标库 | [MIT](https://github.com/ionic-team/ionicons/blob/master/LICENSE) | [ionicons.com](https://ionicons.com/) |
 | LigatureSymbols | 2.11 | 239 | 84KB | Ligature Symbols | [OFL](http://kudakurage.com/ligature_symbols/)| [kudakurage.com/ligature_symbols](http://kudakurage.com/ligature_symbols/) |

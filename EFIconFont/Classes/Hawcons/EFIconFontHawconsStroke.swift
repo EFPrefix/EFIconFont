@@ -34,7 +34,7 @@ public extension EFIconFont {
 extension EFIconFontHawconsStroke: EFIconFontCaseIterableProtocol {
     
     public static var name: String {
-        return "hawconsstroke"
+        return "hawcons"
     }
     
     public var unicode: String {
