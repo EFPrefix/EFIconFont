@@ -22,7 +22,7 @@ struct IconFont {
 
 class ViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
     
-    static let iconfonts: [(name: String, font: IconFont)] = [
+    let iconfonts: [(name: String, font: IconFont)] = [
         ("AntDesign", IconFont(EFIconFont.antDesign)),
         ("Dashicons", IconFont(EFIconFont.dashicons)),
         ("Devicons", IconFont(EFIconFont.devicons)),
@@ -86,7 +86,7 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
     }
     
     @objc func gotoSearch() {
-        let searchViewController: SearchViewController = SearchViewController(iconfonts: ViewController.iconfonts)
+        let searchViewController: SearchViewController = SearchViewController(iconfonts: iconfonts)
         self.navigationController?.pushViewController(searchViewController, animated: true)
     }
     
@@ -96,7 +96,7 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ViewController.iconfonts.count
+        return iconfonts.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -104,7 +104,7 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
         let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier) ?? UITableViewCell(
             style: UITableViewCell.CellStyle.default, reuseIdentifier: reuseIdentifier
         )
-        cell.textLabel?.text = ViewController.iconfonts[indexPath.row].name
+        cell.textLabel?.text = iconfonts[indexPath.row].name
         return cell
     }
     
@@ -115,7 +115,7 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let item = ViewController.iconfonts[indexPath.row]
+        let item = iconfonts[indexPath.row]
         let subViewController: SubViewController = SubViewController(name: item.name, iconfont: item.font)
         self.navigationController?.pushViewController(subViewController, animated: true)
     }

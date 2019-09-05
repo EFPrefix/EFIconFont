@@ -34,5 +34,11 @@
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
 	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>EFIconFont need to access album</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>EFIconFont need to access album</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>EFIconFont need to access library</string>
 </dict>
 </plist>
