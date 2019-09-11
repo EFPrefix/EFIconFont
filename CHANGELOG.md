@@ -2,6 +2,12 @@
 
 -----
 
+## [0.6.4](https://github.com/EFPrefix/EFIconFont/releases/tag/0.6.4) (2019-09-11)
+
+- Add VSCodeIcons;
+
+---
+
 ## [0.6.3](https://github.com/EFPrefix/EFIconFont/releases/tag/0.6.3) (2019-09-05)
 
 - Reduce hawconstroke.ttf file size;

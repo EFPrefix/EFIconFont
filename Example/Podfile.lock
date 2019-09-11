@@ -1,7 +1,7 @@
 PODS:
-  - EFIconFont/AntDesign (0.6.3):
+  - EFIconFont/AntDesign (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/Complete (0.6.3):
+  - EFIconFont/Complete (0.6.4):
     - EFIconFont/AntDesign
     - EFIconFont/Core
     - EFIconFont/Dashicons
@@ -24,46 +24,46 @@ PODS:
     - EFIconFont/Typicons
     - EFIconFont/VSCodeIcons
     - EFIconFont/WeatherIcons
-  - EFIconFont/Core (0.6.3)
-  - EFIconFont/Dashicons (0.6.3):
+  - EFIconFont/Core (0.6.4)
+  - EFIconFont/Dashicons (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/Devicons (0.6.3):
+  - EFIconFont/Devicons (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/ElusiveIcons (0.6.3):
+  - EFIconFont/ElusiveIcons (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/EvilIcons (0.6.3):
+  - EFIconFont/EvilIcons (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/FontAwesome (0.6.3):
+  - EFIconFont/FontAwesome (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/GenericonsNeue (0.6.3):
+  - EFIconFont/GenericonsNeue (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/Hawcons (0.6.3):
+  - EFIconFont/Hawcons (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/IcoMoon (0.6.3):
+  - EFIconFont/IcoMoon (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/Ionicons (0.6.3):
+  - EFIconFont/Ionicons (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/LigatureSymbols (0.6.3):
+  - EFIconFont/LigatureSymbols (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/MapIcons (0.6.3):
+  - EFIconFont/MapIcons (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/MaterialIcons (0.6.3):
+  - EFIconFont/MaterialIcons (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/Meteocons (0.6.3):
+  - EFIconFont/Meteocons (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/MetrizeIcons (0.6.3):
+  - EFIconFont/MetrizeIcons (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/OpenIconic (0.6.3):
+  - EFIconFont/OpenIconic (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/Stroke7 (0.6.3):
+  - EFIconFont/Stroke7 (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/ThemifyIcons (0.6.3):
+  - EFIconFont/ThemifyIcons (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/Typicons (0.6.3):
+  - EFIconFont/Typicons (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/VSCodeIcons (0.6.3):
+  - EFIconFont/VSCodeIcons (0.6.4):
     - EFIconFont/Core
-  - EFIconFont/WeatherIcons (0.6.3):
+  - EFIconFont/WeatherIcons (0.6.4):
     - EFIconFont/Core
 
 DEPENDENCIES:
@@ -74,7 +74,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EFIconFont: 712baff886784187e0076d5675aa99be0dbcce7d
+  EFIconFont: 73fbb061b7bba6cf33167201d3b94b5c886addf9
 
 PODFILE CHECKSUM: 377b34526d3e9857b28e9885a58c59c640f11ab8
 

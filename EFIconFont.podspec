@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'EFIconFont'
-    s.version          = '0.6.3'
+    s.version          = '0.6.4'
     s.summary          = 'Yet another stupid wrapper of icon font.'
     
     s.description      = <<-DESC
