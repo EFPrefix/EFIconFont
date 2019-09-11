@@ -89,6 +89,7 @@ class SearchViewController: BaseViewController, UITableViewDataSource, UITableVi
         tableView.estimatedSectionFooterHeight = 0
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.keyboardDismissMode = .onDrag
         tableView.frame = CGRect(
             x: 0,
             y: searchView.frame.maxY,
