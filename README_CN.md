@@ -171,6 +171,7 @@ EFIconFont.antDesign.dictionary
 | Meteocons |  | 47 | 15KB | 一个天气图标库 | [Free](https://www.alessioatzeni.com/meteocons/) | [alessioatzeni.com/meteocons](https://www.alessioatzeni.com/meteocons/) |
 | MetrizeIcons | 1.0 | 300 | 74KB | 300 个给设计和开发人员的免费图标 | [Free](https://www.alessioatzeni.com/metrize-icons/) | [alessioatzeni.com/metrize-icons](https://www.alessioatzeni.com/metrize-icons/) |
 | OpenIconic | 1.1.1 | 223 | 33KB | 223 个开源矢量图标集 | [OFL](https://github.com/iconic/open-iconic/blob/master/FONT-LICENSE) | [useiconic.com/open](https://useiconic.com/open/) |
+| StrawberryIcon | 2.0.0 | 382 | 69KB | 为开发者设计的一套免费开源图标库 | [OFL](https://github.com/xiangsudian/CaoMei) | [chuangzaoshi.com/icon](http://chuangzaoshi.com/icon/) |
 | Stroke7 | 1.2.0 | 202 | 44KB | Stroke 7 免费图标集 | [Free](https://www.pixeden.com/icon-fonts/filled-7-icon-font-set) | [themes-pixeden.com/font-demos](http://themes-pixeden.com/font-demos/7-stroke/index.html) |
 | ThemifyIcons | 1.0 | 352 | 68KB | Handcrafted 免费图标库 | [Free](https://themify.me/themify-icons) | [themify.me](https://themify.me/themify-icons) |
 | Typicons | 2.0.9 | 336 | 82KB | 336 个矢量图标集合在一个库内 | [OFL](https://github.com/stephenhutchings/typicons.font/blob/master/README.md) | [s-ings.com/typicons](https://www.s-ings.com/typicons/) |

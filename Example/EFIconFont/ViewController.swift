@@ -43,6 +43,7 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
         ("MetrizeIcons", IconFont(EFIconFont.metrizeIcons)),
         ("Octicons", IconFont(EFIconFont.octicons)),
         ("OpenIconic", IconFont(EFIconFont.openIconic)),
+        ("StrawberryIcon", IconFont(EFIconFont.strawberryIcon)),
         ("Stroke7", IconFont(EFIconFont.stroke7)),
         ("ThemifyIcons", IconFont(EFIconFont.themifyIcons)),
         ("Typicons", IconFont(EFIconFont.typicons)),

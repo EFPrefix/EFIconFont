@@ -117,6 +117,12 @@ Pod::Spec.new do |s|
         openiconic.dependency 'EFIconFont/Core'
     end
 
+    s.subspec 'StrawberryIcon' do |strawberryicon|
+        strawberryicon.source_files = 'EFIconFont/Classes/StrawberryIcon/**/*'
+        strawberryicon.resources = 'EFIconFont/Assets/StrawberryIcon/**/*'
+        strawberryicon.dependency 'EFIconFont/Core'
+    end
+
     s.subspec 'Stroke7' do |stroke7|
         stroke7.source_files = 'EFIconFont/Classes/Stroke7/**/*'
         stroke7.resources = 'EFIconFont/Assets/Stroke7/**/*'
@@ -165,6 +171,7 @@ Pod::Spec.new do |s|
         complete.dependency 'EFIconFont/Meteocons'
         complete.dependency 'EFIconFont/MetrizeIcons'
         complete.dependency 'EFIconFont/OpenIconic'
+        complete.dependency 'EFIconFont/StrawberryIcon'
         complete.dependency 'EFIconFont/Stroke7'
         complete.dependency 'EFIconFont/ThemifyIcons'
         complete.dependency 'EFIconFont/Typicons'

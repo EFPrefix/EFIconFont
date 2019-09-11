@@ -187,6 +187,16 @@
       }
     },
     {
+      "name": "StrawberryIcon",
+      "source_files": "EFIconFont/Classes/StrawberryIcon/**/*",
+      "resources": "EFIconFont/Assets/StrawberryIcon/**/*",
+      "dependencies": {
+        "EFIconFont/Core": [
+
+        ]
+      }
+    },
+    {
       "name": "Stroke7",
       "source_files": "EFIconFont/Classes/Stroke7/**/*",
       "resources": "EFIconFont/Assets/Stroke7/**/*",
@@ -288,6 +298,9 @@
 
         ],
         "EFIconFont/OpenIconic": [
+
+        ],
+        "EFIconFont/StrawberryIcon": [
 
         ],
         "EFIconFont/Stroke7": [
