@@ -22,6 +22,7 @@ PODS:
     - EFIconFont/Stroke7
     - EFIconFont/ThemifyIcons
     - EFIconFont/Typicons
+    - EFIconFont/VSCodeIcons
     - EFIconFont/WeatherIcons
   - EFIconFont/Core (0.6.3)
   - EFIconFont/Dashicons (0.6.3):
@@ -60,6 +61,8 @@ PODS:
     - EFIconFont/Core
   - EFIconFont/Typicons (0.6.3):
     - EFIconFont/Core
+  - EFIconFont/VSCodeIcons (0.6.3):
+    - EFIconFont/Core
   - EFIconFont/WeatherIcons (0.6.3):
     - EFIconFont/Core
 
@@ -71,7 +74,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EFIconFont: 6df03a9b0ecded14dc0842408a54110cb49b596b
+  EFIconFont: 712baff886784187e0076d5675aa99be0dbcce7d
 
 PODFILE CHECKSUM: 377b34526d3e9857b28e9885a58c59c640f11ab8
 

@@ -217,6 +217,16 @@
       }
     },
     {
+      "name": "VSCodeIcons",
+      "source_files": "EFIconFont/Classes/VSCodeIcons/**/*",
+      "resources": "EFIconFont/Assets/VSCodeIcons/**/*",
+      "dependencies": {
+        "EFIconFont/Core": [
+
+        ]
+      }
+    },
+    {
       "name": "WeatherIcons",
       "source_files": "EFIconFont/Classes/WeatherIcons/**/*",
       "resources": "EFIconFont/Assets/WeatherIcons/**/*",
@@ -287,6 +297,9 @@
 
         ],
         "EFIconFont/Typicons": [
+
+        ],
+        "EFIconFont/VSCodeIcons": [
 
         ],
         "EFIconFont/WeatherIcons": [

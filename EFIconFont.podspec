@@ -135,6 +135,12 @@ Pod::Spec.new do |s|
         typicons.dependency 'EFIconFont/Core'
     end
 
+    s.subspec 'VSCodeIcons' do |vscodeicons|
+        vscodeicons.source_files = 'EFIconFont/Classes/VSCodeIcons/**/*'
+        vscodeicons.resources = 'EFIconFont/Assets/VSCodeIcons/**/*'
+        vscodeicons.dependency 'EFIconFont/Core'
+    end
+
     s.subspec 'WeatherIcons' do |weathericons|
         weathericons.source_files = 'EFIconFont/Classes/WeatherIcons/**/*'
         weathericons.resources = 'EFIconFont/Assets/WeatherIcons/**/*'
@@ -162,6 +168,7 @@ Pod::Spec.new do |s|
         complete.dependency 'EFIconFont/Stroke7'
         complete.dependency 'EFIconFont/ThemifyIcons'
         complete.dependency 'EFIconFont/Typicons'
+        complete.dependency 'EFIconFont/VSCodeIcons'
         complete.dependency 'EFIconFont/WeatherIcons'
     end
 end
