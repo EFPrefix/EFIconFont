@@ -2,6 +2,12 @@
 
 -----
 
+## [0.6.5](https://github.com/EFPrefix/EFIconFont/releases/tag/0.6.5) (2019-09-11)
+
+- Add StrawberryIcon;
+
+---
+
 ## [0.6.4](https://github.com/EFPrefix/EFIconFont/releases/tag/0.6.4) (2019-09-11)
 
 - Add VSCodeIcons;
