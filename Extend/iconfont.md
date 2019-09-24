@@ -40,6 +40,7 @@ for(let i = 0, len = items.length; i < len; i++) {
     var name = item.getElementsByClassName('icon-name')[0].innerHTML
     name = camelCase(name, ' ')
     name = camelCase(name, '-')
+    name = camelCase(name, '_')
     var code = item.getElementsByClassName('icon-code')[0].innerHTML
     code = code.replace('&amp;#x', '')
     code = code.replace(';', '')

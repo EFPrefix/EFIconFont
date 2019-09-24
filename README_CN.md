@@ -167,7 +167,7 @@ EFIconFont.antDesign.dictionary
 | Ionicons | 4.5.5 | 696 | 143KB | Ionicons 免费图标库 | [MIT](https://github.com/ionic-team/ionicons/blob/master/LICENSE) | [ionicons.com](https://ionicons.com/) |
 | LigatureSymbols | 2.11 | 239 | 84KB | Ligature Symbols | [OFL](http://kudakurage.com/ligature_symbols/)| [kudakurage.com/ligature_symbols](http://kudakurage.com/ligature_symbols/) |
 | MapIcons | 3.0.0 | 192 | 48 KB | 一系列可以配合地图使用的图标 | [OFL](https://github.com/scottdejonge/map-icons) | [map-icons.com](http://map-icons.com/) | 
-| MaterialIcons | 3.0.1 | 932 | 128KB | Google 的 Material 图标库 | [Apache-2.0](https://github.com/google/material-design-icons/blob/master/LICENSE) | [material.io](https://material.io/tools/icons) |
+| MaterialIcons | 3.0.1 | 1057 | 695KB | Google 的 Material 图标库，4 种样式 | [Apache-2.0](https://github.com/google/material-design-icons/blob/master/LICENSE) | [material.io](https://material.io/tools/icons) |
 | Meteocons |  | 47 | 15KB | 一个天气图标库 | [Free](https://www.alessioatzeni.com/meteocons/) | [alessioatzeni.com/meteocons](https://www.alessioatzeni.com/meteocons/) |
 | MetrizeIcons | 1.0 | 300 | 74KB | 300 个给设计和开发人员的免费图标 | [Free](https://www.alessioatzeni.com/metrize-icons/) | [alessioatzeni.com/metrize-icons](https://www.alessioatzeni.com/metrize-icons/) |
 | OpenIconic | 1.1.1 | 223 | 33KB | 223 个开源矢量图标集 | [OFL](https://github.com/iconic/open-iconic/blob/master/FONT-LICENSE) | [useiconic.com/open](https://useiconic.com/open/) |
