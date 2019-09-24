@@ -2,6 +2,13 @@
 
 -----
 
+## [0.7.0](https://github.com/EFPrefix/EFIconFont/releases/tag/0.7.0) (2019-09-24)
+
+- Update MaterialIcons;
+- `EFIconFontMaterialIcons` rename to `EFIconFontMaterialIconsFilled`.
+
+---
+
 ## [0.6.5](https://github.com/EFPrefix/EFIconFont/releases/tag/0.6.5) (2019-09-11)
 
 - Add StrawberryIcon;

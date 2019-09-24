@@ -6,17 +6,9 @@
 //  Copyright © 2019年 CocoaPods. All rights reserved.
 //
 
-import UIKit
+import EFFoundation
 
 extension CGFloat {
-    
-    static let screenWidth = UIScreen.main.bounds.size.width
-    static let screenHeight = UIScreen.main.bounds.size.height
-    
-    static let statusBarHeight: CGFloat = 20 + topSafeAreaHeight
-    static let navigationBarHeight: CGFloat = 46
+
     static let statusAndNavigationHeight: CGFloat = statusBarHeight + navigationBarHeight
-    
-    static let topSafeAreaHeight: CGFloat = UIDevice.isiPhoneX ? 22 : 0
-    static let bottomSafeAreaHeight: CGFloat = UIDevice.isiPhoneX ? 34 : 0
 }

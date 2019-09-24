@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12410FF42339CAC3002A574B /* CGFloat+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12410FF32339CAC3002A574B /* CGFloat+.swift */; };
 		12476E9D2320E91600BA0EEC /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12476E9C2320E91600BA0EEC /* BaseViewController.swift */; };
 		12A4AB342245228B003A811F /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A4AB332245228A003A811F /* SubViewController.swift */; };
-		12A4AB3C22467457003A811F /* CGFloat+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A4AB3B22467457003A811F /* CGFloat+.swift */; };
-		12A4AB3E224674A0003A811F /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A4AB3D224674A0003A811F /* UIDevice+.swift */; };
 		12C6769D2246945D00284C0C /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C6769C2246945D00284C0C /* GalleryViewController.swift */; };
 		12C6769F2246980100284C0C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C6769E2246980100284C0C /* DetailViewController.swift */; };
 		12E738EA2247544F00AB06B4 /* octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12E738E82247544F00AB06B4 /* octicons.ttf */; };
@@ -38,11 +37,10 @@
 
 /* Begin PBXFileReference section */
 		0FEDA834429814FC7822588F /* EFIconFont.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EFIconFont.podspec; path = ../EFIconFont.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		12410FF32339CAC3002A574B /* CGFloat+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+.swift"; sourceTree = "<group>"; };
 		12476E9C2320E91600BA0EEC /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		12A4AB292244ADAE003A811F /* README_CN.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README_CN.md; path = ../README_CN.md; sourceTree = "<group>"; };
 		12A4AB332245228A003A811F /* SubViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
-		12A4AB3B22467457003A811F /* CGFloat+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+.swift"; sourceTree = "<group>"; };
-		12A4AB3D224674A0003A811F /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
 		12C6769C2246945D00284C0C /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
 		12C6769E2246980100284C0C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		12E738E82247544F00AB06B4 /* octicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = octicons.ttf; sourceTree = "<group>"; };
@@ -122,8 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				12E738EC2247545700AB06B4 /* Octicons */,
-				12A4AB3B22467457003A811F /* CGFloat+.swift */,
-				12A4AB3D224674A0003A811F /* UIDevice+.swift */,
+				12410FF32339CAC3002A574B /* CGFloat+.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				12476E9C2320E91600BA0EEC /* BaseViewController.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
@@ -249,13 +246,11 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = P3X2725LYY;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						DevelopmentTeam = P3X2725LYY;
 						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 607FACCF1AFB9204008FA782;
@@ -354,10 +349,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-EFIconFont_Example/Pods-EFIconFont_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DeviceKit/DeviceKit.framework",
+				"${BUILT_PRODUCTS_DIR}/EFFoundation/EFFoundation.framework",
 				"${BUILT_PRODUCTS_DIR}/EFIconFont/EFIconFont.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DeviceKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EFFoundation.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EFIconFont.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,11 +372,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E738EB2247544F00AB06B4 /* EFIconFontOcticons.swift in Sources */,
-				12A4AB3C22467457003A811F /* CGFloat+.swift in Sources */,
-				12A4AB3E224674A0003A811F /* UIDevice+.swift in Sources */,
 				12E9C63E2320B5D000E43E0B /* SearchViewController.swift in Sources */,
 				12A4AB342245228B003A811F /* SubViewController.swift in Sources */,
 				12476E9D2320E91600BA0EEC /* BaseViewController.swift in Sources */,
+				12410FF42339CAC3002A574B /* CGFloat+.swift in Sources */,
 				12C6769D2246945D00284C0C /* GalleryViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
@@ -537,7 +535,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P3X2725LYY;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EFIconFont/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -555,7 +553,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P3X2725LYY;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EFIconFont/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -572,7 +570,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P3X2725LYY;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -597,7 +595,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P3X2725LYY;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

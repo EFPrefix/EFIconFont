@@ -8,6 +8,7 @@
 
 import UIKit
 import EFIconFont
+import EFFoundation
 
 class SubViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
     
