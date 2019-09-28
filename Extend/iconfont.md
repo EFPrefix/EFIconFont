@@ -69,8 +69,16 @@ iconfont.ttf: {之前建立项目时设置的 `Font Family` 内容}
 
 ## 5. 注意
 
-1. iconfont.cn 的上传有文件大小限制，一次上传数量、大小过多触发限制可以尝试分几次上传；
-2. 其它相似 iconfont 资源站点的资源可以取其中的 .svg 包，用上述步骤生成 .ttf 文件和调用代码。
+1. 其它相似 iconfont 资源站点的资源可以取其中的 .svg 包，用上述步骤生成 .ttf 文件和调用代码；
+2. iconfont.cn 的上传有文件大小限制，一次上传数量、大小过多触发限制可以尝试分几次上传；
+3. 若上传太多文件无法提交，可在 console 执行以下脚本进行清空：
+
+```javascript
+var icon=document.getElementsByClassName('delete-icon');
+for(var i=0;i<icon.length;i++){
+    icon[i].click();
+}
+```
 
 ## 6. 最后
 

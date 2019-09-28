@@ -1,8 +1,8 @@
 PODS:
-  - DeviceKit (2.1.0)
-  - EFFoundation/Core (0.8.2)
-  - EFFoundation/Device (0.8.2):
-    - DeviceKit (>= 2.1.0)
+  - DeviceKit (2.2.0)
+  - EFFoundation/Core (0.9.2)
+  - EFFoundation/Device (0.9.2):
+    - DeviceKit (>= 2.2.0)
     - EFFoundation/Core
   - EFIconFont/AntDesign (0.7.0):
     - EFIconFont/Core
@@ -75,11 +75,11 @@ PODS:
     - EFIconFont/Core
 
 DEPENDENCIES:
-  - EFFoundation/Device (= 0.8.2)
+  - EFFoundation/Device (= 0.9.2)
   - EFIconFont/Complete (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - DeviceKit
     - EFFoundation
 
@@ -88,10 +88,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DeviceKit: 2f6c28410d5a5fe2977be7f8cb9b313d28bdae69
-  EFFoundation: 9ca4a4f3fc6222a4255ad3a8b052ea2307aed5b2
+  DeviceKit: ee5d2ec3bc8ad3847f9f0f202de0be09448707e1
+  EFFoundation: cbda6c8d19891efa1dae71b2cfeaaa9636347fe3
   EFIconFont: 7676f5444bed0bc350265fe3e613a0e10b9c5f28
 
-PODFILE CHECKSUM: e52965ca1c8ec63ccd71f9199ab5e7329112bd48
+PODFILE CHECKSUM: 19e630f4ce0ed52e1e503ac0e28d8c7efee60276
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.1

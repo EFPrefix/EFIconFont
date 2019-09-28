@@ -2,7 +2,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'EFIconFont_Example' do
-  pod 'EFFoundation/Device', '0.8.2'
+  pod 'EFFoundation/Device', '0.9.2'
   pod 'EFIconFont', :subspecs => ['Complete'], :path => '../'
 
   target 'EFIconFont_Tests' do
