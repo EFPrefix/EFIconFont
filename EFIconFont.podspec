@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'EFIconFont'
-    s.version          = '0.7.1'
+    s.version          = '0.8.0'
     s.summary          = 'Yet another stupid wrapper of icon font.'
     
     s.description      = <<-DESC
@@ -51,9 +51,21 @@ Pod::Spec.new do |s|
         evilicons.dependency 'EFIconFont/Core'
     end
 
-    s.subspec 'FontAwesome' do |fontawesome|
-        fontawesome.source_files = 'EFIconFont/Classes/FontAwesome/**/*'
-        fontawesome.resources = 'EFIconFont/Assets/FontAwesome/**/*'
+    s.subspec 'FontAwesomeBrands' do |fontawesome|
+        fontawesome.source_files = 'EFIconFont/Classes/FontAwesomeBrands/**/*'
+        fontawesome.resources = 'EFIconFont/Assets/FontAwesomeBrands/**/*'
+        fontawesome.dependency 'EFIconFont/Core'
+    end
+
+    s.subspec 'FontAwesomeRegular' do |fontawesome|
+        fontawesome.source_files = 'EFIconFont/Classes/FontAwesomeRegular/**/*'
+        fontawesome.resources = 'EFIconFont/Assets/FontAwesomeRegular/**/*'
+        fontawesome.dependency 'EFIconFont/Core'
+    end
+
+    s.subspec 'FontAwesomeSolid' do |fontawesome|
+        fontawesome.source_files = 'EFIconFont/Classes/FontAwesomeSolid/**/*'
+        fontawesome.resources = 'EFIconFont/Assets/FontAwesomeSolid/**/*'
         fontawesome.dependency 'EFIconFont/Core'
     end
 
@@ -63,9 +75,15 @@ Pod::Spec.new do |s|
         genericonsneue.dependency 'EFIconFont/Core'
     end
 
-    s.subspec 'Hawcons' do |hawcons|
-        hawcons.source_files = 'EFIconFont/Classes/Hawcons/**/*'
-        hawcons.resources = 'EFIconFont/Assets/Hawcons/**/*'
+    s.subspec 'HawconsFilled' do |hawcons|
+        hawcons.source_files = 'EFIconFont/Classes/HawconsFilled/**/*'
+        hawcons.resources = 'EFIconFont/Assets/HawconsFilled/**/*'
+        hawcons.dependency 'EFIconFont/Core'
+    end
+
+    s.subspec 'HawconsStroke' do |hawcons|
+        hawcons.source_files = 'EFIconFont/Classes/HawconsStroke/**/*'
+        hawcons.resources = 'EFIconFont/Assets/HawconsStroke/**/*'
         hawcons.dependency 'EFIconFont/Core'
     end
 
@@ -93,9 +111,27 @@ Pod::Spec.new do |s|
         mapicons.dependency 'EFIconFont/Core'
     end
 
-    s.subspec 'MaterialIcons' do |materialicons|
-        materialicons.source_files = 'EFIconFont/Classes/MaterialIcons/**/*'
-        materialicons.resources = 'EFIconFont/Assets/MaterialIcons/**/*'
+    s.subspec 'MaterialIconsFilled' do |materialicons|
+        materialicons.source_files = 'EFIconFont/Classes/MaterialIconsFilled/**/*'
+        materialicons.resources = 'EFIconFont/Assets/MaterialIconsFilled/**/*'
+        materialicons.dependency 'EFIconFont/Core'
+    end
+
+    s.subspec 'MaterialIconsOutlined' do |materialicons|
+        materialicons.source_files = 'EFIconFont/Classes/MaterialIconsOutlined/**/*'
+        materialicons.resources = 'EFIconFont/Assets/MaterialIconsOutlined/**/*'
+        materialicons.dependency 'EFIconFont/Core'
+    end
+
+    s.subspec 'MaterialIconsRounded' do |materialicons|
+        materialicons.source_files = 'EFIconFont/Classes/MaterialIconsRounded/**/*'
+        materialicons.resources = 'EFIconFont/Assets/MaterialIconsRounded/**/*'
+        materialicons.dependency 'EFIconFont/Core'
+    end
+
+    s.subspec 'MaterialIconsSharp' do |materialicons|
+        materialicons.source_files = 'EFIconFont/Classes/MaterialIconsSharp/**/*'
+        materialicons.resources = 'EFIconFont/Assets/MaterialIconsSharp/**/*'
         materialicons.dependency 'EFIconFont/Core'
     end
 
@@ -160,14 +196,20 @@ Pod::Spec.new do |s|
         complete.dependency 'EFIconFont/Devicons'
         complete.dependency 'EFIconFont/ElusiveIcons'
         complete.dependency 'EFIconFont/EvilIcons'
-        complete.dependency 'EFIconFont/FontAwesome'
+        complete.dependency 'EFIconFont/FontAwesomeBrands'
+        complete.dependency 'EFIconFont/FontAwesomeRegular'
+        complete.dependency 'EFIconFont/FontAwesomeSolid'
         complete.dependency 'EFIconFont/GenericonsNeue'
-        complete.dependency 'EFIconFont/Hawcons'
+        complete.dependency 'EFIconFont/HawconsFilled'
+        complete.dependency 'EFIconFont/HawconsStroke'
         complete.dependency 'EFIconFont/IcoMoon'
         complete.dependency 'EFIconFont/Ionicons'
         complete.dependency 'EFIconFont/LigatureSymbols'
         complete.dependency 'EFIconFont/MapIcons'
-        complete.dependency 'EFIconFont/MaterialIcons'
+        complete.dependency 'EFIconFont/MaterialIconsFilled'
+        complete.dependency 'EFIconFont/MaterialIconsOutlined'
+        complete.dependency 'EFIconFont/MaterialIconsRounded'
+        complete.dependency 'EFIconFont/MaterialIconsSharp'
         complete.dependency 'EFIconFont/Meteocons'
         complete.dependency 'EFIconFont/MetrizeIcons'
         complete.dependency 'EFIconFont/OpenIconic'

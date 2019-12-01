@@ -2,6 +2,12 @@
 
 -----
 
+## [0.8.0](https://github.com/EFPrefix/EFIconFont/releases/tag/0.8.0) (2019-12-01)
+
+- Split big subspec;
+
+---
+
 ## [0.7.1](https://github.com/EFPrefix/EFIconFont/releases/tag/0.7.1) (2019-12-01)
 
 - Fix MaterialIcons;
