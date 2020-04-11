@@ -4,23 +4,30 @@ PODS:
   - EFFoundation/Device (0.9.2):
     - DeviceKit (>= 2.2.0)
     - EFFoundation/Core
-  - EFIconFont/AntDesign (0.7.0):
+  - EFIconFont/AntDesign (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/Complete (0.7.0):
+  - EFIconFont/Complete (0.8.0):
     - EFIconFont/AntDesign
     - EFIconFont/Core
     - EFIconFont/Dashicons
     - EFIconFont/Devicons
     - EFIconFont/ElusiveIcons
     - EFIconFont/EvilIcons
-    - EFIconFont/FontAwesome
+    - EFIconFont/FontAwesomeBrands
+    - EFIconFont/FontAwesomeRegular
+    - EFIconFont/FontAwesomeSolid
+    - EFIconFont/FoundationIcons
     - EFIconFont/GenericonsNeue
-    - EFIconFont/Hawcons
+    - EFIconFont/HawconsFilled
+    - EFIconFont/HawconsStroke
     - EFIconFont/IcoMoon
     - EFIconFont/Ionicons
     - EFIconFont/LigatureSymbols
     - EFIconFont/MapIcons
-    - EFIconFont/MaterialIcons
+    - EFIconFont/MaterialIconsFilled
+    - EFIconFont/MaterialIconsOutlined
+    - EFIconFont/MaterialIconsRounded
+    - EFIconFont/MaterialIconsSharp
     - EFIconFont/Meteocons
     - EFIconFont/MetrizeIcons
     - EFIconFont/OpenIconic
@@ -30,48 +37,62 @@ PODS:
     - EFIconFont/Typicons
     - EFIconFont/VSCodeIcons
     - EFIconFont/WeatherIcons
-  - EFIconFont/Core (0.7.0)
-  - EFIconFont/Dashicons (0.7.0):
+  - EFIconFont/Core (0.8.0)
+  - EFIconFont/Dashicons (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/Devicons (0.7.0):
+  - EFIconFont/Devicons (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/ElusiveIcons (0.7.0):
+  - EFIconFont/ElusiveIcons (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/EvilIcons (0.7.0):
+  - EFIconFont/EvilIcons (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/FontAwesome (0.7.0):
+  - EFIconFont/FontAwesomeBrands (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/GenericonsNeue (0.7.0):
+  - EFIconFont/FontAwesomeRegular (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/Hawcons (0.7.0):
+  - EFIconFont/FontAwesomeSolid (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/IcoMoon (0.7.0):
+  - EFIconFont/FoundationIcons (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/Ionicons (0.7.0):
+  - EFIconFont/GenericonsNeue (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/LigatureSymbols (0.7.0):
+  - EFIconFont/HawconsFilled (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/MapIcons (0.7.0):
+  - EFIconFont/HawconsStroke (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/MaterialIcons (0.7.0):
+  - EFIconFont/IcoMoon (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/Meteocons (0.7.0):
+  - EFIconFont/Ionicons (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/MetrizeIcons (0.7.0):
+  - EFIconFont/LigatureSymbols (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/OpenIconic (0.7.0):
+  - EFIconFont/MapIcons (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/StrawberryIcon (0.7.0):
+  - EFIconFont/MaterialIconsFilled (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/Stroke7 (0.7.0):
+  - EFIconFont/MaterialIconsOutlined (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/ThemifyIcons (0.7.0):
+  - EFIconFont/MaterialIconsRounded (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/Typicons (0.7.0):
+  - EFIconFont/MaterialIconsSharp (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/VSCodeIcons (0.7.0):
+  - EFIconFont/Meteocons (0.8.0):
     - EFIconFont/Core
-  - EFIconFont/WeatherIcons (0.7.0):
+  - EFIconFont/MetrizeIcons (0.8.0):
+    - EFIconFont/Core
+  - EFIconFont/OpenIconic (0.8.0):
+    - EFIconFont/Core
+  - EFIconFont/StrawberryIcon (0.8.0):
+    - EFIconFont/Core
+  - EFIconFont/Stroke7 (0.8.0):
+    - EFIconFont/Core
+  - EFIconFont/ThemifyIcons (0.8.0):
+    - EFIconFont/Core
+  - EFIconFont/Typicons (0.8.0):
+    - EFIconFont/Core
+  - EFIconFont/VSCodeIcons (0.8.0):
+    - EFIconFont/Core
+  - EFIconFont/WeatherIcons (0.8.0):
     - EFIconFont/Core
 
 DEPENDENCIES:
@@ -90,8 +111,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   DeviceKit: ee5d2ec3bc8ad3847f9f0f202de0be09448707e1
   EFFoundation: cbda6c8d19891efa1dae71b2cfeaaa9636347fe3
-  EFIconFont: 7676f5444bed0bc350265fe3e613a0e10b9c5f28
+  EFIconFont: c11aa7faa9b9b731fe1d3110d7774e59ea4c4d24
 
 PODFILE CHECKSUM: 19e630f4ce0ed52e1e503ac0e28d8c7efee60276
 
-COCOAPODS: 1.8.1
+COCOAPODS: 1.9.1

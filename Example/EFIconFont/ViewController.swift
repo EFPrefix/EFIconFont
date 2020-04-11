@@ -31,6 +31,7 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
         ("FontAwesomeBrands", IconFont(EFIconFont.fontAwesomeBrands)),
         ("FontAwesomeRegular", IconFont(EFIconFont.fontAwesomeRegular)),
         ("FontAwesomeSolid", IconFont(EFIconFont.fontAwesomeSolid)),
+        ("FoundationIcons", IconFont(EFIconFont.foundationIcons)),
         ("GenericonsNeue", IconFont(EFIconFont.genericonsNeue)),
         ("HawconsFilled", IconFont(EFIconFont.hawconsFilled)),
         ("HawconsStroke", IconFont(EFIconFont.hawconsStroke)),

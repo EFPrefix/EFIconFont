@@ -51,22 +51,28 @@ Pod::Spec.new do |s|
         evilicons.dependency 'EFIconFont/Core'
     end
 
-    s.subspec 'FontAwesomeBrands' do |fontawesome|
-        fontawesome.source_files = 'EFIconFont/Classes/FontAwesomeBrands/**/*'
-        fontawesome.resources = 'EFIconFont/Assets/FontAwesomeBrands/**/*'
-        fontawesome.dependency 'EFIconFont/Core'
+    s.subspec 'FontAwesomeBrands' do |fontawesomebrands|
+        fontawesomebrands.source_files = 'EFIconFont/Classes/FontAwesomeBrands/**/*'
+        fontawesomebrands.resources = 'EFIconFont/Assets/FontAwesomeBrands/**/*'
+        fontawesomebrands.dependency 'EFIconFont/Core'
     end
 
-    s.subspec 'FontAwesomeRegular' do |fontawesome|
-        fontawesome.source_files = 'EFIconFont/Classes/FontAwesomeRegular/**/*'
-        fontawesome.resources = 'EFIconFont/Assets/FontAwesomeRegular/**/*'
-        fontawesome.dependency 'EFIconFont/Core'
+    s.subspec 'FontAwesomeRegular' do |fontawesomeregular|
+        fontawesomeregular.source_files = 'EFIconFont/Classes/FontAwesomeRegular/**/*'
+        fontawesomeregular.resources = 'EFIconFont/Assets/FontAwesomeRegular/**/*'
+        fontawesomeregular.dependency 'EFIconFont/Core'
     end
 
-    s.subspec 'FontAwesomeSolid' do |fontawesome|
-        fontawesome.source_files = 'EFIconFont/Classes/FontAwesomeSolid/**/*'
-        fontawesome.resources = 'EFIconFont/Assets/FontAwesomeSolid/**/*'
-        fontawesome.dependency 'EFIconFont/Core'
+    s.subspec 'FontAwesomeSolid' do |fontawesomesolid|
+        fontawesomesolid.source_files = 'EFIconFont/Classes/FontAwesomeSolid/**/*'
+        fontawesomesolid.resources = 'EFIconFont/Assets/FontAwesomeSolid/**/*'
+        fontawesomesolid.dependency 'EFIconFont/Core'
+    end
+
+    s.subspec 'FoundationIcons' do |foundationicons|
+        foundationicons.source_files = 'EFIconFont/Classes/FoundationIcons/**/*'
+        foundationicons.resources = 'EFIconFont/Assets/FoundationIcons/**/*'
+        foundationicons.dependency 'EFIconFont/Core'
     end
 
     s.subspec 'GenericonsNeue' do |genericonsneue|
@@ -199,6 +205,7 @@ Pod::Spec.new do |s|
         complete.dependency 'EFIconFont/FontAwesomeBrands'
         complete.dependency 'EFIconFont/FontAwesomeRegular'
         complete.dependency 'EFIconFont/FontAwesomeSolid'
+        complete.dependency 'EFIconFont/FoundationIcons'
         complete.dependency 'EFIconFont/GenericonsNeue'
         complete.dependency 'EFIconFont/HawconsFilled'
         complete.dependency 'EFIconFont/HawconsStroke'

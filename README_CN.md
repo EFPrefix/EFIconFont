@@ -160,7 +160,8 @@ EFIconFont.antDesign.dictionary
 | Devicons | 1.8.0 | 192 | 92KB | 各种开发工具、编程语言的图标 | [MIT](https://github.com/vorillaz/devicons) | [vorillaz.github.io/devicons](http://vorillaz.github.io/devicons/#/cheat) |
 | ElusiveIcons | 2.0.0 | 304 | 53KB | Elusive Icons | [OFL](http://elusiveicons.com/license/) | [elusiveicons.com](http://elusiveicons.com/icons/) |
 | EvilIcons | 1.10.1 | 70 | 16 KB | 简洁的图标库 | [MIT](https://github.com/evil-icons/evil-icons/blob/master/LICENSE.txt) | [evil-icons.io](https://evil-icons.io/) |    
-| FontAwesome | 5.8.1 | 1516 | 356KB | FontAwesome 所属的免费图标库 | [Font Awesome Free License](https://fontawesome.com/license/free) | [fontawesome.com](https://fontawesome.com/icons?d=gallery&m=free) |
+| FontAwesome（Regular / Brands / Solid） | 5.8.1 | 1516 | 356KB | FontAwesome 所属的免费图标库 | [Font Awesome Free License](https://fontawesome.com/license/free) | [fontawesome.com](https://fontawesome.com/icons?d=gallery&m=free) |
+| FoundationIcons | 3.0 | 283 | 68KB | Foundation Icon Fonts 3 | [-](https://github.com/zurb/foundation-icon-fonts) | [zurb.com/playground/foundation-icon-fonts-3](https://zurb.com/playground/foundation-icon-fonts-3) |
 | Genericons | 4.0.4 | 103 | 16KB | 通用外观图标库，适用于博客 / 简单网站 | [GPLv2](https://github.com/Automattic/genericons-neue/blob/master/COPYING.md) | [genericons.com](http://genericons.com/) |
 | Hawcons | 1.0 | 1035 | 685KB | Hawcons 免费图标库，包括文档、体育、天气、表情、手势、文件类型等 | [Free](http://hawcons.com/faq/) | [hawcons.com](http://hawcons.com/preview/) |
 | IcoMoon | 1.0 | 490 | 94KB | IcoMoon 免费图标库 | [CC BY 4.0 / GPL](https://github.com/Keyamoon/IcoMoon-Free/blob/master/License.txt) | [ionicons.com](https://icomoon.io/#preview-free) |
