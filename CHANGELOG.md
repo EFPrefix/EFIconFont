@@ -2,15 +2,22 @@
 
 -----
 
+## [0.8.1](https://github.com/EFPrefix/EFIconFont/releases/tag/0.8.1) (2020-04-12)
+
+- Add FoundationIcons;
+- Add Zocial.
+
+---
+
 ## [0.8.0](https://github.com/EFPrefix/EFIconFont/releases/tag/0.8.0) (2019-12-01)
 
-- Split big subspec;
+- Split big subspec.
 
 ---
 
 ## [0.7.1](https://github.com/EFPrefix/EFIconFont/releases/tag/0.7.1) (2019-12-01)
 
-- Fix MaterialIcons;
+- Fix MaterialIcons.
 
 ---
 
@@ -23,13 +30,13 @@
 
 ## [0.6.5](https://github.com/EFPrefix/EFIconFont/releases/tag/0.6.5) (2019-09-11)
 
-- Add StrawberryIcon;
+- Add StrawberryIcon.
 
 ---
 
 ## [0.6.4](https://github.com/EFPrefix/EFIconFont/releases/tag/0.6.4) (2019-09-11)
 
-- Add VSCodeIcons;
+- Add VSCodeIcons.
 
 ---
 
