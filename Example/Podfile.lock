@@ -37,6 +37,7 @@ PODS:
     - EFIconFont/Typicons
     - EFIconFont/VSCodeIcons
     - EFIconFont/WeatherIcons
+    - EFIconFont/Zocial
   - EFIconFont/Core (0.8.0)
   - EFIconFont/Dashicons (0.8.0):
     - EFIconFont/Core
@@ -94,6 +95,8 @@ PODS:
     - EFIconFont/Core
   - EFIconFont/WeatherIcons (0.8.0):
     - EFIconFont/Core
+  - EFIconFont/Zocial (0.8.0):
+    - EFIconFont/Core
 
 DEPENDENCIES:
   - EFFoundation/Device (= 0.9.2)
@@ -111,7 +114,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   DeviceKit: ee5d2ec3bc8ad3847f9f0f202de0be09448707e1
   EFFoundation: cbda6c8d19891efa1dae71b2cfeaaa9636347fe3
-  EFIconFont: c11aa7faa9b9b731fe1d3110d7774e59ea4c4d24
+  EFIconFont: e34f7b99ad76f95b27829c9bcb6a989288cefc20
 
 PODFILE CHECKSUM: 19e630f4ce0ed52e1e503ac0e28d8c7efee60276
 

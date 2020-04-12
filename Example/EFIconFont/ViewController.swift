@@ -52,7 +52,8 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
         ("ThemifyIcons", IconFont(EFIconFont.themifyIcons)),
         ("Typicons", IconFont(EFIconFont.typicons)),
         ("VSCodeIcons", IconFont(EFIconFont.vsCodeIcons)),
-        ("WeatherIcons", IconFont(EFIconFont.weatherIcons))
+        ("WeatherIcons", IconFont(EFIconFont.weatherIcons)),
+        ("Zocial", IconFont(EFIconFont.zocial))
     ]
     
     let tableView: UITableView = UITableView()

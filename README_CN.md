@@ -178,6 +178,7 @@ EFIconFont.antDesign.dictionary
 | Typicons | 2.0.9 | 336 | 82KB | 336 个矢量图标集合在一个库内 | [OFL](https://github.com/stephenhutchings/typicons.font/blob/master/README.md) | [s-ings.com/typicons](https://www.s-ings.com/typicons/) |
 | VSCodeIcons | 1.0 | 133 | 24KB | Visual Studio Code 图标库 | [MIT](https://github.com/microsoft/vscode-icons/blob/master/LICENSE-CODE) | [github.com/microsoft/vscode-icons](https://github.com/microsoft/vscode-icons) |
 | WeatherIcons | 2.0.10 | 219 | 64KB | 天气相关图标 | [OFL](https://github.com/erikflowers/weather-icons) | [erikflowers.github.io/weather-icons](http://erikflowers.github.io/weather-icons/) |
+| Zocial | 1.3.0 | 112 | 31KB | 社交媒体相关图标 | [MIT](https://github.com/smcllns/css-social-buttons/blob/master/LICENSE) | [smcllns.github.io/css-social-buttons/](https://smcllns.github.io/css-social-buttons/) |
 
 ### 3. 自定义图标库
 

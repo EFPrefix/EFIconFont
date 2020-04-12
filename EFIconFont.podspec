@@ -195,6 +195,12 @@ Pod::Spec.new do |s|
         weathericons.dependency 'EFIconFont/Core'
     end
 
+    s.subspec 'Zocial' do |zocial|
+        zocial.source_files = 'EFIconFont/Classes/Zocial/**/*'
+        zocial.resources = 'EFIconFont/Assets/Zocial/**/*'
+        zocial.dependency 'EFIconFont/Core'
+    end
+
     s.subspec 'Complete' do |complete|
         complete.dependency 'EFIconFont/Core'
         complete.dependency 'EFIconFont/AntDesign'
@@ -226,5 +232,6 @@ Pod::Spec.new do |s|
         complete.dependency 'EFIconFont/Typicons'
         complete.dependency 'EFIconFont/VSCodeIcons'
         complete.dependency 'EFIconFont/WeatherIcons'
+        complete.dependency 'EFIconFont/Zocial'
     end
 end
