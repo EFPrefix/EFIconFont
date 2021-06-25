@@ -27,7 +27,7 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
         ("Dashicons", IconFont(EFIconFont.dashicons)),
         ("Devicons", IconFont(EFIconFont.devicons)),
         ("ElusiveIcons", IconFont(EFIconFont.elusiveIcons)),
-        ("EvaIcon", IconFont(EFIconFont.evaIcon)),
+        ("EVAIcon", IconFont(EFIconFont.evaIcon)),
         ("EvilIcons", IconFont(EFIconFont.evilIcons)),
         ("FontAwesomeBrands", IconFont(EFIconFont.fontAwesomeBrands)),
         ("FontAwesomeRegular", IconFont(EFIconFont.fontAwesomeRegular)),

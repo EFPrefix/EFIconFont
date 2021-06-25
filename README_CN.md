@@ -159,6 +159,7 @@ EFIconFont.antDesign.dictionary
 | Dashicons  | 0.9.0 | 203 | 51 KB | WordPress admin 官方图标库 | [GPLv2](https://github.com/WordPress/dashicons) | [wordpress.org](https://developer.wordpress.org/resource/dashicons) |
 | Devicons | 1.8.0 | 192 | 92KB | 各种开发工具、编程语言的图标 | [MIT](https://github.com/vorillaz/devicons) | [vorillaz.github.io/devicons](http://vorillaz.github.io/devicons/#/cheat) |
 | ElusiveIcons | 2.0.0 | 304 | 53KB | Elusive Icons | [OFL](http://elusiveicons.com/license/) | [elusiveicons.com](http://elusiveicons.com/icons/) |
+| EVAIcon |  | 21 | 45 KB | EVA | [OFL](https://github.com/moeoverflow/EVA-icon) | [EVA-icon](https://moeoverflow.github.io/EVA-icon/) |
 | EvilIcons | 1.10.1 | 70 | 16 KB | 简洁的图标库 | [MIT](https://github.com/evil-icons/evil-icons/blob/master/LICENSE.txt) | [evil-icons.io](https://evil-icons.io/) |    
 | FontAwesome（Regular / Brands / Solid） | 5.8.1 | 1516 | 356KB | FontAwesome 所属的免费图标库 | [Font Awesome Free License](https://fontawesome.com/license/free) | [fontawesome.com](https://fontawesome.com/icons?d=gallery&m=free) |
 | FoundationIcons | 3.0 | 283 | 68KB | Foundation Icon Fonts 3 | [-](https://github.com/zurb/foundation-icon-fonts) | [zurb.com/playground/foundation-icon-fonts-3](https://zurb.com/playground/foundation-icon-fonts-3) |
@@ -241,6 +242,7 @@ EFIconFontOcticons.thumbsup
 
 - [iconfont.cn](https://github.com/EFPrefix/EFIconFont/blob/master/Extend/iconfont.md)
 - [fontawesome.com](https://github.com/EFPrefix/EFIconFont/blob/master/Extend/fontawesome.md)
+- [material.io/icons/](https://github.com/EFPrefix/EFIconFont/blob/master/Extend/materialicons.md)
 
 ## 作者
 
