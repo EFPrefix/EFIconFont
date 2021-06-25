@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'EFIconFont'
-    s.version          = '0.8.1'
+    s.version          = '0.8.2'
     s.summary          = 'Yet another stupid wrapper of icon font.'
     
     s.description      = <<-DESC
@@ -43,6 +43,12 @@ Pod::Spec.new do |s|
         elusiveicons.source_files = 'EFIconFont/Classes/ElusiveIcons/**/*'
         elusiveicons.resources = 'EFIconFont/Assets/ElusiveIcons/**/*'
         elusiveicons.dependency 'EFIconFont/Core'
+    end
+
+    s.subspec 'EVAIcon' do |evaIcon|
+        evaIcon.source_files = 'EFIconFont/Classes/EVAIcon/**/*'
+        evaIcon.resources = 'EFIconFont/Assets/EVAIcon/**/*'
+        evaIcon.dependency 'EFIconFont/Core'
     end
 
     s.subspec 'EvilIcons' do |evilicons|
@@ -207,6 +213,7 @@ Pod::Spec.new do |s|
         complete.dependency 'EFIconFont/Dashicons'
         complete.dependency 'EFIconFont/Devicons'
         complete.dependency 'EFIconFont/ElusiveIcons'
+        complete.dependency 'EFIconFont/EVAIcon'
         complete.dependency 'EFIconFont/EvilIcons'
         complete.dependency 'EFIconFont/FontAwesomeBrands'
         complete.dependency 'EFIconFont/FontAwesomeRegular'

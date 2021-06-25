@@ -2,6 +2,12 @@
 
 -----
 
+## [0.8.2](https://github.com/EFPrefix/EFIconFont/releases/tag/0.8.2) (2021-06-25)
+
+- Add [EVA-icon](https://github.com/moeoverflow/EVA-icon).
+
+---
+
 ## [0.8.1](https://github.com/EFPrefix/EFIconFont/releases/tag/0.8.1) (2020-04-12)
 
 - Add FoundationIcons;
