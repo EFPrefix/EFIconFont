@@ -101,13 +101,17 @@ public protocol EFIconFontProtocol {
 
     // `unicode` is unique identifier of particular icon
     var unicode: String { get }
+    
+    // `font` is UIFont of icon with input font size
+    func font(size fontSize: CGFloat) -> UIFont?
 }
 ```
 
 - name: Font name, not necessarily equal to .ttf file name, you can use [BirdFont](https://birdfont.org) to see the `Name` attribute of the file;
 - path: Filepath of `.ttf` file, usually you can get it through code like `Bundle.main.path(forResource: name, ofType: "ttf")`(If filename is same as name, you can use the default implementation and do not need to implement this property);
 - attributes: Attributes of icon(You can use the default implementation and do not need to implement this property);
-- unicode: The unique unicode of an icon.
+- unicode: The unique unicode of an icon;
+- font: The `UIFont` of an icon with input font size.
 
 Objects that implement the protocol can be converted to strings and images by calling the following methods, you can also change the foreground color and size:
 

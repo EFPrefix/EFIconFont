@@ -106,13 +106,17 @@ public protocol EFIconFontProtocol {
 
     // `unicode` is unique identifier of particular icon
     var unicode: String { get }
+    
+    // `font` is UIFont of icon with input font size
+    func font(size fontSize: CGFloat) -> UIFont?
 }
 ```
 
 - name：字体名，与 .ttf 文件名并不一定相等，可通过 [BirdFont](https://birdfont.org) 等字体文件处理工具查看其 `Name` 属性取得；
 - path：.ttf 文件路径，一般通过形如 `Bundle.main.path(forResource: name, ofType: "ttf")` 的方式获取（若文件名和 name 相同，则无须实现该属性，使用默认实现即可）；
 - attributes: 某 icon 的样式（若无特殊需求，使用默认实现即可）；
-- unicode：某符号的 unicode。
+- unicode：某符号的 unicode；
+- font: 根据输入的 fontSize 对应的某图标的 `UIFont`。
 
 实现该协议的对象，可通过调用下列方法进行转换输出为字符串和图片，可改变前景色和大小：
 

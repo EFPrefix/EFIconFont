@@ -4,9 +4,9 @@ PODS:
   - EFFoundation/Device (0.9.2):
     - DeviceKit (>= 2.2.0)
     - EFFoundation/Core
-  - EFIconFont/AntDesign (0.8.2):
+  - EFIconFont/AntDesign (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/Complete (0.8.2):
+  - EFIconFont/Complete (0.9.0):
     - EFIconFont/AntDesign
     - EFIconFont/Core
     - EFIconFont/Dashicons
@@ -39,66 +39,66 @@ PODS:
     - EFIconFont/VSCodeIcons
     - EFIconFont/WeatherIcons
     - EFIconFont/Zocial
-  - EFIconFont/Core (0.8.2)
-  - EFIconFont/Dashicons (0.8.2):
+  - EFIconFont/Core (0.9.0)
+  - EFIconFont/Dashicons (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/Devicons (0.8.2):
+  - EFIconFont/Devicons (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/ElusiveIcons (0.8.2):
+  - EFIconFont/ElusiveIcons (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/EVAIcon (0.8.2):
+  - EFIconFont/EVAIcon (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/EvilIcons (0.8.2):
+  - EFIconFont/EvilIcons (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/FontAwesomeBrands (0.8.2):
+  - EFIconFont/FontAwesomeBrands (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/FontAwesomeRegular (0.8.2):
+  - EFIconFont/FontAwesomeRegular (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/FontAwesomeSolid (0.8.2):
+  - EFIconFont/FontAwesomeSolid (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/FoundationIcons (0.8.2):
+  - EFIconFont/FoundationIcons (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/GenericonsNeue (0.8.2):
+  - EFIconFont/GenericonsNeue (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/HawconsFilled (0.8.2):
+  - EFIconFont/HawconsFilled (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/HawconsStroke (0.8.2):
+  - EFIconFont/HawconsStroke (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/IcoMoon (0.8.2):
+  - EFIconFont/IcoMoon (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/Ionicons (0.8.2):
+  - EFIconFont/Ionicons (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/LigatureSymbols (0.8.2):
+  - EFIconFont/LigatureSymbols (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/MapIcons (0.8.2):
+  - EFIconFont/MapIcons (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/MaterialIconsFilled (0.8.2):
+  - EFIconFont/MaterialIconsFilled (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/MaterialIconsOutlined (0.8.2):
+  - EFIconFont/MaterialIconsOutlined (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/MaterialIconsRounded (0.8.2):
+  - EFIconFont/MaterialIconsRounded (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/MaterialIconsSharp (0.8.2):
+  - EFIconFont/MaterialIconsSharp (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/Meteocons (0.8.2):
+  - EFIconFont/Meteocons (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/MetrizeIcons (0.8.2):
+  - EFIconFont/MetrizeIcons (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/OpenIconic (0.8.2):
+  - EFIconFont/OpenIconic (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/StrawberryIcon (0.8.2):
+  - EFIconFont/StrawberryIcon (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/Stroke7 (0.8.2):
+  - EFIconFont/Stroke7 (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/ThemifyIcons (0.8.2):
+  - EFIconFont/ThemifyIcons (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/Typicons (0.8.2):
+  - EFIconFont/Typicons (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/VSCodeIcons (0.8.2):
+  - EFIconFont/VSCodeIcons (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/WeatherIcons (0.8.2):
+  - EFIconFont/WeatherIcons (0.9.0):
     - EFIconFont/Core
-  - EFIconFont/Zocial (0.8.2):
+  - EFIconFont/Zocial (0.9.0):
     - EFIconFont/Core
 
 DEPENDENCIES:
@@ -117,7 +117,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   DeviceKit: ee5d2ec3bc8ad3847f9f0f202de0be09448707e1
   EFFoundation: cbda6c8d19891efa1dae71b2cfeaaa9636347fe3
-  EFIconFont: a29dc6e2bd6ad6be12759cf0d7a58d22015eda84
+  EFIconFont: 8821c65eff3a72c8163c966bbfda018d0cf69fbc
 
 PODFILE CHECKSUM: 19e630f4ce0ed52e1e503ac0e28d8c7efee60276
 
