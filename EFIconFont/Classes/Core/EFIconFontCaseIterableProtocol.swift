@@ -35,6 +35,9 @@ public protocol EFIconFontCaseIterableProtocol: EFIconFontProtocol, CaseIterable
 
     // `backgroundColor` is backgroundColor of all icons
     static var backgroundColor: UIColor? { set get }
+    
+    // `font` is UIFont of all icons with input font size
+    static func font(size fontSize: CGFloat) -> UIFont?
 }
 
 public extension EFIconFontCaseIterableProtocol {
@@ -104,6 +107,12 @@ public extension EFIconFontCaseIterableProtocol {
         }
     }
 
+    // MARK:- Font
+    static func font(size fontSize: CGFloat) -> UIFont? {
+        if !UIFont.loadFontIfNeeded(name: Self.name, path: Self.path) { return nil }
+        return UIFont(name: Self.name, size: fontSize)
+    }
+    
     // MARK:- EFIconFontProtocol
     var name: String {
         get {
@@ -132,5 +141,9 @@ public extension EFIconFontCaseIterableProtocol {
 
     var backgroundColor: UIColor? {
         return Self.backgroundColor
+    }
+    
+    func font(size fontSize: CGFloat) -> UIFont? {
+        return Self.font(size: fontSize)
     }
 }

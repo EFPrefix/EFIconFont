@@ -44,6 +44,9 @@ public protocol EFIconFontProtocol {
 
     // `unicode` is unique identifier of particular icon
     var unicode: String { get }
+    
+    // `font` is UIFont of icon with input font size
+    func font(size fontSize: CGFloat) -> UIFont?
 }
 
 public extension EFIconFontProtocol {
@@ -51,41 +54,6 @@ public extension EFIconFontProtocol {
     // MARK:- Default
     var path: String {
         return Bundle(for: EFIconFont.self).path(forResource: name, ofType: "ttf") ?? Bundle.main.path(forResource: name, ofType: "ttf") ?? ""
-    }
-
-    // MARK:- Private
-    private func loaded() -> Bool {
-        if UIFont.fontNames(forFamilyName: name).isEmpty == false {
-            return true
-        }
-        if path.isEmpty {
-            return false
-        }
-        guard let fontData = NSData(contentsOfFile: path), let dataProvider = CGDataProvider(data: fontData), let cgFont = CGFont(dataProvider) else {
-            return false
-        }
-        var error: Unmanaged<CFError>?
-        if !CTFontManagerRegisterGraphicsFont(cgFont, &error) {
-            var errorDescription: CFString = "Unknown" as CFString
-            if let takeUnretainedValue = error?.takeUnretainedValue() {
-                errorDescription = CFErrorCopyDescription(takeUnretainedValue)
-            }
-            print("Unable to load \(path): \(errorDescription)")
-            return false
-        }
-        return true
-    }
-
-    private func attributesWith(size fontSize: CGFloat, attributes: [NSAttributedString.Key : Any]?) -> [NSAttributedString.Key : Any]? {
-        guard let font = font(size: fontSize) else { return nil }
-        var attributesCombine: [NSAttributedString.Key : Any] = self.attributes
-        if let attributes = attributes {
-            for attribute in attributes {
-                attributesCombine.updateValue(attribute.value, forKey: attribute.key)
-            }
-        }
-        attributesCombine.updateValue(font, forKey: NSAttributedString.Key.font)
-        return attributesCombine
     }
 
     // MARK:- Style
@@ -129,10 +97,10 @@ public extension EFIconFontProtocol {
         }
     }
 
-    // Mark:- Font
+    // MARK:- Font
     func font(size fontSize: CGFloat) -> UIFont? {
-        if !loaded() { return nil }
-        return UIFont(name: self.name, size: fontSize)
+        if !UIFont.loadFontIfNeeded(name: name, path: path) { return nil }
+        return UIFont(name: name, size: fontSize)
     }
 
     // MARK:- String
@@ -150,6 +118,18 @@ public extension EFIconFontProtocol {
             attributesCombine.updateValue(backgroundColor, forKey: NSAttributedString.Key.backgroundColor)
         }
         return attributedString(size: fontSize, attributes: attributesCombine)
+    }
+    
+    private func attributesWith(size fontSize: CGFloat, attributes: [NSAttributedString.Key : Any]?) -> [NSAttributedString.Key : Any]? {
+        guard let font = font(size: fontSize) else { return nil }
+        var attributesCombine: [NSAttributedString.Key : Any] = self.attributes
+        if let attributes = attributes {
+            for attribute in attributes {
+                attributesCombine.updateValue(attribute.value, forKey: attribute.key)
+            }
+        }
+        attributesCombine.updateValue(font, forKey: NSAttributedString.Key.font)
+        return attributesCombine
     }
 
     // MARK:- Image

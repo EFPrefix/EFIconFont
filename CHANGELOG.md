@@ -2,6 +2,13 @@
 
 -----
 
+## [0.9.0](https://github.com/EFPrefix/EFIconFont/releases/tag/0.9.0) (2021-06-28)
+
+- Add `static func font(size fontSize: CGFloat) -> UIFont?` to `EFIconFontCaseIterableProtocol`;
+- Add `func font(size fontSize: CGFloat) -> UIFont?` to `EFIconFontProtocol`.
+
+---
+
 ## [0.8.2](https://github.com/EFPrefix/EFIconFont/releases/tag/0.8.2) (2021-06-25)
 
 - Add [EVA-icon](https://github.com/moeoverflow/EVA-icon).
