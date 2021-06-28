@@ -22,9 +22,9 @@ Pod::Spec.new do |s|
     end
 
     s.subspec 'AntChain' do |antchain|
-        antdesign.source_files = 'EFIconFont/Classes/AntChain/**/*'
-        antdesign.resources = 'EFIconFont/Assets/AntChain/**/*'
-        antdesign.dependency 'EFIconFont/Core'
+        antchain.source_files = 'EFIconFont/Classes/AntChain/**/*'
+        antchain.resources = 'EFIconFont/Assets/AntChain/**/*'
+        antchain.dependency 'EFIconFont/Core'
     end
 
     s.subspec 'AntDesign' do |antdesign|
