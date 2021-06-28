@@ -26,3 +26,7 @@ Pods/
 Example/Pods/
 Pods
 Example/Pods
+
+# SPM
+.build
+.swiftpm
