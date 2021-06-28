@@ -2,6 +2,12 @@
 
 -----
 
+## [0.9.1](https://github.com/EFPrefix/EFIconFont/releases/tag/0.9.1) (2021-06-28)
+
+- Add [AntChain](https://www.iconfont.cn/collections/detail?cid=26815).
+
+---
+
 ## [0.9.0](https://github.com/EFPrefix/EFIconFont/releases/tag/0.9.0) (2021-06-28)
 
 - Add `static func font(size fontSize: CGFloat) -> UIFont?` to `EFIconFontCaseIterableProtocol`;

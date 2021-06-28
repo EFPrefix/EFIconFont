@@ -154,6 +154,7 @@ PS: Although the libraries below are all free, please make sure that your way of
 
 | Name | Version | Count | File Size | Description | License | Preview |
 |:-|:-|:-|:-|:-|:-|:-|
+| AntChain | 1.0 | 77 | 17KB | AntChain | Unknown | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=26815) |
 | AntDesign | 1.0 | 557 | 127KB | Ant Design | [MIT](https://github.com/ant-design/ant-design/blob/master/LICENSE) | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=9402) |
 | Dashicons  | 0.9.0 | 203 | 51 KB | Official icon font of the WordPress admin | [GPLv2](https://github.com/WordPress/dashicons) | [wordpress.org](https://developer.wordpress.org/resource/dashicons) |
 | Devicons | 1.8.0 | 192 | 92KB | An iconic font for developers | [MIT](https://github.com/vorillaz/devicons) | [vorillaz.github.io/devicons](http://vorillaz.github.io/devicons/#/cheat) |
