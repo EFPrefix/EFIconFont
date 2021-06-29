@@ -25,7 +25,11 @@
 //  THE SOFTWARE.
 
 import Foundation
+#if os(macOS)
+import AppKit
+#else
 import UIKit
+#endif
 
 fileprivate struct AssociatedKeys {
     static var attributes = "attributes"
@@ -46,7 +50,11 @@ public protocol EFIconFontProtocol {
     var unicode: String { get }
     
     // `font` is UIFont of icon with input font size
+    #if os(macOS)
+    func font(size fontSize: CGFloat) -> NSFont?
+    #else
     func font(size fontSize: CGFloat) -> UIFont?
+    #endif
 }
 
 public extension EFIconFontProtocol {
@@ -71,6 +79,20 @@ public extension EFIconFontProtocol {
         }
     }
 
+    #if os(macOS)
+    var foregroundColor: NSColor? {
+        get {
+            return attributes[NSAttributedString.Key.foregroundColor] as? NSColor
+        }
+        set {
+            if let newValue = newValue {
+                attributes.updateValue(newValue, forKey: NSAttributedString.Key.foregroundColor)
+            } else {
+                attributes.removeValue(forKey: NSAttributedString.Key.foregroundColor)
+            }
+        }
+    }
+    #else
     var foregroundColor: UIColor? {
         get {
             return attributes[NSAttributedString.Key.foregroundColor] as? UIColor
@@ -83,7 +105,22 @@ public extension EFIconFontProtocol {
             }
         }
     }
+    #endif
 
+    #if os(macOS)
+    var backgroundColor: NSColor? {
+        get {
+            return attributes[NSAttributedString.Key.backgroundColor] as? NSColor
+        }
+        set {
+            if let newValue = newValue {
+                attributes.updateValue(newValue, forKey: NSAttributedString.Key.backgroundColor)
+            } else {
+                attributes.removeValue(forKey: NSAttributedString.Key.backgroundColor)
+            }
+        }
+    }
+    #else
     var backgroundColor: UIColor? {
         get {
             return attributes[NSAttributedString.Key.backgroundColor] as? UIColor
@@ -96,12 +133,20 @@ public extension EFIconFontProtocol {
             }
         }
     }
+    #endif
 
     // MARK:- Font
+    #if os(macOS)
+    func font(size fontSize: CGFloat) -> NSFont? {
+        if !NSFont.loadFontIfNeeded(name: name, path: path) { return nil }
+        return NSFont(name: name, size: fontSize)
+    }
+    #else
     func font(size fontSize: CGFloat) -> UIFont? {
         if !UIFont.loadFontIfNeeded(name: name, path: path) { return nil }
         return UIFont(name: name, size: fontSize)
     }
+    #endif
 
     // MARK:- String
     func attributedString(size fontSize: CGFloat, attributes: [NSAttributedString.Key : Any]?) -> NSAttributedString? {
@@ -109,6 +154,18 @@ public extension EFIconFontProtocol {
         return NSAttributedString(string: self.unicode, attributes: attributes)
     }
 
+    #if os(macOS)
+    func attributedString(size fontSize: CGFloat, foregroundColor: NSColor? = nil, backgroundColor: NSColor? = nil) -> NSAttributedString? {
+        var attributesCombine: [NSAttributedString.Key : Any] = [:]
+        if let foregroundColor = foregroundColor {
+            attributesCombine.updateValue(foregroundColor, forKey: NSAttributedString.Key.foregroundColor)
+        }
+        if let backgroundColor = backgroundColor {
+            attributesCombine.updateValue(backgroundColor, forKey: NSAttributedString.Key.backgroundColor)
+        }
+        return attributedString(size: fontSize, attributes: attributesCombine)
+    }
+    #else
     func attributedString(size fontSize: CGFloat, foregroundColor: UIColor? = nil, backgroundColor: UIColor? = nil) -> NSAttributedString? {
         var attributesCombine: [NSAttributedString.Key : Any] = [:]
         if let foregroundColor = foregroundColor {
@@ -119,6 +176,7 @@ public extension EFIconFontProtocol {
         }
         return attributedString(size: fontSize, attributes: attributesCombine)
     }
+    #endif
     
     private func attributesWith(size fontSize: CGFloat, attributes: [NSAttributedString.Key : Any]?) -> [NSAttributedString.Key : Any]? {
         guard let font = font(size: fontSize) else { return nil }
@@ -133,6 +191,19 @@ public extension EFIconFontProtocol {
     }
 
     // MARK:- Image
+    #if os(macOS)
+    func image(size fontSize: CGFloat, attributes: [NSAttributedString.Key : Any]?) -> NSImage? {
+        guard let imageString: NSAttributedString = attributedString(size: fontSize, attributes: attributes) else { return nil }
+        let rect = imageString.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: fontSize), options: .usesLineFragmentOrigin, context: nil)
+        let imageSize: CGSize = rect.size
+        // let scale: CGFloat = NSScreen.mainScreen?.backingScaleFactor ?? 1
+        let image = NSImage(size: imageSize)
+        image.lockFocus()
+        imageString.draw(in: rect)
+        image.unlockFocus()
+        return image
+    }
+    #else
     func image(size fontSize: CGFloat, attributes: [NSAttributedString.Key : Any]?) -> UIImage? {
         guard let imageString: NSAttributedString = attributedString(size: fontSize, attributes: attributes) else { return nil }
         let rect = imageString.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: fontSize), options: .usesLineFragmentOrigin, context: nil)
@@ -143,7 +214,20 @@ public extension EFIconFontProtocol {
         UIGraphicsEndImageContext()
         return image
     }
+    #endif
 
+    #if os(macOS)
+    func image(size fontSize: CGFloat, foregroundColor: NSColor? = nil, backgroundColor: NSColor? = nil) -> NSImage? {
+        var attributesCombine: [NSAttributedString.Key : Any] = [:]
+        if let foregroundColor = foregroundColor {
+            attributesCombine.updateValue(foregroundColor, forKey: NSAttributedString.Key.foregroundColor)
+        }
+        if let backgroundColor = backgroundColor {
+            attributesCombine.updateValue(backgroundColor, forKey: NSAttributedString.Key.backgroundColor)
+        }
+        return image(size: fontSize, attributes: attributesCombine)
+    }
+    #else
     func image(size fontSize: CGFloat, foregroundColor: UIColor? = nil, backgroundColor: UIColor? = nil) -> UIImage? {
         var attributesCombine: [NSAttributedString.Key : Any] = [:]
         if let foregroundColor = foregroundColor {
@@ -154,7 +238,36 @@ public extension EFIconFontProtocol {
         }
         return image(size: fontSize, attributes: attributesCombine)
     }
+    #endif
 
+    #if os(macOS)
+    func image(size imageSize: CGSize, attributes: [NSAttributedString.Key : Any]?) -> NSImage? {
+        guard let imageString: NSAttributedString = attributedString(size: 1, attributes: attributes) else { return nil }
+        let rect = imageString.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 1), options: .usesLineFragmentOrigin, context: nil)
+        let widthScale = imageSize.width / rect.width
+        let heightScale = imageSize.height / rect.height
+        let scale = (widthScale < heightScale) ? widthScale : heightScale
+        let scaledWidth = rect.width * scale
+        let scaledHeight = rect.height * scale
+        var anchorPoint = CGPoint.zero
+        if widthScale < heightScale {
+            anchorPoint.y = (imageSize.height - scaledHeight) / 2
+        } else if widthScale > heightScale {
+            anchorPoint.x = (imageSize.width - scaledWidth) / 2
+        }
+        var anchorRect = CGRect.zero
+        anchorRect.origin = anchorPoint
+        anchorRect.size.width = scaledWidth
+        anchorRect.size.height = scaledHeight
+        guard let imageStringScale: NSAttributedString = attributedString(size: scale, attributes: attributes) else { return nil }
+        // let scale: CGFloat = NSScreen.mainScreen?.backingScaleFactor ?? 1
+        let image = NSImage(size: imageSize)
+        image.lockFocus()
+        imageStringScale.draw(in: anchorRect)
+        image.unlockFocus()
+        return image
+    }
+    #else
     func image(size imageSize: CGSize, attributes: [NSAttributedString.Key : Any]?) -> UIImage? {
         guard let imageString: NSAttributedString = attributedString(size: 1, attributes: attributes) else { return nil }
         let rect = imageString.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 1), options: .usesLineFragmentOrigin, context: nil)
@@ -180,7 +293,20 @@ public extension EFIconFontProtocol {
         UIGraphicsEndImageContext()
         return image
     }
+    #endif
 
+    #if os(macOS)
+    func image(size imageSize: CGSize, foregroundColor: NSColor? = nil, backgroundColor: NSColor? = nil) -> NSImage? {
+        var attributesCombine: [NSAttributedString.Key : Any] = [:]
+        if let foregroundColor = foregroundColor {
+            attributesCombine.updateValue(foregroundColor, forKey: NSAttributedString.Key.foregroundColor)
+        }
+        if let backgroundColor = backgroundColor {
+            attributesCombine.updateValue(backgroundColor, forKey: NSAttributedString.Key.backgroundColor)
+        }
+        return image(size: imageSize, attributes: attributesCombine)
+    }
+    #else
     func image(size imageSize: CGSize, foregroundColor: UIColor? = nil, backgroundColor: UIColor? = nil) -> UIImage? {
         var attributesCombine: [NSAttributedString.Key : Any] = [:]
         if let foregroundColor = foregroundColor {
@@ -191,4 +317,5 @@ public extension EFIconFontProtocol {
         }
         return image(size: imageSize, attributes: attributesCombine)
     }
+    #endif
 }

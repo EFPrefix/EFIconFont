@@ -6,7 +6,11 @@
 //
 
 import Foundation
+#if os(macOS)
+import AppKit
+#else
 import UIKit
+#endif
 
 fileprivate struct Anchor {
     static var dictionaryDictionaries: [String: [String : EFIconFontProtocol]] = [:]
@@ -31,13 +35,25 @@ public protocol EFIconFontCaseIterableProtocol: EFIconFontProtocol, CaseIterable
     static var attributes: [NSAttributedString.Key : Any] { set get }
 
     // `foregroundColor` is foregroundColor of all icons
+    #if os(macOS)
+    static var foregroundColor: NSColor? { set get }
+    #else
     static var foregroundColor: UIColor? { set get }
+    #endif
 
     // `backgroundColor` is backgroundColor of all icons
+    #if os(macOS)
+    static var backgroundColor: NSColor? { set get }
+    #else
     static var backgroundColor: UIColor? { set get }
+    #endif
     
     // `font` is UIFont of all icons with input font size
+    #if os(macOS)
+    static func font(size fontSize: CGFloat) -> NSFont?
+    #else
     static func font(size fontSize: CGFloat) -> UIFont?
+    #endif
 }
 
 public extension EFIconFontCaseIterableProtocol {
@@ -81,6 +97,20 @@ public extension EFIconFontCaseIterableProtocol {
         }
     }
 
+    #if os(macOS)
+    static var foregroundColor: NSColor? {
+        get {
+            return Self.attributes[NSAttributedString.Key.foregroundColor] as? NSColor
+        }
+        set {
+            if let newValue = newValue {
+                Self.attributes.updateValue(newValue, forKey: NSAttributedString.Key.foregroundColor)
+            } else {
+                Self.attributes.removeValue(forKey: NSAttributedString.Key.foregroundColor)
+            }
+        }
+    }
+    #else
     static var foregroundColor: UIColor? {
         get {
             return Self.attributes[NSAttributedString.Key.foregroundColor] as? UIColor
@@ -93,7 +123,22 @@ public extension EFIconFontCaseIterableProtocol {
             }
         }
     }
+    #endif
 
+    #if os(macOS)
+    static var backgroundColor: NSColor? {
+        get {
+            return Self.attributes[NSAttributedString.Key.backgroundColor] as? NSColor
+        }
+        set {
+            if let newValue = newValue {
+                Self.attributes.updateValue(newValue, forKey: NSAttributedString.Key.backgroundColor)
+            } else {
+                Self.attributes.removeValue(forKey: NSAttributedString.Key.backgroundColor)
+            }
+        }
+    }
+    #else
     static var backgroundColor: UIColor? {
         get {
             return Self.attributes[NSAttributedString.Key.backgroundColor] as? UIColor
@@ -106,12 +151,20 @@ public extension EFIconFontCaseIterableProtocol {
             }
         }
     }
+    #endif
 
     // MARK:- Font
+    #if os(macOS)
+    static func font(size fontSize: CGFloat) -> NSFont? {
+        if !NSFont.loadFontIfNeeded(name: Self.name, path: Self.path) { return nil }
+        return NSFont(name: Self.name, size: fontSize)
+    }
+    #else
     static func font(size fontSize: CGFloat) -> UIFont? {
         if !UIFont.loadFontIfNeeded(name: Self.name, path: Self.path) { return nil }
         return UIFont(name: Self.name, size: fontSize)
     }
+    #endif
     
     // MARK:- EFIconFontProtocol
     var name: String {
@@ -135,15 +188,33 @@ public extension EFIconFontCaseIterableProtocol {
         }
     }
 
+    #if os(macOS)
+    var foregroundColor: NSColor? {
+        return Self.foregroundColor
+    }
+    #else
     var foregroundColor: UIColor? {
         return Self.foregroundColor
     }
-
+    #endif
+    
+    #if os(macOS)
+    var backgroundColor: NSColor? {
+        return Self.backgroundColor
+    }
+    #else
     var backgroundColor: UIColor? {
         return Self.backgroundColor
     }
+    #endif
     
+    #if os(macOS)
+    func font(size fontSize: CGFloat) -> NSFont? {
+        return Self.font(size: fontSize)
+    }
+    #else
     func font(size fontSize: CGFloat) -> UIFont? {
         return Self.font(size: fontSize)
     }
+    #endif
 }

@@ -1,0 +1,36 @@
+use_frameworks!
+
+workspace 'EFIconFont'
+
+project 'EFIconFont-iOS.xcodeproj'
+project 'EFIconFont-tvOS.xcodeproj'
+project 'EFIconFont-macOS.xcodeproj'
+
+def shared_pods
+  pod 'EFIconFont', :subspecs => ['Complete'], :path => '../'
+end
+
+target 'EFIconFont-iOS' do
+  platform :ios, '9.0'
+  project 'EFIconFont-iOS.xcodeproj'
+
+  pod 'EFFoundation/Device', '1.4.9'
+  shared_pods
+end
+
+target 'EFIconFont-tvOS' do
+  platform :tvos, '9.0'
+  project 'EFIconFont-tvOS.xcodeproj'
+  
+  pod 'EFFoundation', '1.4.9'
+  shared_pods
+end
+
+target 'EFIconFont-macOS' do
+  platform :osx, '10.12'
+  project 'EFIconFont-macOS.xcodeproj'
+  
+  pod 'EFFoundation', '1.4.9'
+  pod 'SnapKit', '5.0.1'
+  shared_pods
+end

@@ -105,16 +105,19 @@ PODS:
     - EFIconFont/Core
   - EFIconFont/Zocial (0.9.1):
     - EFIconFont/Core
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - EFFoundation (= 1.4.9)
   - EFFoundation/Device (= 1.4.9)
   - EFIconFont/Complete (from `../`)
+  - SnapKit (= 5.0.1)
 
 SPEC REPOS:
   trunk:
     - DeviceKit
     - EFFoundation
+    - SnapKit
 
 EXTERNAL SOURCES:
   EFIconFont:
@@ -123,8 +126,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   DeviceKit: 2c5d7485a2fa10b65c0091b2952d30843a6ba06d
   EFFoundation: ca61de582cd5b6f3516b43c0f7b364222cbf8e4b
-  EFIconFont: a82e61c64d03062a53e7e0dce6c5f69633a5b99b
+  EFIconFont: 25dddae54bd315367fab30871e3f4660c695830f
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: c058abb49776214154b33459b16cb656f6788c2c
+PODFILE CHECKSUM: 1307107b347724c5303721c13fc2bb9abf9107da
 
 COCOAPODS: 1.10.1

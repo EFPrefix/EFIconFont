@@ -10,4 +10,7 @@
    <FileRef
       location = "group:EFIconFont-tvOS.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:EFIconFont-macOS.xcodeproj">
+   </FileRef>
 </Workspace>
