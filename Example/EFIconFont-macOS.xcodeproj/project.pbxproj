@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		123EF789268B327300A0CD9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123EF788268B327300A0CD9D /* AppDelegate.swift */; };
+		123EF78B268B327300A0CD9D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123EF78A268B327300A0CD9D /* ViewController.swift */; };
+		123EF78D268B327400A0CD9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 123EF78C268B327400A0CD9D /* Assets.xcassets */; };
+		123EF790268B327400A0CD9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123EF78E268B327400A0CD9D /* Main.storyboard */; };
+		EBB926FDECDD19BB8AA972AB /* Pods_EFIconFont_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82A5C5FC47C8C4AD0552B987 /* Pods_EFIconFont_macOS.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		123EF785268B327300A0CD9D /* EFIconFont-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EFIconFont-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		123EF788268B327300A0CD9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		123EF78A268B327300A0CD9D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		123EF78C268B327400A0CD9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		123EF78F268B327400A0CD9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		123EF791268B327400A0CD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		123EF792268B327400A0CD9D /* EFIconFont_macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EFIconFont_macOS.entitlements; sourceTree = "<group>"; };
+		82A5C5FC47C8C4AD0552B987 /* Pods_EFIconFont_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFIconFont_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2404F1094DA02222589996C /* Pods-EFIconFont-macOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFIconFont-macOS.release.xcconfig"; path = "Target Support Files/Pods-EFIconFont-macOS/Pods-EFIconFont-macOS.release.xcconfig"; sourceTree = "<group>"; };
+		DF9CF75E98C967717D0D33E9 /* Pods-EFIconFont-macOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFIconFont-macOS.debug.xcconfig"; path = "Target Support Files/Pods-EFIconFont-macOS/Pods-EFIconFont-macOS.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		123EF782268B327300A0CD9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBB926FDECDD19BB8AA972AB /* Pods_EFIconFont_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		123EF77C268B327300A0CD9D = {
+			isa = PBXGroup;
+			children = (
+				123EF787268B327300A0CD9D /* EFIconFont-macOS */,
+				123EF786268B327300A0CD9D /* Products */,
+				2F1075BE255E82D12B706328 /* Pods */,
+				CD104DF5EDD9BFAA73DD70C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		123EF786268B327300A0CD9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				123EF785268B327300A0CD9D /* EFIconFont-macOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		123EF787268B327300A0CD9D /* EFIconFont-macOS */ = {
+			isa = PBXGroup;
+			children = (
+				123EF788268B327300A0CD9D /* AppDelegate.swift */,
+				123EF78A268B327300A0CD9D /* ViewController.swift */,
+				123EF78C268B327400A0CD9D /* Assets.xcassets */,
+				123EF78E268B327400A0CD9D /* Main.storyboard */,
+				123EF791268B327400A0CD9D /* Info.plist */,
+				123EF792268B327400A0CD9D /* EFIconFont_macOS.entitlements */,
+			);
+			path = "EFIconFont-macOS";
+			sourceTree = "<group>";
+		};
+		2F1075BE255E82D12B706328 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF9CF75E98C967717D0D33E9 /* Pods-EFIconFont-macOS.debug.xcconfig */,
+				C2404F1094DA02222589996C /* Pods-EFIconFont-macOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD104DF5EDD9BFAA73DD70C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82A5C5FC47C8C4AD0552B987 /* Pods_EFIconFont_macOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		123EF784268B327300A0CD9D /* EFIconFont-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 123EF795268B327400A0CD9D /* Build configuration list for PBXNativeTarget "EFIconFont-macOS" */;
+			buildPhases = (
+				C50B74C624F3ACDEEEEB6891 /* [CP] Check Pods Manifest.lock */,
+				123EF781268B327300A0CD9D /* Sources */,
+				123EF782268B327300A0CD9D /* Frameworks */,
+				123EF783268B327300A0CD9D /* Resources */,
+				40CA6BB54F97E22985B78331 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EFIconFont-macOS";
+			productName = "EFIconFont-macOS";
+			productReference = 123EF785268B327300A0CD9D /* EFIconFont-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		123EF77D268B327300A0CD9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					123EF784268B327300A0CD9D = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 123EF780268B327300A0CD9D /* Build configuration list for PBXProject "EFIconFont-macOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 123EF77C268B327300A0CD9D;
+			productRefGroup = 123EF786268B327300A0CD9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				123EF784268B327300A0CD9D /* EFIconFont-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		123EF783268B327300A0CD9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123EF78D268B327400A0CD9D /* Assets.xcassets in Resources */,
+				123EF790268B327400A0CD9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40CA6BB54F97E22985B78331 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EFIconFont-macOS/Pods-EFIconFont-macOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EFIconFont-macOS/Pods-EFIconFont-macOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EFIconFont-macOS/Pods-EFIconFont-macOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C50B74C624F3ACDEEEEB6891 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EFIconFont-macOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		123EF781268B327300A0CD9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				123EF78B268B327300A0CD9D /* ViewController.swift in Sources */,
+				123EF789268B327300A0CD9D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		123EF78E268B327400A0CD9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				123EF78F268B327400A0CD9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		123EF793268B327400A0CD9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		123EF794268B327400A0CD9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		123EF796268B327400A0CD9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF9CF75E98C967717D0D33E9 /* Pods-EFIconFont-macOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "EFIconFont-macOS/EFIconFont_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P3X2725LYY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "EFIconFont-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.eyrefree.EFIconFont-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		123EF797268B327400A0CD9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2404F1094DA02222589996C /* Pods-EFIconFont-macOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "EFIconFont-macOS/EFIconFont_macOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = P3X2725LYY;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "EFIconFont-macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "org.eyrefree.EFIconFont-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		123EF780268B327300A0CD9D /* Build configuration list for PBXProject "EFIconFont-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				123EF793268B327400A0CD9D /* Debug */,
+				123EF794268B327400A0CD9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		123EF795268B327400A0CD9D /* Build configuration list for PBXNativeTarget "EFIconFont-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				123EF796268B327400A0CD9D /* Debug */,
+				123EF797268B327400A0CD9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 123EF77D268B327300A0CD9D /* Project object */;
+}

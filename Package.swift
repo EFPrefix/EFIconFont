@@ -31,7 +31,7 @@ let package = Package(
     name: "EFIconFont",
     platforms: [
         .iOS(.v8),
-        .macOS(.v10_10),
+        .macOS(.v10_11),
         .tvOS(.v9),
         .watchOS(.v2)
     ],
