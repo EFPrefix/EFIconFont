@@ -2,28 +2,31 @@
 
 <p align="center">
     <a href="https://travis-ci.org/EFPrefix/EFIconFont">
-    	<img src="https://api.travis-ci.org/EFPrefix/EFIconFont.svg?branch=master">
+        <img src="https://api.travis-ci.org/EFPrefix/EFIconFont.svg?branch=master">
+    </a>
+    <a href="https://swift.org/package-manager/">
+        <img src="https://img.shields.io/badge/SPM-ready-orange.svg">
     </a>
     <a href="https://cocoapods.org/pods/EFIconFont">
-    	<img src="https://img.shields.io/cocoapods/v/EFIconFont.svg?style=flat">
+        <img src="https://img.shields.io/cocoapods/v/EFIconFont.svg?style=flat">
     </a>
-    <a href="https://cocoapods.org/pods/EFIconFont">
-    	<img src="https://img.shields.io/cocoapods/p/EFIconFont.svg?style=flat">
+    <a href="https://swiftpackageindex.com/EFPrefix/EFIconFont">
+        <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FEFPrefix%EFIconFont%2Fbadge%3Ftype%3Dplatforms" alt="Compatible with all Platforms">
     </a>
     <a href="https://github.com/apple/swift">
-    	<img src="https://img.shields.io/badge/language-swift-orange.svg">
+        <img src="https://img.shields.io/badge/language-swift-orange.svg">
     </a>
     <a href="https://codebeat.co/projects/github-com-efprefix-eficonfont-master">
         <img src="https://codebeat.co/badges/4cbadc4d-e8f9-4f5b-8ee5-676ba6380383" />
     </a>
     <a href="https://raw.githubusercontent.com/EFPrefix/EFIconFont/master/LICENSE">
-    	<img src="https://img.shields.io/cocoapods/l/EFIconFont.svg?style=flat">
+        <img src="https://img.shields.io/cocoapods/l/EFIconFont.svg?style=flat">
     </a>
     <a href="https://twitter.com/EyreFree777">
-    	<img src="https://img.shields.io/badge/twitter-@EyreFree777-blue.svg?style=flat">
+        <img src="https://img.shields.io/badge/twitter-@EyreFree777-blue.svg?style=flat">
     </a>
     <a href="https://weibo.com/eyrefree777">
-    	<img src="https://img.shields.io/badge/weibo-@EyreFree-red.svg?style=flat">
+        <img src="https://img.shields.io/badge/weibo-@EyreFree-red.svg?style=flat">
     </a>
     <img src="https://img.shields.io/badge/made%20with-%3C3-orange.svg">
     <a href="http://shang.qq.com/wpa/qunwpa?idkey=d0f732585dcb0c6f2eb26bc9e0327f6305d18260eeba89ed26a201b520c572c0">
@@ -62,6 +65,8 @@ git clone git@github.com:EFPrefix/EFIconFont.git; cd EFIconFont/Example; pod ins
 
 ## 安装
 
+### CocoaPods
+
 EFIconFont 可以通过 [CocoaPods](https://cocoapods.org) 进行获取。只需要在你的 Podfile 中添加如下代码就能实现引入，默认只包含 `Core` 部分，不含字体包：
 
 ```ruby
@@ -84,6 +89,18 @@ pod 'EFIconFont', :subspecs => ['Complete']
 
 ```bash
 pod install
+```
+
+### Swift Package Manager
+
+[Swift Package Manager](https://swift.org/package-manager/) 是一个集成在 Swift 编译器中的用来进行 Swift 代码自动化发布的工具。
+
+如果你已经建立了你的 Swift 包，将 EFIconFont 加入依赖是十分容易的，只需要将其添加到你的 `Package.swift` 文件的 `dependencies` 项中即可：
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/EFPrefix/EFIconFont.git", .upToNextMinor(from: "1.0.0"))
+]
 ```
 
 ## 使用

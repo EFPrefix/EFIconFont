@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 //
 //  Package.swift
 //  EFIconFont
@@ -72,7 +72,7 @@ let package = Package(
     ],
     targets: [
         .target(name: "Core", path: "EFIconFont/Classes/Core"),
-        .target(name: "AntDesign", dependencies: ["Core"], path: "EFIconFont/Classes/AntDesign", resources: [.process("EFIconFont/Assets/AntDesign")]),
+        .target(name: "AntDesign", dependencies: ["Core"], path: "EFIconFont/Classes/AntDesign", resources: [.process("EFIconFont/Assets/AntDesign")]/*, swiftSettings: [.define("SPM")]*/),
         .target(name: "Dashicons", dependencies: ["Core"], path: "EFIconFont/Classes/Dashicons", resources: [.process("EFIconFont/Assets/Dashicons")]),
         .target(name: "Devicons", dependencies: ["Core"], path: "EFIconFont/Classes/Devicons", resources: [.process("EFIconFont/Assets/Devicons")]),
         .target(name: "ElusiveIcons", dependencies: ["Core"], path: "EFIconFont/Classes/ElusiveIcons", resources: [.process("EFIconFont/Assets/ElusiveIcons")]),

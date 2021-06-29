@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'EFIconFont'
-    s.version          = '0.9.1'
+    s.version          = '1.0.0'
     s.summary          = 'Yet another stupid wrapper of icon font.'
     
     s.description      = <<-DESC
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
     s.ios.framework = 'UIKit'
     s.osx.framework = 'AppKit'
     s.tvos.framework = 'UIKit'
-    s.watchos.framework = 'UIKit'
+    s.watchos.framework = ['UIKit', 'WatchKit']
     
     s.default_subspec = 'Core'
     

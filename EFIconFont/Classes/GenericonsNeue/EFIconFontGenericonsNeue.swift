@@ -25,6 +25,9 @@
 //  THE SOFTWARE.
 
 import Foundation
+#if canImport(Core)
+import Core
+#endif
 
 public extension EFIconFont {
 

@@ -4,11 +4,14 @@
     <a href="https://travis-ci.org/EFPrefix/EFIconFont">
     	<img src="https://api.travis-ci.org/EFPrefix/EFIconFont.svg?branch=master">
     </a>
+    <a href="https://swift.org/package-manager/">
+        <img src="https://img.shields.io/badge/SPM-ready-orange.svg">
+    </a>
     <a href="https://cocoapods.org/pods/EFIconFont">
     	<img src="https://img.shields.io/cocoapods/v/EFIconFont.svg?style=flat">
     </a>
-    <a href="https://cocoapods.org/pods/EFIconFont">
-    	<img src="https://img.shields.io/cocoapods/p/EFIconFont.svg?style=flat">
+    <a href="https://swiftpackageindex.com/EFPrefix/EFIconFont">
+        <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FEFPrefix%EFIconFont%2Fbadge%3Ftype%3Dplatforms" alt="Compatible with all Platforms">
     </a>
     <a href="https://github.com/apple/swift">
     	<img src="https://img.shields.io/badge/language-swift-orange.svg">
@@ -57,6 +60,8 @@ git clone git@github.com:EFPrefix/EFIconFont.git; cd EFIconFont/Example; pod ins
 
 ## Installation
 
+### CocoaPods
+
 EFIconFont is available through [CocoaPods](https://cocoapods.org). To install it, simply add the following line to your Podfile:
 
 ```ruby
@@ -79,6 +84,18 @@ Then, run the following command:
 
 ```bash
 pod install
+```
+
+### Swift Package Manager
+
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for automating the distribution of Swift code and is integrated into the Swift compiler.
+
+Once you have your Swift package set up, adding EFIconFont as a dependency is as easy as adding it to the `dependencies` value of your `Package.swift`.
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/EFPrefix/EFIconFont.git", .upToNextMinor(from: "1.0.0"))
+]
 ```
 
 ## Use

@@ -2,6 +2,13 @@
 
 -----
 
+## [1.0.0](https://github.com/EFPrefix/EFIconFont/releases/tag/1.0.0) (2021-06-30)
+
+- Support watchOS, tvOS, macOS;
+- Support SPM.
+
+---
+
 ## [0.9.1](https://github.com/EFPrefix/EFIconFont/releases/tag/0.9.1) (2021-06-28)
 
 - Add [AntChain](https://www.iconfont.cn/collections/detail?cid=26815).
