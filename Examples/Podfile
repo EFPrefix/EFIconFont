@@ -1,0 +1,26 @@
+use_frameworks!
+
+workspace 'EFIconFont'
+
+xcodeproj 'EFIconFont-iOS.xcodeproj'
+xcodeproj 'EFIconFont-tvOS.xcodeproj'
+
+def shared_pods
+  pod 'EFIconFont', :subspecs => ['Complete'], :path => '../'
+end
+
+target 'EFIconFont-iOS' do
+  platform :ios, '8.0'
+  xcodeproj 'EFIconFont-iOS.xcodeproj'
+
+  pod 'EFFoundation/Device', '1.4.9'
+  shared_pods
+end
+
+target 'EFIconFont-tvOS' do
+  platform :tvos, '9.0'
+  xcodeproj 'EFIconFont-tvOS.xcodeproj'
+  
+  pod 'EFFoundation', '1.4.9'
+  shared_pods
+end

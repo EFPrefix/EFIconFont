@@ -27,11 +27,13 @@
 
 import PackageDescription
 
-#if os(iOS)
 let package = Package(
     name: "EFIconFont",
     platforms: [
-        .iOS(.v8)
+        .iOS(.v8),
+        .macOS(.v10_10),
+        .tvOS(.v9),
+        .watchOS(.v2)
     ],
     products: [
         .library(name: "Core", targets: ["Core"]),
@@ -70,40 +72,37 @@ let package = Package(
     ],
     targets: [
         .target(name: "Core", path: "EFIconFont/Classes/Core"),
-        .target(name: "AntDesign", path: "EFIconFont/Classes/AntDesign", resources: [.process("EFIconFont/Assets/AntDesign")]),
-        .target(name: "Dashicons", path: "EFIconFont/Classes/Dashicons", resources: [.process("EFIconFont/Assets/Dashicons")]),
-        .target(name: "Devicons", path: "EFIconFont/Classes/Devicons", resources: [.process("EFIconFont/Assets/Devicons")]),
-        .target(name: "ElusiveIcons", path: "EFIconFont/Classes/ElusiveIcons", resources: [.process("EFIconFont/Assets/ElusiveIcons")]),
-        .target(name: "EVAIcon", path: "EFIconFont/Classes/EVAIcon", resources: [.process("EFIconFont/Assets/EVAIcon")]),
-        .target(name: "EvilIcons", path: "EFIconFont/Classes/EvilIcons", resources: [.process("EFIconFont/Assets/EvilIcons")]),
-        .target(name: "FontAwesomeBrands", path: "EFIconFont/Classes/FontAwesomeBrands", resources: [.process("EFIconFont/Assets/FontAwesomeBrands")]),
-        .target(name: "FontAwesomeRegular", path: "EFIconFont/Classes/FontAwesomeRegular", resources: [.process("EFIconFont/Assets/FontAwesomeRegular")]),
-        .target(name: "FontAwesomeSolid", path: "EFIconFont/Classes/FontAwesomeSolid", resources: [.process("EFIconFont/Assets/FontAwesomeSolid")]),
-        .target(name: "FoundationIcons", path: "EFIconFont/Classes/FoundationIcons", resources: [.process("EFIconFont/Assets/FoundationIcons")]),
-        .target(name: "GenericonsNeue", path: "EFIconFont/Classes/GenericonsNeue", resources: [.process("EFIconFont/Assets/GenericonsNeue")]),
-        .target(name: "HawconsFilled", path: "EFIconFont/Classes/HawconsFilled", resources: [.process("EFIconFont/Assets/HawconsFilled")]),
-        .target(name: "HawconsStroke", path: "EFIconFont/Classes/HawconsStroke", resources: [.process("EFIconFont/Assets/HawconsStroke")]),
-        .target(name: "IcoMoon", path: "EFIconFont/Classes/IcoMoon", resources: [.process("EFIconFont/Assets/IcoMoon")]),
-        .target(name: "Ionicons", path: "EFIconFont/Classes/Ionicons", resources: [.process("EFIconFont/Assets/Ionicons")]),
-        .target(name: "LigatureSymbols", path: "EFIconFont/Classes/LigatureSymbols", resources: [.process("EFIconFont/Assets/LigatureSymbols")]),
-        .target(name: "MapIcons", path: "EFIconFont/Classes/MapIcons", resources: [.process("EFIconFont/Assets/MapIcons")]),
-        .target(name: "MaterialIconsFilled", path: "EFIconFont/Classes/MaterialIconsFilled", resources: [.process("EFIconFont/Assets/MaterialIconsFilled")]),
-        .target(name: "MaterialIconsOutlined", path: "EFIconFont/Classes/MaterialIconsOutlined", resources: [.process("EFIconFont/Assets/MaterialIconsOutlined")]),
-        .target(name: "MaterialIconsRounded", path: "EFIconFont/Classes/MaterialIconsRounded", resources: [.process("EFIconFont/Assets/MaterialIconsRounded")]),
-        .target(name: "MaterialIconsSharp", path: "EFIconFont/Classes/MaterialIconsSharp", resources: [.process("EFIconFont/Assets/MaterialIconsSharp")]),
-        .target(name: "Meteocons", path: "EFIconFont/Classes/Meteocons", resources: [.process("EFIconFont/Assets/Meteocons")]),
-        .target(name: "MetrizeIcons", path: "EFIconFont/Classes/MetrizeIcons", resources: [.process("EFIconFont/Assets/MetrizeIcons")]),
-        .target(name: "OpenIconic", path: "EFIconFont/Classes/OpenIconic", resources: [.process("EFIconFont/Assets/OpenIconic")]),
-        .target(name: "StrawberryIcon", path: "EFIconFont/Classes/StrawberryIcon", resources: [.process("EFIconFont/Assets/StrawberryIcon")]),
-        .target(name: "Stroke7", path: "EFIconFont/Classes/Stroke7", resources: [.process("EFIconFont/Assets/Stroke7")]),
-        .target(name: "ThemifyIcons", path: "EFIconFont/Classes/ThemifyIcons", resources: [.process("EFIconFont/Assets/ThemifyIcons")]),
-        .target(name: "Typicons", path: "EFIconFont/Classes/Typicons", resources: [.process("EFIconFont/Assets/Typicons")]),
-        .target(name: "VSCodeIcons", path: "EFIconFont/Classes/VSCodeIcons", resources: [.process("EFIconFont/Assets/VSCodeIcons")]),
-        .target(name: "WeatherIcons", path: "EFIconFont/Classes/WeatherIcons", resources: [.process("EFIconFont/Assets/WeatherIcons")]),
-        .target(name: "Zocial", path: "EFIconFont/Classes/Zocial", resources: [.process("EFIconFont/Assets/Zocial")])
+        .target(name: "AntDesign", path: "EFIconFont/Classes/AntDesign", resources: [.process("EFIconFont/Assets/AntDesign")], dependencies: ["Core"]),
+        .target(name: "Dashicons", path: "EFIconFont/Classes/Dashicons", resources: [.process("EFIconFont/Assets/Dashicons")], dependencies: ["Core"]),
+        .target(name: "Devicons", path: "EFIconFont/Classes/Devicons", resources: [.process("EFIconFont/Assets/Devicons")], dependencies: ["Core"]),
+        .target(name: "ElusiveIcons", path: "EFIconFont/Classes/ElusiveIcons", resources: [.process("EFIconFont/Assets/ElusiveIcons")], dependencies: ["Core"]),
+        .target(name: "EVAIcon", path: "EFIconFont/Classes/EVAIcon", resources: [.process("EFIconFont/Assets/EVAIcon")], dependencies: ["Core"]),
+        .target(name: "EvilIcons", path: "EFIconFont/Classes/EvilIcons", resources: [.process("EFIconFont/Assets/EvilIcons")], dependencies: ["Core"]),
+        .target(name: "FontAwesomeBrands", path: "EFIconFont/Classes/FontAwesomeBrands", resources: [.process("EFIconFont/Assets/FontAwesomeBrands")], dependencies: ["Core"]),
+        .target(name: "FontAwesomeRegular", path: "EFIconFont/Classes/FontAwesomeRegular", resources: [.process("EFIconFont/Assets/FontAwesomeRegular")], dependencies: ["Core"]),
+        .target(name: "FontAwesomeSolid", path: "EFIconFont/Classes/FontAwesomeSolid", resources: [.process("EFIconFont/Assets/FontAwesomeSolid")], dependencies: ["Core"]),
+        .target(name: "FoundationIcons", path: "EFIconFont/Classes/FoundationIcons", resources: [.process("EFIconFont/Assets/FoundationIcons")], dependencies: ["Core"]),
+        .target(name: "GenericonsNeue", path: "EFIconFont/Classes/GenericonsNeue", resources: [.process("EFIconFont/Assets/GenericonsNeue")], dependencies: ["Core"]),
+        .target(name: "HawconsFilled", path: "EFIconFont/Classes/HawconsFilled", resources: [.process("EFIconFont/Assets/HawconsFilled")], dependencies: ["Core"]),
+        .target(name: "HawconsStroke", path: "EFIconFont/Classes/HawconsStroke", resources: [.process("EFIconFont/Assets/HawconsStroke")], dependencies: ["Core"]),
+        .target(name: "IcoMoon", path: "EFIconFont/Classes/IcoMoon", resources: [.process("EFIconFont/Assets/IcoMoon")], dependencies: ["Core"]),
+        .target(name: "Ionicons", path: "EFIconFont/Classes/Ionicons", resources: [.process("EFIconFont/Assets/Ionicons")], dependencies: ["Core"]),
+        .target(name: "LigatureSymbols", path: "EFIconFont/Classes/LigatureSymbols", resources: [.process("EFIconFont/Assets/LigatureSymbols")], dependencies: ["Core"]),
+        .target(name: "MapIcons", path: "EFIconFont/Classes/MapIcons", resources: [.process("EFIconFont/Assets/MapIcons")], dependencies: ["Core"]),
+        .target(name: "MaterialIconsFilled", path: "EFIconFont/Classes/MaterialIconsFilled", resources: [.process("EFIconFont/Assets/MaterialIconsFilled")], dependencies: ["Core"]),
+        .target(name: "MaterialIconsOutlined", path: "EFIconFont/Classes/MaterialIconsOutlined", resources: [.process("EFIconFont/Assets/MaterialIconsOutlined")], dependencies: ["Core"]),
+        .target(name: "MaterialIconsRounded", path: "EFIconFont/Classes/MaterialIconsRounded", resources: [.process("EFIconFont/Assets/MaterialIconsRounded")], dependencies: ["Core"]),
+        .target(name: "MaterialIconsSharp", path: "EFIconFont/Classes/MaterialIconsSharp", resources: [.process("EFIconFont/Assets/MaterialIconsSharp")], dependencies: ["Core"]),
+        .target(name: "Meteocons", path: "EFIconFont/Classes/Meteocons", resources: [.process("EFIconFont/Assets/Meteocons")], dependencies: ["Core"]),
+        .target(name: "MetrizeIcons", path: "EFIconFont/Classes/MetrizeIcons", resources: [.process("EFIconFont/Assets/MetrizeIcons")], dependencies: ["Core"]),
+        .target(name: "OpenIconic", path: "EFIconFont/Classes/OpenIconic", resources: [.process("EFIconFont/Assets/OpenIconic")], dependencies: ["Core"]),
+        .target(name: "StrawberryIcon", path: "EFIconFont/Classes/StrawberryIcon", resources: [.process("EFIconFont/Assets/StrawberryIcon")], dependencies: ["Core"]),
+        .target(name: "Stroke7", path: "EFIconFont/Classes/Stroke7", resources: [.process("EFIconFont/Assets/Stroke7")], dependencies: ["Core"]),
+        .target(name: "ThemifyIcons", path: "EFIconFont/Classes/ThemifyIcons", resources: [.process("EFIconFont/Assets/ThemifyIcons")], dependencies: ["Core"]),
+        .target(name: "Typicons", path: "EFIconFont/Classes/Typicons", resources: [.process("EFIconFont/Assets/Typicons")], dependencies: ["Core"]),
+        .target(name: "VSCodeIcons", path: "EFIconFont/Classes/VSCodeIcons", resources: [.process("EFIconFont/Assets/VSCodeIcons")], dependencies: ["Core"]),
+        .target(name: "WeatherIcons", path: "EFIconFont/Classes/WeatherIcons", resources: [.process("EFIconFont/Assets/WeatherIcons")], dependencies: ["Core"]),
+        .target(name: "Zocial", path: "EFIconFont/Classes/Zocial", resources: [.process("EFIconFont/Assets/Zocial")], dependencies: ["Core"])
     ],
     swiftLanguageVersions: [.v5]
 )
-#else
-fatalError("Unsupported OS")
-#endif
