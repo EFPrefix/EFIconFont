@@ -25,6 +25,9 @@
 //  THE SOFTWARE.
 
 import Foundation
+#if os(watchOS)
+import WatchKit
+#endif
 #if os(macOS)
 import AppKit
 #else
@@ -208,7 +211,12 @@ public extension EFIconFontProtocol {
         guard let imageString: NSAttributedString = attributedString(size: fontSize, attributes: attributes) else { return nil }
         let rect = imageString.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: fontSize), options: .usesLineFragmentOrigin, context: nil)
         let imageSize: CGSize = rect.size
-        UIGraphicsBeginImageContextWithOptions(imageSize, false, UIScreen.main.scale)
+        #if os(watchOS)
+        let screenScale: CGFloat = WKInterfaceDevice.current().screenScale
+        #else
+        let screenScale: CGFloat = UIScreen.main.scale
+        #endif
+        UIGraphicsBeginImageContextWithOptions(imageSize, false, screenScale)
         imageString.draw(in: rect)
         let image: UIImage? = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
@@ -287,7 +295,12 @@ public extension EFIconFontProtocol {
         anchorRect.size.width = scaledWidth
         anchorRect.size.height = scaledHeight
         guard let imageStringScale: NSAttributedString = attributedString(size: scale, attributes: attributes) else { return nil }
-        UIGraphicsBeginImageContextWithOptions(imageSize, false, UIScreen.main.scale)
+        #if os(watchOS)
+        let screenScale: CGFloat = WKInterfaceDevice.current().screenScale
+        #else
+        let screenScale: CGFloat = UIScreen.main.scale
+        #endif
+        UIGraphicsBeginImageContextWithOptions(imageSize, false, screenScale)
         imageStringScale.draw(in: anchorRect)
         let image: UIImage? = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

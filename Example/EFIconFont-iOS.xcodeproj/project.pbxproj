@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09E3E69D58C95CD511CD394E /* Pods_EFIconFont_watchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0B47AA6CDDEB96440D849E4 /* Pods_EFIconFont_watchOS.framework */; };
 		123EF720268B212E00A0CD9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123EF718268B212E00A0CD9D /* AppDelegate.swift */; };
 		123EF721268B212E00A0CD9D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123EF719268B212E00A0CD9D /* SearchViewController.swift */; };
 		123EF722268B212E00A0CD9D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123EF71A268B212E00A0CD9D /* BaseViewController.swift */; };
@@ -20,10 +21,61 @@
 		123EF733268B21E100A0CD9D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 123EF730268B21E100A0CD9D /* Images.xcassets */; };
 		123EF738268B241900A0CD9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 123EF734268B241900A0CD9D /* Main.storyboard */; };
 		123EF739268B241900A0CD9D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 123EF736268B241900A0CD9D /* LaunchScreen.xib */; };
+		12CDE578268B557E00EFC3B3 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12CDE576268B557E00EFC3B3 /* Interface.storyboard */; };
+		12CDE57A268B558100EFC3B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CDE579268B558100EFC3B3 /* Assets.xcassets */; };
+		12CDE581268B558100EFC3B3 /* EFIconFont-watchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 12CDE580268B558100EFC3B3 /* EFIconFont-watchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		12CDE586268B558100EFC3B3 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CDE585268B558100EFC3B3 /* InterfaceController.swift */; };
+		12CDE588268B558100EFC3B3 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CDE587268B558100EFC3B3 /* ExtensionDelegate.swift */; };
+		12CDE58A268B558100EFC3B3 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CDE589268B558100EFC3B3 /* ComplicationController.swift */; };
+		12CDE58C268B558200EFC3B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12CDE58B268B558200EFC3B3 /* Assets.xcassets */; };
+		12CDE590268B558200EFC3B3 /* EFIconFont-watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 12CDE574268B557E00EFC3B3 /* EFIconFont-watchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		EDEA777BF9A81D123DF2F977 /* Pods_EFIconFont_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40861DCD30C88BC8B1C7DC57 /* Pods_EFIconFont_iOS.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		12CDE582268B558100EFC3B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12CDE57F268B558100EFC3B3;
+			remoteInfo = "EFIconFont-watchOS Extension";
+		};
+		12CDE58E268B558200EFC3B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12CDE573268B557E00EFC3B3;
+			remoteInfo = "EFIconFont-watchOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		12CDE591268B558200EFC3B3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				12CDE590268B558200EFC3B3 /* EFIconFont-watchOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12CDE594268B558200EFC3B3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				12CDE581268B558100EFC3B3 /* EFIconFont-watchOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		015E22431CF685942CA101D3 /* Pods-EFIconFont-watchOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFIconFont-watchOS.release.xcconfig"; path = "Target Support Files/Pods-EFIconFont-watchOS/Pods-EFIconFont-watchOS.release.xcconfig"; sourceTree = "<group>"; };
 		123EF718268B212E00A0CD9D /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "EFIconFont-iOS/AppDelegate.swift"; sourceTree = "<group>"; };
 		123EF719268B212E00A0CD9D /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = "EFIconFont-iOS/SearchViewController.swift"; sourceTree = "<group>"; };
 		123EF71A268B212E00A0CD9D /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = "EFIconFont-iOS/BaseViewController.swift"; sourceTree = "<group>"; };
@@ -38,13 +90,40 @@
 		123EF730268B21E100A0CD9D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "EFIconFont-iOS/Supporting Files/Images.xcassets"; sourceTree = "<group>"; };
 		123EF735268B241900A0CD9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "EFIconFont-iOS/Supporting Files/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
 		123EF737268B241900A0CD9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = "EFIconFont-iOS/Supporting Files/Base.lproj/LaunchScreen.xib"; sourceTree = "<group>"; };
+		12CDE574268B557E00EFC3B3 /* EFIconFont-watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EFIconFont-watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12CDE577268B557E00EFC3B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		12CDE579268B558100EFC3B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12CDE57B268B558100EFC3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12CDE580268B558100EFC3B3 /* EFIconFont-watchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "EFIconFont-watchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12CDE585268B558100EFC3B3 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		12CDE587268B558100EFC3B3 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		12CDE589268B558100EFC3B3 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		12CDE58B268B558200EFC3B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12CDE58D268B558200EFC3B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40861DCD30C88BC8B1C7DC57 /* Pods_EFIconFont_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFIconFont_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B0E20F45C6D9D69A4ECD7A /* Pods-EFIconFont-watchOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFIconFont-watchOS.debug.xcconfig"; path = "Target Support Files/Pods-EFIconFont-watchOS/Pods-EFIconFont-watchOS.debug.xcconfig"; sourceTree = "<group>"; };
 		546EDC7150108FFB10E8E4E4 /* Pods-EFIconFont-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFIconFont-iOS.debug.xcconfig"; path = "Target Support Files/Pods-EFIconFont-iOS/Pods-EFIconFont-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* EFIconFont-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EFIconFont-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B47AA6CDDEB96440D849E4 /* Pods_EFIconFont_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EFIconFont_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F61870C1F6D8055AE14721D3 /* Pods-EFIconFont-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EFIconFont-iOS.release.xcconfig"; path = "Target Support Files/Pods-EFIconFont-iOS/Pods-EFIconFont-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		05C3CB13BA205C675635460E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09E3E69D58C95CD511CD394E /* Pods_EFIconFont_watchOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12CDE57D268B558100EFC3B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCD1AFB9204008FA782 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,11 +172,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		12CDE575268B557E00EFC3B3 /* EFIconFont-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				12CDE576268B557E00EFC3B3 /* Interface.storyboard */,
+				12CDE579268B558100EFC3B3 /* Assets.xcassets */,
+				12CDE57B268B558100EFC3B3 /* Info.plist */,
+			);
+			path = "EFIconFont-watchOS";
+			sourceTree = "<group>";
+		};
+		12CDE584268B558100EFC3B3 /* EFIconFont-watchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				12CDE585268B558100EFC3B3 /* InterfaceController.swift */,
+				12CDE587268B558100EFC3B3 /* ExtensionDelegate.swift */,
+				12CDE589268B558100EFC3B3 /* ComplicationController.swift */,
+				12CDE58B268B558200EFC3B3 /* Assets.xcassets */,
+				12CDE58D268B558200EFC3B3 /* Info.plist */,
+			);
+			path = "EFIconFont-watchOS Extension";
+			sourceTree = "<group>";
+		};
 		18C4182E308188F7E36DCEEB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				546EDC7150108FFB10E8E4E4 /* Pods-EFIconFont-iOS.debug.xcconfig */,
 				F61870C1F6D8055AE14721D3 /* Pods-EFIconFont-iOS.release.xcconfig */,
+				43B0E20F45C6D9D69A4ECD7A /* Pods-EFIconFont-watchOS.debug.xcconfig */,
+				015E22431CF685942CA101D3 /* Pods-EFIconFont-watchOS.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -106,6 +209,8 @@
 			isa = PBXGroup;
 			children = (
 				123EF717268B20EB00A0CD9D /* EFIconFont-iOS */,
+				12CDE575268B557E00EFC3B3 /* EFIconFont-watchOS */,
+				12CDE584268B558100EFC3B3 /* EFIconFont-watchOS Extension */,
 				607FACD11AFB9204008FA782 /* Products */,
 				18C4182E308188F7E36DCEEB /* Pods */,
 				ACA9130F15F9697B6D360FC2 /* Frameworks */,
@@ -116,6 +221,8 @@
 			isa = PBXGroup;
 			children = (
 				607FACD01AFB9204008FA782 /* EFIconFont-iOS.app */,
+				12CDE574268B557E00EFC3B3 /* EFIconFont-watchOS.app */,
+				12CDE580268B558100EFC3B3 /* EFIconFont-watchOS Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				40861DCD30C88BC8B1C7DC57 /* Pods_EFIconFont_iOS.framework */,
+				B0B47AA6CDDEB96440D849E4 /* Pods_EFIconFont_watchOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -131,6 +239,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		12CDE573268B557E00EFC3B3 /* EFIconFont-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12CDE598268B558200EFC3B3 /* Build configuration list for PBXNativeTarget "EFIconFont-watchOS" */;
+			buildPhases = (
+				1F131E18557862370F695B14 /* [CP] Check Pods Manifest.lock */,
+				12CDE572268B557E00EFC3B3 /* Resources */,
+				12CDE594268B558200EFC3B3 /* Embed App Extensions */,
+				05C3CB13BA205C675635460E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12CDE583268B558100EFC3B3 /* PBXTargetDependency */,
+			);
+			name = "EFIconFont-watchOS";
+			productName = "EFIconFont-watchOS";
+			productReference = 12CDE574268B557E00EFC3B3 /* EFIconFont-watchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		12CDE57F268B558100EFC3B3 /* EFIconFont-watchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12CDE597268B558200EFC3B3 /* Build configuration list for PBXNativeTarget "EFIconFont-watchOS Extension" */;
+			buildPhases = (
+				12CDE57C268B558100EFC3B3 /* Sources */,
+				12CDE57D268B558100EFC3B3 /* Frameworks */,
+				12CDE57E268B558100EFC3B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "EFIconFont-watchOS Extension";
+			productName = "EFIconFont-watchOS Extension";
+			productReference = 12CDE580268B558100EFC3B3 /* EFIconFont-watchOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		607FACCF1AFB9204008FA782 /* EFIconFont-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "EFIconFont-iOS" */;
@@ -140,10 +284,12 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				D4330BB61061A814CB8621B7 /* [CP] Embed Pods Frameworks */,
+				12CDE591268B558200EFC3B3 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				12CDE58F268B558200EFC3B3 /* PBXTargetDependency */,
 			);
 			name = "EFIconFont-iOS";
 			productName = EFIconFont;
@@ -156,10 +302,18 @@
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
+					12CDE573268B557E00EFC3B3 = {
+						CreatedOnToolsVersion = 12.5.1;
+						ProvisioningStyle = Automatic;
+					};
+					12CDE57F268B558100EFC3B3 = {
+						CreatedOnToolsVersion = 12.5.1;
+						ProvisioningStyle = Automatic;
+					};
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
 						LastSwiftMigration = 1250;
@@ -181,11 +335,30 @@
 			projectRoot = "";
 			targets = (
 				607FACCF1AFB9204008FA782 /* EFIconFont-iOS */,
+				12CDE573268B557E00EFC3B3 /* EFIconFont-watchOS */,
+				12CDE57F268B558100EFC3B3 /* EFIconFont-watchOS Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		12CDE572268B557E00EFC3B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CDE57A268B558100EFC3B3 /* Assets.xcassets in Resources */,
+				12CDE578268B557E00EFC3B3 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12CDE57E268B558100EFC3B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CDE58C268B558200EFC3B3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCE1AFB9204008FA782 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +395,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		1F131E18557862370F695B14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EFIconFont-watchOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		D4330BB61061A814CB8621B7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -247,6 +442,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		12CDE57C268B558100EFC3B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12CDE588268B558100EFC3B3 /* ExtensionDelegate.swift in Sources */,
+				12CDE586268B558100EFC3B3 /* InterfaceController.swift in Sources */,
+				12CDE58A268B558100EFC3B3 /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		607FACCC1AFB9204008FA782 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +470,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		12CDE583268B558100EFC3B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12CDE57F268B558100EFC3B3 /* EFIconFont-watchOS Extension */;
+			targetProxy = 12CDE582268B558100EFC3B3 /* PBXContainerItemProxy */;
+		};
+		12CDE58F268B558200EFC3B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12CDE573268B557E00EFC3B3 /* EFIconFont-watchOS */;
+			targetProxy = 12CDE58E268B558200EFC3B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		123EF734268B241900A0CD9D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -282,9 +500,137 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
+		12CDE576268B557E00EFC3B3 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12CDE577268B557E00EFC3B3 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		12CDE592268B558200EFC3B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43B0E20F45C6D9D69A4ECD7A /* Pods-EFIconFont-watchOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = EFIconFont_watchOS_Extension;
+				INFOPLIST_FILE = "EFIconFont-watchOS/Info.plist";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.eyrefree.EFIconFont-iOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		12CDE593268B558200EFC3B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 015E22431CF685942CA101D3 /* Pods-EFIconFont-watchOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				IBSC_MODULE = EFIconFont_watchOS_Extension;
+				INFOPLIST_FILE = "EFIconFont-watchOS/Info.plist";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.eyrefree.EFIconFont-iOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
+		12CDE595268B558200EFC3B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "EFIconFont-watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.eyrefree.EFIconFont-iOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Debug;
+		};
+		12CDE596268B558200EFC3B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "EFIconFont-watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.eyrefree.EFIconFont-iOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.4;
+			};
+			name = Release;
+		};
 		607FACED1AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -434,6 +780,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		12CDE597268B558200EFC3B3 /* Build configuration list for PBXNativeTarget "EFIconFont-watchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12CDE595268B558200EFC3B3 /* Debug */,
+				12CDE596268B558200EFC3B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12CDE598268B558200EFC3B3 /* Build configuration list for PBXNativeTarget "EFIconFont-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12CDE592268B558200EFC3B3 /* Debug */,
+				12CDE593268B558200EFC3B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "EFIconFont-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -34,3 +34,10 @@ target 'EFIconFont-macOS' do
   pod 'SnapKit', '5.0.1'
   shared_pods
 end
+
+target 'EFIconFont-watchOS' do
+  platform :watchos, '2.0'
+  project 'EFIconFont-iOS.xcodeproj'
+
+  shared_pods
+end
