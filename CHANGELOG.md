@@ -2,6 +2,12 @@
 
 -----
 
+## [1.0.1](https://github.com/EFPrefix/EFIconFont/releases/tag/1.0.1) (2021-06-30)
+
+- Add [TaoBao](https://www.iconfont.cn/collections/detail?cid=33).
+
+---
+
 ## [1.0.0](https://github.com/EFPrefix/EFIconFont/releases/tag/1.0.0) (2021-06-30)
 
 - Support watchOS, tvOS, macOS;

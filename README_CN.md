@@ -99,7 +99,7 @@ pod install
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/EFPrefix/EFIconFont.git", .upToNextMinor(from: "1.0.0"))
+    .package(url: "https://github.com/EFPrefix/EFIconFont.git", .upToNextMinor(from: "1.0.1"))
 ]
 ```
 
@@ -176,7 +176,7 @@ EFIconFont.antDesign.dictionary
 
 | 名称 | 版本 | 数量 | 文件大小 | 描述 | 使用规范 | 预览 |
 |:-|:-|:-|:-|:-|:-|:-|
-| AntChain | 1.0 | 77 | 17KB | AntChain 蚂蚁链官方图标库 | Unknown | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=26815) |
+| AntChain | 1.0 | 77 | 17KB | AntChain 蚂蚁链官方图标库 | 未知 | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=26815) |
 | AntDesign | | 557 | 127KB | AntDesign 所属图标库 | [MIT](https://github.com/ant-design/ant-design/blob/master/LICENSE) | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=9402) |
 | Dashicons  | 0.9.0 | 203 | 51 KB | WordPress admin 官方图标库 | [GPLv2](https://github.com/WordPress/dashicons) | [wordpress.org](https://developer.wordpress.org/resource/dashicons) |
 | Devicons | 1.8.0 | 192 | 92KB | 各种开发工具、编程语言的图标 | [MIT](https://github.com/vorillaz/devicons) | [vorillaz.github.io/devicons](http://vorillaz.github.io/devicons/#/cheat) |
@@ -197,6 +197,7 @@ EFIconFont.antDesign.dictionary
 | OpenIconic | 1.1.1 | 223 | 33KB | 223 个开源矢量图标集 | [OFL](https://github.com/iconic/open-iconic/blob/master/FONT-LICENSE) | [useiconic.com/open](https://useiconic.com/open/) |
 | StrawberryIcon | 2.0.0 | 382 | 69KB | 为开发者设计的一套免费开源图标库 | [OFL](https://github.com/xiangsudian/CaoMei) | [chuangzaoshi.com/icon](http://chuangzaoshi.com/icon/) |
 | Stroke7 | 1.2.0 | 202 | 44KB | Stroke 7 免费图标集 | [Free](https://www.pixeden.com/icon-fonts/filled-7-icon-font-set) | [themes-pixeden.com/font-demos](http://themes-pixeden.com/font-demos/7-stroke/index.html) |
+| TaoBao | 1.0 | 434 | 126KB | 手机淘宝图标库 | 未知 | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=33) |
 | ThemifyIcons | 1.0 | 352 | 68KB | Handcrafted 免费图标库 | [Free](https://themify.me/themify-icons) | [themify.me](https://themify.me/themify-icons) |
 | Typicons | 2.0.9 | 336 | 82KB | 336 个矢量图标集合在一个库内 | [OFL](https://github.com/stephenhutchings/typicons.font/blob/master/README.md) | [s-ings.com/typicons](https://www.s-ings.com/typicons/) |
 | VSCodeIcons | 1.0 | 133 | 24KB | Visual Studio Code 图标库 | [MIT](https://github.com/microsoft/vscode-icons/blob/master/LICENSE-CODE) | [github.com/microsoft/vscode-icons](https://github.com/microsoft/vscode-icons) |

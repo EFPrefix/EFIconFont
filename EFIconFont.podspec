@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'EFIconFont'
-    s.version          = '1.0.0'
+    s.version          = '1.0.1'
     s.summary          = 'Yet another stupid wrapper of icon font.'
     
     s.description      = <<-DESC
@@ -195,6 +195,12 @@ Pod::Spec.new do |s|
         stroke7.dependency 'EFIconFont/Core'
     end
 
+    s.subspec 'TaoBao' do |taobao|
+        taobao.source_files = 'EFIconFont/Classes/TaoBao/**/*'
+        taobao.resources = 'EFIconFont/Assets/TaoBao/**/*'
+        taobao.dependency 'EFIconFont/Core'
+    end
+
     s.subspec 'ThemifyIcons' do |themifyicons|
         themifyicons.source_files = 'EFIconFont/Classes/ThemifyIcons/**/*'
         themifyicons.resources = 'EFIconFont/Assets/ThemifyIcons/**/*'
@@ -254,6 +260,7 @@ Pod::Spec.new do |s|
         complete.dependency 'EFIconFont/OpenIconic'
         complete.dependency 'EFIconFont/StrawberryIcon'
         complete.dependency 'EFIconFont/Stroke7'
+        complete.dependency 'EFIconFont/TaoBao'
         complete.dependency 'EFIconFont/ThemifyIcons'
         complete.dependency 'EFIconFont/Typicons'
         complete.dependency 'EFIconFont/VSCodeIcons'

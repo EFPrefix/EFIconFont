@@ -6,11 +6,11 @@ PODS:
   - EFFoundation/Device (1.4.9):
     - DeviceKit (>= 4.2.1)
     - EFFoundation/Core
-  - EFIconFont/AntChain (1.0.0):
+  - EFIconFont/AntChain (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/AntDesign (1.0.0):
+  - EFIconFont/AntDesign (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/Complete (1.0.0):
+  - EFIconFont/Complete (1.0.1):
     - EFIconFont/AntChain
     - EFIconFont/AntDesign
     - EFIconFont/Core
@@ -39,71 +39,74 @@ PODS:
     - EFIconFont/OpenIconic
     - EFIconFont/StrawberryIcon
     - EFIconFont/Stroke7
+    - EFIconFont/TaoBao
     - EFIconFont/ThemifyIcons
     - EFIconFont/Typicons
     - EFIconFont/VSCodeIcons
     - EFIconFont/WeatherIcons
     - EFIconFont/Zocial
-  - EFIconFont/Core (1.0.0)
-  - EFIconFont/Dashicons (1.0.0):
+  - EFIconFont/Core (1.0.1)
+  - EFIconFont/Dashicons (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/Devicons (1.0.0):
+  - EFIconFont/Devicons (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/ElusiveIcons (1.0.0):
+  - EFIconFont/ElusiveIcons (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/EVAIcon (1.0.0):
+  - EFIconFont/EVAIcon (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/EvilIcons (1.0.0):
+  - EFIconFont/EvilIcons (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/FontAwesomeBrands (1.0.0):
+  - EFIconFont/FontAwesomeBrands (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/FontAwesomeRegular (1.0.0):
+  - EFIconFont/FontAwesomeRegular (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/FontAwesomeSolid (1.0.0):
+  - EFIconFont/FontAwesomeSolid (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/FoundationIcons (1.0.0):
+  - EFIconFont/FoundationIcons (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/GenericonsNeue (1.0.0):
+  - EFIconFont/GenericonsNeue (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/HawconsFilled (1.0.0):
+  - EFIconFont/HawconsFilled (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/HawconsStroke (1.0.0):
+  - EFIconFont/HawconsStroke (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/IcoMoon (1.0.0):
+  - EFIconFont/IcoMoon (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/Ionicons (1.0.0):
+  - EFIconFont/Ionicons (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/LigatureSymbols (1.0.0):
+  - EFIconFont/LigatureSymbols (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/MapIcons (1.0.0):
+  - EFIconFont/MapIcons (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/MaterialIconsFilled (1.0.0):
+  - EFIconFont/MaterialIconsFilled (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/MaterialIconsOutlined (1.0.0):
+  - EFIconFont/MaterialIconsOutlined (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/MaterialIconsRounded (1.0.0):
+  - EFIconFont/MaterialIconsRounded (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/MaterialIconsSharp (1.0.0):
+  - EFIconFont/MaterialIconsSharp (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/Meteocons (1.0.0):
+  - EFIconFont/Meteocons (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/MetrizeIcons (1.0.0):
+  - EFIconFont/MetrizeIcons (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/OpenIconic (1.0.0):
+  - EFIconFont/OpenIconic (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/StrawberryIcon (1.0.0):
+  - EFIconFont/StrawberryIcon (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/Stroke7 (1.0.0):
+  - EFIconFont/Stroke7 (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/ThemifyIcons (1.0.0):
+  - EFIconFont/TaoBao (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/Typicons (1.0.0):
+  - EFIconFont/ThemifyIcons (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/VSCodeIcons (1.0.0):
+  - EFIconFont/Typicons (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/WeatherIcons (1.0.0):
+  - EFIconFont/VSCodeIcons (1.0.1):
     - EFIconFont/Core
-  - EFIconFont/Zocial (1.0.0):
+  - EFIconFont/WeatherIcons (1.0.1):
+    - EFIconFont/Core
+  - EFIconFont/Zocial (1.0.1):
     - EFIconFont/Core
   - SnapKit (5.0.1)
 
@@ -126,7 +129,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   DeviceKit: 2c5d7485a2fa10b65c0091b2952d30843a6ba06d
   EFFoundation: ca61de582cd5b6f3516b43c0f7b364222cbf8e4b
-  EFIconFont: c4db42ba6eaea96b6212c0e712d651d6257948bf
+  EFIconFont: 950271ebde349fba98cc69d41d18a9a11ca6a13e
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
 PODFILE CHECKSUM: 7d721c716f7a6515f9e66926c1b03492764683fd

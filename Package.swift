@@ -63,12 +63,13 @@ let package = Package(
         .library(name: "OpenIconic", targets: ["Core", "OpenIconic"]),
         .library(name: "StrawberryIcon", targets: ["Core", "StrawberryIcon"]),
         .library(name: "Stroke7", targets: ["Core", "Stroke7"]),
+        .library(name: "TaoBao", targets: ["Core", "TaoBao"]),
         .library(name: "ThemifyIcons", targets: ["Core", "ThemifyIcons"]),
         .library(name: "Typicons", targets: ["Core", "Typicons"]),
         .library(name: "VSCodeIcons", targets: ["Core", "VSCodeIcons"]),
         .library(name: "WeatherIcons", targets: ["Core", "WeatherIcons"]),
         .library(name: "Zocial", targets: ["Core", "Zocial"]),
-        .library(name: "Complete", targets: ["Core", "AntDesign", "Dashicons", "Devicons", "ElusiveIcons", "EVAIcon", "EvilIcons", "FontAwesomeBrands", "FontAwesomeRegular", "FontAwesomeSolid", "FoundationIcons", "GenericonsNeue", "HawconsFilled", "HawconsStroke", "IcoMoon", "Ionicons", "LigatureSymbols", "MapIcons", "MaterialIconsFilled", "MaterialIconsOutlined", "MaterialIconsRounded", "MaterialIconsSharp", "Meteocons", "MetrizeIcons", "OpenIconic", "StrawberryIcon", "Stroke7", "ThemifyIcons", "Typicons", "VSCodeIcons", "WeatherIcons", "Zocial"])
+        .library(name: "Complete", targets: ["Core", "AntDesign", "Dashicons", "Devicons", "ElusiveIcons", "EVAIcon", "EvilIcons", "FontAwesomeBrands", "FontAwesomeRegular", "FontAwesomeSolid", "FoundationIcons", "GenericonsNeue", "HawconsFilled", "HawconsStroke", "IcoMoon", "Ionicons", "LigatureSymbols", "MapIcons", "MaterialIconsFilled", "MaterialIconsOutlined", "MaterialIconsRounded", "MaterialIconsSharp", "Meteocons", "MetrizeIcons", "OpenIconic", "StrawberryIcon", "Stroke7", "TaoBao", "ThemifyIcons", "Typicons", "VSCodeIcons", "WeatherIcons", "Zocial"])
     ],
     targets: [
         .target(name: "Core", path: "EFIconFont/Classes/Core"),
@@ -98,6 +99,7 @@ let package = Package(
         .target(name: "OpenIconic", dependencies: ["Core"], path: "EFIconFont/Classes/OpenIconic", resources: [.process("EFIconFont/Assets/OpenIconic")]),
         .target(name: "StrawberryIcon", dependencies: ["Core"], path: "EFIconFont/Classes/StrawberryIcon", resources: [.process("EFIconFont/Assets/StrawberryIcon")]),
         .target(name: "Stroke7", dependencies: ["Core"], path: "EFIconFont/Classes/Stroke7", resources: [.process("EFIconFont/Assets/Stroke7")]),
+        .target(name: "TaoBao", dependencies: ["Core"], path: "EFIconFont/Classes/TaoBao", resources: [.process("EFIconFont/Assets/TaoBao")]),
         .target(name: "ThemifyIcons", dependencies: ["Core"], path: "EFIconFont/Classes/ThemifyIcons", resources: [.process("EFIconFont/Assets/ThemifyIcons")]),
         .target(name: "Typicons", dependencies: ["Core"], path: "EFIconFont/Classes/Typicons", resources: [.process("EFIconFont/Assets/Typicons")]),
         .target(name: "VSCodeIcons", dependencies: ["Core"], path: "EFIconFont/Classes/VSCodeIcons", resources: [.process("EFIconFont/Assets/VSCodeIcons")]),

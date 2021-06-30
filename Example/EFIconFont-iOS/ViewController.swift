@@ -51,6 +51,7 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
         ("OpenIconic", IconFont(EFIconFont.openIconic)),
         ("StrawberryIcon", IconFont(EFIconFont.strawberryIcon)),
         ("Stroke7", IconFont(EFIconFont.stroke7)),
+        ("TaoBao", IconFont(EFIconFont.taoBao)),
         ("ThemifyIcons", IconFont(EFIconFont.themifyIcons)),
         ("Typicons", IconFont(EFIconFont.typicons)),
         ("VSCodeIcons", IconFont(EFIconFont.vsCodeIcons)),

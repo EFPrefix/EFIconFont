@@ -94,7 +94,7 @@ Once you have your Swift package set up, adding EFIconFont as a dependency is as
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/EFPrefix/EFIconFont.git", .upToNextMinor(from: "1.0.0"))
+    .package(url: "https://github.com/EFPrefix/EFIconFont.git", .upToNextMinor(from: "1.0.1"))
 ]
 ```
 
@@ -192,6 +192,7 @@ PS: Although the libraries below are all free, please make sure that your way of
 | OpenIconic | 1.1.1 | 223 | 33KB | An open source icon set with 223 marks in SVG | [OFL](https://github.com/iconic/open-iconic/blob/master/FONT-LICENSE) | [useiconic.com/open](https://useiconic.com/open/) |
 | StrawberryIcon | 2.0.0 | 382 | 69KB | A Free And Open Iconic Font Library for Developer and Creator | [OFL](https://github.com/xiangsudian/CaoMei) | [chuangzaoshi.com/icon](http://chuangzaoshi.com/icon/) |
 | Stroke7 | 1.2.0 | 202 | 44KB | A series of iOS 7 inspired thin stroke icons | [Free](https://www.pixeden.com/icon-fonts/filled-7-icon-font-set) | [themes-pixeden.com/font-demos](http://themes-pixeden.com/font-demos/7-stroke/index.html) |
+| TaoBao | 1.0 | 434 | 126KB | TaoBao | Unknown | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=33) |
 | ThemifyIcons | 1.0 | 352 | 68KB | A complete set of icons for use in web design and apps | [Free](https://themify.me/themify-icons) | [themify.me](https://themify.me/themify-icons) |
 | Typicons | 2.0.9 | 336 | 82KB | 336 pixel perfect, all-purpose vector icons in a kit | [OFL](https://github.com/stephenhutchings/typicons.font/blob/master/README.md) | [s-ings.com/typicons](https://www.s-ings.com/typicons/) |
 | VSCodeIcons | 1.0 | 133 | 24KB | Icons for Visual Studio Code | [MIT](https://github.com/microsoft/vscode-icons/blob/master/LICENSE-CODE) | [github.com/microsoft/vscode-icons](https://github.com/microsoft/vscode-icons) |
