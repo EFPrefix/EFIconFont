@@ -11,7 +11,7 @@
     	<img src="https://img.shields.io/cocoapods/v/EFIconFont.svg?style=flat">
     </a>
     <a href="https://swiftpackageindex.com/EFPrefix/EFIconFont">
-        <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FEFPrefix%EFIconFont%2Fbadge%3Ftype%3Dplatforms" alt="Compatible with all Platforms">
+        <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FEFPrefix%2FEFIconFont%2Fbadge%3Ftype%3Dplatforms">
     </a>
     <a href="https://github.com/apple/swift">
     	<img src="https://img.shields.io/badge/language-swift-orange.svg">
@@ -43,12 +43,12 @@ An ordinary iconfont cocoapods package helps you to use iconfont more easily in 
 
 ## Example
 
-To run the example project manually, clone the repo, demo is in the 'Example' folder, then open `EFIconFont.xcworkspace` with Xcode and select the target you want, run.
+To run the example project manually, clone the repo, and run `sh Startup.sh` in project folder. Demo is in the `Example` folder, open `EFIconFont.xcworkspace` with Xcode and select the target you want in it, run.
 
 Or you can run the following command in terminal:
 
 ```bash
-git clone git@github.com:EFPrefix/EFIconFont.git; cd EFIconFont/Example; pod install; open EFIconFont.xcworkspace
+git clone git@github.com:EFPrefix/EFIconFont.git; cd EFIconFont; sh Startup.sh; open Example/EFIconFont.xcworkspace;
 ```
 
 ## Requirements

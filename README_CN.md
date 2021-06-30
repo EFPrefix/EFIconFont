@@ -11,7 +11,7 @@
         <img src="https://img.shields.io/cocoapods/v/EFIconFont.svg?style=flat">
     </a>
     <a href="https://swiftpackageindex.com/EFPrefix/EFIconFont">
-        <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FEFPrefix%EFIconFont%2Fbadge%3Ftype%3Dplatforms" alt="Compatible with all Platforms">
+        <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FEFPrefix%2FEFIconFont%2Fbadge%3Ftype%3Dplatforms">
     </a>
     <a href="https://github.com/apple/swift">
         <img src="https://img.shields.io/badge/language-swift-orange.svg">
@@ -47,13 +47,13 @@
 ## 示例
 
 1. 利用 `git clone` 命令下载本仓库；
-2. 利用 cd 命令切换到 Example 目录下，执行 `pod install` 命令；
-3. 随后打开 `EFIconFont.xcworkspace` 编译即可。
+2. 利用 cd 命令切换到仓库目录下，执行 `sh Startup.sh` 命令；
+3. 随后打开 `Example` 目录下的 `EFIconFont.xcworkspace` 编译即可。
 
 或执行以下命令：
 
 ```bash
-git clone git@github.com:EFPrefix/EFIconFont.git; cd EFIconFont/Example; pod install; open EFIconFont.xcworkspace
+git clone git@github.com:EFPrefix/EFIconFont.git; cd EFIconFont; sh Startup.sh; open Example/EFIconFont.xcworkspace;
 ```
 
 ## 需求
