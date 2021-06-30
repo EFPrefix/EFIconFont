@@ -4,14 +4,14 @@
     <a href="https://travis-ci.org/EFPrefix/EFIconFont">
         <img src="https://api.travis-ci.org/EFPrefix/EFIconFont.svg?branch=master">
     </a>
-    <a href="https://swift.org/package-manager/">
+    <a href="https://swiftpackageindex.com/EFPrefix/EFIconFont">
         <img src="https://img.shields.io/badge/SPM-ready-orange.svg">
     </a>
     <a href="https://cocoapods.org/pods/EFIconFont">
         <img src="https://img.shields.io/cocoapods/v/EFIconFont.svg?style=flat">
     </a>
-    <a href="https://swiftpackageindex.com/EFPrefix/EFIconFont">
-        <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FEFPrefix%2FEFIconFont%2Fbadge%3Ftype%3Dplatforms">
+    <a href="https://cocoapods.org/pods/EFIconFont">
+        <img src="https://img.shields.io/cocoapods/p/EFIconFont.svg?style=flat">
     </a>
     <a href="https://github.com/apple/swift">
         <img src="https://img.shields.io/badge/language-swift-orange.svg">
@@ -214,7 +214,7 @@ EFIconFont.antDesign.dictionary
 
 #### (2) 实现 `EFIconFontCaseIterableProtocol` 
 
-可通过实现 [EFIconFontCaseIterableProtocol](https://github.com/EFPrefix/EFIconFont/blob/master/EFIconFont/Classes/Core/EFIconFontCaseIterableProtocol.swift) 协议实现图标库的封装，本项目中 Example 以 GitHub 所有的 Octicons 为例 [演示](https://github.com/EFPrefix/EFIconFont/blob/master/Example/EFIconFont/EFIconFontOcticons.swift) 了自定义方式：
+可通过实现 [EFIconFontCaseIterableProtocol](https://github.com/EFPrefix/EFIconFont/blob/master/EFIconFont/Classes/Core/EFIconFontCaseIterableProtocol.swift) 协议实现图标库的封装，本项目中 Example 以 GitHub 所有的 Octicons 为例 [演示](https://github.com/EFPrefix/EFIconFont/blob/master/Example/EFIconFont-iOS/Octicons/EFIconFontOcticons.swift) 了自定义方式：
 
 ```swift
 import EFIconFont

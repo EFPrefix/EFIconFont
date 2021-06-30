@@ -4,14 +4,14 @@
     <a href="https://travis-ci.org/EFPrefix/EFIconFont">
     	<img src="https://api.travis-ci.org/EFPrefix/EFIconFont.svg?branch=master">
     </a>
-    <a href="https://swift.org/package-manager/">
+    <a href="https://swiftpackageindex.com/EFPrefix/EFIconFont">
         <img src="https://img.shields.io/badge/SPM-ready-orange.svg">
     </a>
     <a href="https://cocoapods.org/pods/EFIconFont">
     	<img src="https://img.shields.io/cocoapods/v/EFIconFont.svg?style=flat">
     </a>
-    <a href="https://swiftpackageindex.com/EFPrefix/EFIconFont">
-        <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fswiftpackageindex.com%2Fapi%2Fpackages%2FEFPrefix%2FEFIconFont%2Fbadge%3Ftype%3Dplatforms">
+    <a href="https://cocoapods.org/pods/EFIconFont">
+        <img src="https://img.shields.io/cocoapods/p/EFIconFont.svg?style=flat">
     </a>
     <a href="https://github.com/apple/swift">
     	<img src="https://img.shields.io/badge/language-swift-orange.svg">
@@ -209,7 +209,7 @@ In addition, the file will be loaded at runtime, do not need to add it to the `F
 
 #### (2) Implement `EFIconFontCaseIterableProtocol` 
 
-By making a implementation of [EFIconFontCaseIterableProtocol](https://github.com/EFPrefix/EFIconFont/blob/master/EFIconFont/Classes/Core/EFIconFontCaseIterableProtocol.swift) you can get your custom iconfont pack object, demo in this project demonstrates customization with GitHub's Octicons as an [example](https://github.com/EFPrefix/EFIconFont/blob/master/Example/EFIconFont/EFIconFontOcticons.swift):
+By making a implementation of [EFIconFontCaseIterableProtocol](https://github.com/EFPrefix/EFIconFont/blob/master/EFIconFont/Classes/Core/EFIconFontCaseIterableProtocol.swift) you can get your custom iconfont pack object, demo in this project demonstrates customization with GitHub's Octicons as an [example](https://github.com/EFPrefix/EFIconFont/blob/master/Example/EFIconFont-iOS/Octicons/EFIconFontOcticons.swift):
 
 ```swift
 import EFIconFont
