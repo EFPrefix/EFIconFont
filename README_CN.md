@@ -48,12 +48,12 @@
 
 1. 利用 `git clone` 命令下载本仓库；
 2. 利用 cd 命令切换到仓库目录下，执行 `sh Startup.sh` 命令；
-3. 随后打开 `Example` 目录下的 `EFIconFont.xcworkspace` 编译即可。
+3. 随后打开 `Example` 目录下的 `Example.xcworkspace` 编译即可。
 
 或执行以下命令：
 
 ```bash
-git clone git@github.com:EFPrefix/EFIconFont.git; cd EFIconFont; sh Startup.sh; open Example/EFIconFont.xcworkspace;
+git clone git@github.com:EFPrefix/EFIconFont.git; cd EFIconFont; sh Startup.sh; open Example/Example.xcworkspace;
 ```
 
 ## 需求

@@ -43,12 +43,12 @@ An ordinary iconfont cocoapods package helps you to use iconfont more easily in 
 
 ## Example
 
-To run the example project manually, clone the repo, and run `sh Startup.sh` in project folder. Demo is in the `Example` folder, open `EFIconFont.xcworkspace` with Xcode and select the target you want in it, run.
+To run the example project manually, clone the repo, and run `sh Startup.sh` in project folder. Demo is in the `Example` folder, open `Example.xcworkspace` with Xcode and select the target you want in it, run.
 
 Or you can run the following command in terminal:
 
 ```bash
-git clone git@github.com:EFPrefix/EFIconFont.git; cd EFIconFont; sh Startup.sh; open Example/EFIconFont.xcworkspace;
+git clone git@github.com:EFPrefix/EFIconFont.git; cd EFIconFont; sh Startup.sh; open Example/Example.xcworkspace;
 ```
 
 ## Requirements

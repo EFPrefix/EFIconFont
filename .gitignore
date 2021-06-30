@@ -30,3 +30,6 @@ Example/Pods
 # SPM
 .build
 .swiftpm
+
+# WorkSpace
+Example/EFIconFont.xcworkspace
