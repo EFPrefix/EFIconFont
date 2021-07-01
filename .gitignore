@@ -32,4 +32,8 @@ Example/Pods
 .swiftpm
 
 # WorkSpace
-Example/EFIconFont.xcworkspace
+Example/Example.xcworkspace
+
+# Fastlane
+*.dSYM.zip
+*.ipa

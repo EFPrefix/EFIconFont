@@ -16,21 +16,36 @@ or alternatively using `brew install fastlane`
 
 # Available Actions
 ## iOS
+### ios local
+```
+fastlane ios local
+```
+Update dependences
+### ios update_dependences
+```
+fastlane ios update_dependences
+```
+Update dependences
+### ios update_build_number
+```
+fastlane ios update_build_number
+```
+Update build number
 ### ios build
 ```
 fastlane ios build
 ```
-Make a build
-### ios beta
+Make a new build
+### ios upload_testflight
 ```
-fastlane ios beta
+fastlane ios upload_testflight
 ```
-Push a new beta build to TestFlight
-### ios release
+Upload to testflight alpha and beta test
+### ios upload_dsyms
 ```
-fastlane ios release
+fastlane ios upload_dsyms
 ```
-Push a new release build to the App Store
+Download dSYM files from iTunes Connect and upload to Crashlytics.
 
 ----
 

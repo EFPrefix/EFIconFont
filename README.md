@@ -43,6 +43,16 @@ An ordinary iconfont cocoapods package helps you to use iconfont more easily in 
 
 ## Example
 
+### TestFlight
+
+You can click the `TestFlight` button below to download demo with TestFlight:
+
+<a target='_blank' href='https://testflight.apple.com/join/mlmn8ipW'>
+    <img src='https://testflight.apple.com/images/testflight-128x128_2x_27.png' width='128' height='128'/>
+</a>
+
+### Compile Demo Manually
+
 To run the example project manually, clone the repo, and run `sh Startup.sh` in project folder. Demo is in the `Example` folder, open `Example.xcworkspace` with Xcode and select the target you want in it, run.
 
 Or you can run the following command in terminal:

@@ -16,24 +16,95 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Make a build"
+  desc "Update dependences"
+  lane :local do
+    update_build_number
+    build
+    upload_to_testflight
+  end
+
+  desc "Update dependences"
+  lane :update_dependences do
+    cocoapods
+  end
+
+  desc "Update build number"
+  lane :update_build_number do
+    latestBuildNumber = Time.now
+    update_info_plist(
+      xcodeproj: "Example/Example-iOS.xcodeproj",
+      scheme: "Example-iOS",
+      block: lambda { |plist|
+        plist["CFBundleVersion"] = (latestBuildNumber.to_i).to_s
+      }
+    )
+    update_info_plist(
+      xcodeproj: "Example/Example-iOS.xcodeproj",
+      scheme: "Example-watchOS",
+      block: lambda { |plist|
+        plist["CFBundleVersion"] = (latestBuildNumber.to_i).to_s
+      }
+    )
+    update_info_plist(
+      xcodeproj: "Example/Example-iOS.xcodeproj",
+      scheme: "Example-watchOS Extension",
+      block: lambda { |plist|
+        plist["CFBundleVersion"] = (latestBuildNumber.to_i).to_s
+      }
+    )
+  end
+
+  desc "Make a new build"
   lane :build do
     build_app(workspace: "Example/Example.xcworkspace", scheme: "Example-iOS")
   end
-end
 
-platform :ios do
-  desc "Push a new beta build to TestFlight"
-  lane :beta do
-    build_app(workspace: "Example/Example.xcworkspace", scheme: "Example-iOS")
-    upload_to_testflight
+  desc "Upload to testflight alpha and beta test"
+  lane :upload_testflight do
+    upload_to_testflight(
+      beta_app_review_info: {
+        contact_email: "eyrefree@eyrefree.org",
+        contact_first_name: "Eyre",
+        contact_last_name: "Free",
+        contact_phone: "+86 18352505161",
+        demo_account_name: "",
+        demo_account_password: "",
+        notes: "EFIconFont's iOS App update, thanks for reviewing."
+      },
+      localized_build_info: {
+        "default": {
+          whats_new: "EFIconFont's iOS App update.",
+        },
+        "en-GB": {
+          whats_new: "EFIconFont's iOS App update.",
+        }
+      },
+      skip_waiting_for_build_processing: false, # true 就不自动提审了
+      reject_build_waiting_for_review: true, # 取消当前正在审核的 build
+      skip_submission: false,
+      username: "eyrefree@eyrefree.org",
+      app_identifier: "org.eyrefree.EFIconFont-iOS",
+      beta_app_feedback_email:"eyrefree@eyrefree.org",
+      beta_app_description: "EFIconFont's iOS App.",
+      demo_account_required: false,
+      distribute_external: true, # 构建是否应该分发给外部测试人员？
+      notify_external_testers: true,
+      groups: "公测",
+      changelog: "EFIconFont's iOS App update",
+      beta_app_feedback_email: "eyrefree@eyrefree.org",
+      ipa: "Example-iOS.ipa",
+      apple_id: "1574507978",
+      team_id: "118360553",
+      itc_provider: "P3X2725LYY"
+    )
   end
-end
 
-platform :ios do
-  desc "Push a new release build to the App Store"
-  lane :release do
-    build_app(workspace: "Example/Example.xcworkspace", scheme: "Example-iOS")
-    upload_to_app_store(skip_metadata: true, skip_screenshots: true)
+  desc "Download dSYM files from iTunes Connect and upload to Crashlytics."
+  lane :upload_dsyms do
+    download_dsyms(
+      username: "eyrefree@eyrefree.org", 
+      app_identifier: "org.eyrefree.EFIconFont-iOS"
+    )
+    upload_symbols_to_crashlytics(gsp_path: "./xxxxx/GoogleService-Info.plist")
   end
 end

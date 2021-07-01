@@ -46,6 +46,16 @@
 
 ## 示例
 
+### TestFlight
+
+你可以点击下方的 `TestFlight` 按钮下载示例程序：
+
+<a target='_blank' href='https://testflight.apple.com/join/mlmn8ipW'>
+    <img src='https://testflight.apple.com/images/testflight-128x128_2x_27.png' width='128' height='128'/>
+</a>
+
+### 手动编译项目
+
 1. 利用 `git clone` 命令下载本仓库；
 2. 利用 cd 命令切换到仓库目录下，执行 `sh Startup.sh` 命令；
 3. 随后打开 `Example` 目录下的 `Example.xcworkspace` 编译即可。
