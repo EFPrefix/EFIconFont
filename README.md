@@ -204,6 +204,7 @@ PS: Although the libraries below are all free, please make sure that your way of
 | Stroke7 | 1.2.0 | 202 | 44KB | A series of iOS 7 inspired thin stroke icons | [Free](https://www.pixeden.com/icon-fonts/filled-7-icon-font-set) | [themes-pixeden.com/font-demos](http://themes-pixeden.com/font-demos/7-stroke/index.html) |
 | TaoBao | 1.0 | 434 | 126KB | TaoBao | Unknown | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=33) |
 | ThemifyIcons | 1.0 | 352 | 68KB | A complete set of icons for use in web design and apps | [Free](https://themify.me/themify-icons) | [themify.me](https://themify.me/themify-icons) |
+| Tmall | 1.0 | 564 | 190KB | Tmall | Unknown | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=28) |
 | Typicons | 2.0.9 | 336 | 82KB | 336 pixel perfect, all-purpose vector icons in a kit | [OFL](https://github.com/stephenhutchings/typicons.font/blob/master/README.md) | [s-ings.com/typicons](https://www.s-ings.com/typicons/) |
 | VSCodeIcons | 1.0 | 133 | 24KB | Icons for Visual Studio Code | [MIT](https://github.com/microsoft/vscode-icons/blob/master/LICENSE-CODE) | [github.com/microsoft/vscode-icons](https://github.com/microsoft/vscode-icons) |
 | WeatherIcons | 2.0.10 | 219 | 64KB | Weather, maritime, and meteorological based icons | [OFL](https://github.com/erikflowers/weather-icons) | [erikflowers.github.io/weather-icons](http://erikflowers.github.io/weather-icons/) |

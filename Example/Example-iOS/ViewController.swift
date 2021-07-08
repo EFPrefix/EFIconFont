@@ -53,6 +53,7 @@ class ViewController: BaseViewController, UITableViewDataSource, UITableViewDele
         ("Stroke7", IconFont(EFIconFont.stroke7)),
         ("TaoBao", IconFont(EFIconFont.taoBao)),
         ("ThemifyIcons", IconFont(EFIconFont.themifyIcons)),
+        ("Tmall", IconFont(EFIconFont.tmall)),
         ("Typicons", IconFont(EFIconFont.typicons)),
         ("VSCodeIcons", IconFont(EFIconFont.vsCodeIcons)),
         ("WeatherIcons", IconFont(EFIconFont.weatherIcons)),

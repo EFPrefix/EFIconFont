@@ -2,6 +2,13 @@
 
 -----
 
+## [1.1.0](https://github.com/EFPrefix/EFIconFont/releases/tag/1.1.0) (2021-07-09)
+
+- Add [Tmall](https://www.iconfont.cn/collections/detail?cid=28);
+- Change SPM products name.
+
+---
+
 ## [1.0.1](https://github.com/EFPrefix/EFIconFont/releases/tag/1.0.1) (2021-06-30)
 
 - Add [TaoBao](https://www.iconfont.cn/collections/detail?cid=33).
