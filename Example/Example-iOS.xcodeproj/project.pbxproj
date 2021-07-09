@@ -536,7 +536,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = EFIconFont_watchOS_Extension;
 				INFOPLIST_FILE = "Example-watchOS/Info.plist";
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.2.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.eyrefree.EFIconFont-iOS.watchkitapp";
@@ -572,7 +572,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = EFIconFont_watchOS_Extension;
 				INFOPLIST_FILE = "Example-watchOS/Info.plist";
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.2.0;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.eyrefree.EFIconFont-iOS.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -604,7 +604,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Example-watchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.2.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.eyrefree.EFIconFont-iOS.watchkitapp.watchkitextension";
@@ -637,7 +637,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Example-watchOS Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.2.0;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.eyrefree.EFIconFont-iOS.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
@@ -769,7 +769,7 @@
 				DEVELOPMENT_TEAM = P3X2725LYY;
 				INFOPLIST_FILE = "$(SRCROOT)/Example-iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.2.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.eyrefree.EFIconFont-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -791,7 +791,7 @@
 				DEVELOPMENT_TEAM = P3X2725LYY;
 				INFOPLIST_FILE = "$(SRCROOT)/Example-iOS/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.2.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.eyrefree.EFIconFont-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
