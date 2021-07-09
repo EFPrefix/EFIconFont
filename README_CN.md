@@ -109,7 +109,7 @@ pod install
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/EFPrefix/EFIconFont.git", .upToNextMinor(from: "1.0.1"))
+    .package(url: "https://github.com/EFPrefix/EFIconFont.git", .upToNextMinor(from: "1.2.0"))
 ]
 ```
 
@@ -186,6 +186,7 @@ EFIconFont.antDesign.dictionary
 
 | 名称 | 版本 | 数量 | 文件大小 | 描述 | 使用规范 | 预览 |
 |:-|:-|:-|:-|:-|:-|:-|
+| AliCloudConsole | 1.0 | 266 | 42KB | 阿里云控制台官方图标库 | Unknown | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=11607) |
 | AntChain | 1.0 | 77 | 17KB | AntChain 蚂蚁链官方图标库 | 未知 | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=26815) |
 | AntDesign | | 557 | 127KB | AntDesign 所属图标库 | [MIT](https://github.com/ant-design/ant-design/blob/master/LICENSE) | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=9402) |
 | Dashicons  | 0.9.0 | 203 | 51 KB | WordPress admin 官方图标库 | [GPLv2](https://github.com/WordPress/dashicons) | [wordpress.org](https://developer.wordpress.org/resource/dashicons) |

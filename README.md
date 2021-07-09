@@ -104,7 +104,7 @@ Once you have your Swift package set up, adding EFIconFont as a dependency is as
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/EFPrefix/EFIconFont.git", .upToNextMinor(from: "1.0.1"))
+    .package(url: "https://github.com/EFPrefix/EFIconFont.git", .upToNextMinor(from: "1.2.0"))
 ]
 ```
 
@@ -181,6 +181,7 @@ PS: Although the libraries below are all free, please make sure that your way of
 
 | Name | Version | Count | File Size | Description | License | Preview |
 |:-|:-|:-|:-|:-|:-|:-|
+| AliCloudConsole | 1.0 | 266 | 42KB | AliCloudConsole | Unknown | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=11607) |
 | AntChain | 1.0 | 77 | 17KB | AntChain | Unknown | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=26815) |
 | AntDesign | 1.0 | 557 | 127KB | Ant Design | [MIT](https://github.com/ant-design/ant-design/blob/master/LICENSE) | [iconfont.cn](https://www.iconfont.cn/collections/detail?cid=9402) |
 | Dashicons  | 0.9.0 | 203 | 51 KB | Official icon font of the WordPress admin | [GPLv2](https://github.com/WordPress/dashicons) | [wordpress.org](https://developer.wordpress.org/resource/dashicons) |

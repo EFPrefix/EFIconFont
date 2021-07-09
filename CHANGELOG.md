@@ -2,6 +2,13 @@
 
 -----
 
+## [1.2.0](https://github.com/EFPrefix/EFIconFont/releases/tag/1.2.0) (2021-07-09)
+
+- Add [AliCloudConsole](https://www.iconfont.cn/collections/detail?cid=11607);
+- Change SPM products name.
+
+---
+
 ## [1.1.0](https://github.com/EFPrefix/EFIconFont/releases/tag/1.1.0) (2021-07-09)
 
 - Add [Tmall](https://www.iconfont.cn/collections/detail?cid=28);

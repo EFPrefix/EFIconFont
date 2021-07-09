@@ -23,6 +23,7 @@ struct IconFont {
 class ViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate {
     
     let iconfonts: [(name: String, font: IconFont)] = [
+        ("AliCloudConsole", IconFont(EFIconFont.aliCloudConsole)),
         ("AntChain", IconFont(EFIconFont.antChain)),
         ("AntDesign", IconFont(EFIconFont.antDesign)),
         ("Dashicons", IconFont(EFIconFont.dashicons)),
