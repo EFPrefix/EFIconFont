@@ -66,7 +66,7 @@ platform :ios do
         contact_email: "eyrefree@eyrefree.org",
         contact_first_name: "Eyre",
         contact_last_name: "Free",
-        contact_phone: "+86 18352505161",
+        contact_phone: "+86 17172125161",
         demo_account_name: "",
         demo_account_password: "",
         notes: "EFIconFont's iOS App update, thanks for reviewing."
@@ -76,6 +76,9 @@ platform :ios do
           whats_new: "EFIconFont's iOS App update.",
         },
         "en-GB": {
+          whats_new: "EFIconFont's iOS App update.",
+        },
+        "en-US": {
           whats_new: "EFIconFont's iOS App update.",
         }
       },
@@ -89,7 +92,7 @@ platform :ios do
       demo_account_required: false,
       distribute_external: true, # 构建是否应该分发给外部测试人员？
       notify_external_testers: true,
-      groups: "公测",
+      groups: "Beta",
       changelog: "EFIconFont's iOS App update",
       beta_app_feedback_email: "eyrefree@eyrefree.org",
       ipa: "Example-iOS.ipa",
