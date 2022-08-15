@@ -22,11 +22,8 @@
     <a href="https://raw.githubusercontent.com/EFPrefix/EFIconFont/master/LICENSE">
         <img src="https://img.shields.io/cocoapods/l/EFIconFont.svg?style=flat">
     </a>
-    <a href="https://twitter.com/EyreFree777">
-        <img src="https://img.shields.io/badge/twitter-@EyreFree777-blue.svg?style=flat">
-    </a>
-    <a href="https://weibo.com/eyrefree777">
-        <img src="https://img.shields.io/badge/weibo-@EyreFree-red.svg?style=flat">
+    <a href="https://app.fossa.com/projects/git%2Bgithub.com%2FEFPrefix%2FEFIconFont?ref=badge_shield">
+        <img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FEFPrefix%2FEFIconFont.svg?type=shield">
     </a>
     <img src="https://img.shields.io/badge/made%20with-%3C3-orange.svg">
     <a href="http://shang.qq.com/wpa/qunwpa?idkey=d0f732585dcb0c6f2eb26bc9e0327f6305d18260eeba89ed26a201b520c572c0">

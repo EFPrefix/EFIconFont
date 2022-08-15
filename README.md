@@ -20,13 +20,10 @@
         <img src="https://codebeat.co/badges/4cbadc4d-e8f9-4f5b-8ee5-676ba6380383" />
     </a>
     <a href="https://raw.githubusercontent.com/EFPrefix/EFIconFont/master/LICENSE">
-    	<img src="https://img.shields.io/cocoapods/l/EFIconFont.svg?style=flat">
+        <img src="https://img.shields.io/cocoapods/l/EFIconFont.svg?style=flat">
     </a>
-    <a href="https://twitter.com/EyreFree777">
-    	<img src="https://img.shields.io/badge/twitter-@EyreFree777-blue.svg?style=flat">
-    </a>
-    <a href="https://weibo.com/eyrefree777">
-    	<img src="https://img.shields.io/badge/weibo-@EyreFree-red.svg?style=flat">
+    <a href="https://app.fossa.com/projects/git%2Bgithub.com%2FEFPrefix%2FEFIconFont?ref=badge_shield">
+        <img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FEFPrefix%2FEFIconFont.svg?type=shield">
     </a>
     <img src="https://img.shields.io/badge/made%20with-%3C3-orange.svg">
 </p>
