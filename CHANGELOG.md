@@ -2,6 +2,12 @@
 
 -----
 
+## [1.2.1](https://github.com/EFPrefix/EFIconFont/releases/tag/1.2.1) (2022-11-29)
+
+- Update deployment_target to meet xcode requirements.
+
+---
+
 ## [1.2.0](https://github.com/EFPrefix/EFIconFont/releases/tag/1.2.0) (2021-07-09)
 
 - Add [AliCloudConsole](https://www.iconfont.cn/collections/detail?cid=11607);

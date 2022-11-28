@@ -29,12 +29,7 @@ import PackageDescription
 
 let package = Package(
     name: "EFIconFont",
-    platforms: [
-        .iOS(.v8),
-        .macOS(.v10_11),
-        .tvOS(.v9),
-        .watchOS(.v2)
-    ],
+    platforms: [.iOS(.v11), .macOS(.v10_13), .tvOS(.v11), .watchOS(.v6)],
     products: [
         .library(name: "EFIconFontCore", targets: ["EFIconFontCore"]),
         .library(name: "EFIconFontAliCloudConsole", targets: ["EFIconFontCore", "EFIconFontAliCloudConsole"]),
