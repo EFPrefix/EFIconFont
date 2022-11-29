@@ -7,7 +7,6 @@
     <a href="https://swiftpackageindex.com/EFPrefix/EFIconFont">
         <img src="https://img.shields.io/badge/SPM-ready-orange.svg">
     </a>
-<a href="https://app.fossa.com/projects/git%2Bgithub.com%2FEFPrefix%2FEFIconFont?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FEFPrefix%2FEFIconFont.svg?type=shield"/></a>
     <a href="https://cocoapods.org/pods/EFIconFont">
     	<img src="https://img.shields.io/cocoapods/v/EFIconFont.svg?style=flat">
     </a>
@@ -26,15 +25,11 @@
     <a href="https://app.fossa.com/projects/git%2Bgithub.com%2FEFPrefix%2FEFIconFont?ref=badge_shield">
         <img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FEFPrefix%2FEFIconFont.svg?type=shield">
     </a>
-    <img src="https://img.shields.io/badge/made%20with-%3C3-orange.svg">
 </p>
 
 An ordinary iconfont cocoapods package helps you to use iconfont more easily in your project, in Swift.
 
 > [中文介绍](https://github.com/EFPrefix/EFIconFont/blob/master/README_CN.md)
-
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FEFPrefix%2FEFIconFont.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FEFPrefix%2FEFIconFont?ref=badge_large)
 
 ## Preview
 
@@ -105,7 +100,7 @@ Once you have your Swift package set up, adding EFIconFont as a dependency is as
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/EFPrefix/EFIconFont.git", .upToNextMinor(from: "1.2.0"))
+    .package(url: "https://github.com/EFPrefix/EFIconFont.git", .upToNextMinor(from: "1.2.1"))
 ]
 ```
 
