@@ -6,13 +6,13 @@ PODS:
   - EFFoundation/Device (1.4.9):
     - DeviceKit (>= 4.2.1)
     - EFFoundation/Core
-  - EFIconFont/AliCloudConsole (1.2.0):
+  - EFIconFont/AliCloudConsole (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/AntChain (1.2.0):
+  - EFIconFont/AntChain (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/AntDesign (1.2.0):
+  - EFIconFont/AntDesign (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/Complete (1.2.0):
+  - EFIconFont/Complete (1.2.1):
     - EFIconFont/AliCloudConsole
     - EFIconFont/AntChain
     - EFIconFont/AntDesign
@@ -49,78 +49,78 @@ PODS:
     - EFIconFont/VSCodeIcons
     - EFIconFont/WeatherIcons
     - EFIconFont/Zocial
-  - EFIconFont/Core (1.2.0)
-  - EFIconFont/Dashicons (1.2.0):
+  - EFIconFont/Core (1.2.1)
+  - EFIconFont/Dashicons (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/Devicons (1.2.0):
+  - EFIconFont/Devicons (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/ElusiveIcons (1.2.0):
+  - EFIconFont/ElusiveIcons (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/EVAIcon (1.2.0):
+  - EFIconFont/EVAIcon (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/EvilIcons (1.2.0):
+  - EFIconFont/EvilIcons (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/FontAwesomeBrands (1.2.0):
+  - EFIconFont/FontAwesomeBrands (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/FontAwesomeRegular (1.2.0):
+  - EFIconFont/FontAwesomeRegular (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/FontAwesomeSolid (1.2.0):
+  - EFIconFont/FontAwesomeSolid (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/FoundationIcons (1.2.0):
+  - EFIconFont/FoundationIcons (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/GenericonsNeue (1.2.0):
+  - EFIconFont/GenericonsNeue (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/HawconsFilled (1.2.0):
+  - EFIconFont/HawconsFilled (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/HawconsStroke (1.2.0):
+  - EFIconFont/HawconsStroke (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/IcoMoon (1.2.0):
+  - EFIconFont/IcoMoon (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/Ionicons (1.2.0):
+  - EFIconFont/Ionicons (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/LigatureSymbols (1.2.0):
+  - EFIconFont/LigatureSymbols (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/MapIcons (1.2.0):
+  - EFIconFont/MapIcons (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/MaterialIconsFilled (1.2.0):
+  - EFIconFont/MaterialIconsFilled (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/MaterialIconsOutlined (1.2.0):
+  - EFIconFont/MaterialIconsOutlined (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/MaterialIconsRounded (1.2.0):
+  - EFIconFont/MaterialIconsRounded (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/MaterialIconsSharp (1.2.0):
+  - EFIconFont/MaterialIconsSharp (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/Meteocons (1.2.0):
+  - EFIconFont/Meteocons (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/MetrizeIcons (1.2.0):
+  - EFIconFont/MetrizeIcons (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/OpenIconic (1.2.0):
+  - EFIconFont/OpenIconic (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/StrawberryIcon (1.2.0):
+  - EFIconFont/StrawberryIcon (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/Stroke7 (1.2.0):
+  - EFIconFont/Stroke7 (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/TaoBao (1.2.0):
+  - EFIconFont/TaoBao (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/ThemifyIcons (1.2.0):
+  - EFIconFont/ThemifyIcons (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/Tmall (1.2.0):
+  - EFIconFont/Tmall (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/Typicons (1.2.0):
+  - EFIconFont/Typicons (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/VSCodeIcons (1.2.0):
+  - EFIconFont/VSCodeIcons (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/WeatherIcons (1.2.0):
+  - EFIconFont/WeatherIcons (1.2.1):
     - EFIconFont/Core
-  - EFIconFont/Zocial (1.2.0):
+  - EFIconFont/Zocial (1.2.1):
     - EFIconFont/Core
-  - SnapKit (5.0.1)
+  - SnapKit (5.6.0)
 
 DEPENDENCIES:
   - EFFoundation (= 1.4.9)
   - EFFoundation/Device (= 1.4.9)
   - EFIconFont/Complete (from `../`)
-  - SnapKit (= 5.0.1)
+  - SnapKit (= 5.6.0)
 
 SPEC REPOS:
   trunk:
@@ -135,9 +135,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   DeviceKit: 2c5d7485a2fa10b65c0091b2952d30843a6ba06d
   EFFoundation: ca61de582cd5b6f3516b43c0f7b364222cbf8e4b
-  EFIconFont: 2c2fec7b83f60304235957650841a0815c1c1611
-  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  EFIconFont: 3209f4986826396360eff01c43f6cbca0915c3f7
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 6860285d20ef3908b291791d8297d0f2a8ba49b7
+PODFILE CHECKSUM: d1d97c1fac3d4baf277ce22bad064d5d2f93c648
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.12.1

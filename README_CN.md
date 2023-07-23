@@ -1,9 +1,6 @@
 ![](https://github.com/EFPrefix/EFIconFont/blob/master/Assets/EFIconFont.png?raw=true)
 
 <p align="center">
-    <a href="https://travis-ci.org/EFPrefix/EFIconFont">
-        <img src="https://api.travis-ci.org/EFPrefix/EFIconFont.svg?branch=master">
-    </a>
     <a href="https://swiftpackageindex.com/EFPrefix/EFIconFont">
         <img src="https://img.shields.io/badge/SPM-ready-orange.svg">
     </a>
@@ -38,16 +35,6 @@
 | ![](https://github.com/EFPrefix/EFIconFont/blob/master/Assets/1.png?raw=true) | ![](https://github.com/EFPrefix/EFIconFont/blob/master/Assets/2.png?raw=true) | ![](https://github.com/EFPrefix/EFIconFont/blob/master/Assets/3.png?raw=true) | ![](https://github.com/EFPrefix/EFIconFont/blob/master/Assets/4.png?raw=true) |
 
 ## 示例
-
-### TestFlight
-
-你可以点击下方的 `TestFlight` 按钮下载示例程序：
-
-<a target='_blank' href='https://testflight.apple.com/join/mlmn8ipW'>
-    <img src='https://testflight.apple.com/images/testflight-128x128_2x_27.png' width='128' height='128'/>
-</a>
-
-### 手动编译项目
 
 1. 利用 `git clone` 命令下载本仓库；
 2. 利用 cd 命令切换到仓库目录下，执行 `sh Startup.sh` 命令；

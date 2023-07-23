@@ -1,9 +1,6 @@
 ![](https://github.com/EFPrefix/EFIconFont/blob/master/Assets/EFIconFont.png?raw=true)
 
 <p align="center">
-    <a href="https://travis-ci.org/EFPrefix/EFIconFont">
-    	<img src="https://api.travis-ci.org/EFPrefix/EFIconFont.svg?branch=master">
-    </a>
     <a href="https://swiftpackageindex.com/EFPrefix/EFIconFont">
         <img src="https://img.shields.io/badge/SPM-ready-orange.svg">
     </a>
@@ -38,16 +35,6 @@ An ordinary iconfont cocoapods package helps you to use iconfont more easily in 
 | ![](https://github.com/EFPrefix/EFIconFont/blob/master/Assets/1.png?raw=true) | ![](https://github.com/EFPrefix/EFIconFont/blob/master/Assets/2.png?raw=true) | ![](https://github.com/EFPrefix/EFIconFont/blob/master/Assets/3.png?raw=true) | ![](https://github.com/EFPrefix/EFIconFont/blob/master/Assets/4.png?raw=true) |
 
 ## Example
-
-### TestFlight
-
-You can click the `TestFlight` button below to download demo with TestFlight:
-
-<a target='_blank' href='https://testflight.apple.com/join/mlmn8ipW'>
-    <img src='https://testflight.apple.com/images/testflight-128x128_2x_27.png' width='128' height='128'/>
-</a>
-
-### Compile Demo Manually
 
 To run the example project manually, clone the repo, and run `sh Startup.sh` in project folder. Demo is in the `Example` folder, open `Example.xcworkspace` with Xcode and select the target you want in it, run.
 
