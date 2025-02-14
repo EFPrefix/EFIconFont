@@ -2,6 +2,12 @@
 
 -----
 
+## [6.0.0.0](https://github.com/EFPrefix/EFIconFont/releases/tag/6.0.0.0) (2025-02-15)
+
+- Adapt to Swift 6.0.
+
+---
+
 ## [1.2.1](https://github.com/EFPrefix/EFIconFont/releases/tag/1.2.1) (2022-11-29)
 
 - Update deployment_target to meet xcode requirements.

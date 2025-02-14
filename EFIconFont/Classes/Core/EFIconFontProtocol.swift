@@ -35,7 +35,7 @@ import UIKit
 #endif
 
 fileprivate struct AssociatedKeys {
-    static var attributes = "attributes"
+    nonisolated(unsafe) static var attributes = "attributes"
 }
 
 public protocol EFIconFontProtocol {
@@ -207,12 +207,14 @@ public extension EFIconFontProtocol {
         return image
     }
     #else
-    func image(size fontSize: CGFloat, attributes: [NSAttributedString.Key : Any]?) -> UIImage? {
+    @MainActor func image(size fontSize: CGFloat, attributes: [NSAttributedString.Key : Any]?) -> UIImage? {
         guard let imageString: NSAttributedString = attributedString(size: fontSize, attributes: attributes) else { return nil }
         let rect = imageString.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: fontSize), options: .usesLineFragmentOrigin, context: nil)
         let imageSize: CGSize = rect.size
         #if os(watchOS)
         let screenScale: CGFloat = WKInterfaceDevice.current().screenScale
+        #elseif os(visionOS)
+        let screenScale: CGFloat = UITraitCollection.current.displayScale
         #else
         let screenScale: CGFloat = UIScreen.main.scale
         #endif
@@ -236,7 +238,7 @@ public extension EFIconFontProtocol {
         return image(size: fontSize, attributes: attributesCombine)
     }
     #else
-    func image(size fontSize: CGFloat, foregroundColor: UIColor? = nil, backgroundColor: UIColor? = nil) -> UIImage? {
+    @MainActor func image(size fontSize: CGFloat, foregroundColor: UIColor? = nil, backgroundColor: UIColor? = nil) -> UIImage? {
         var attributesCombine: [NSAttributedString.Key : Any] = [:]
         if let foregroundColor = foregroundColor {
             attributesCombine.updateValue(foregroundColor, forKey: NSAttributedString.Key.foregroundColor)
@@ -276,7 +278,7 @@ public extension EFIconFontProtocol {
         return image
     }
     #else
-    func image(size imageSize: CGSize, attributes: [NSAttributedString.Key : Any]?) -> UIImage? {
+    @MainActor func image(size imageSize: CGSize, attributes: [NSAttributedString.Key : Any]?) -> UIImage? {
         guard let imageString: NSAttributedString = attributedString(size: 1, attributes: attributes) else { return nil }
         let rect = imageString.boundingRect(with: CGSize(width: CGFloat(MAXFLOAT), height: 1), options: .usesLineFragmentOrigin, context: nil)
         let widthScale = imageSize.width / rect.width
@@ -297,6 +299,8 @@ public extension EFIconFontProtocol {
         guard let imageStringScale: NSAttributedString = attributedString(size: scale, attributes: attributes) else { return nil }
         #if os(watchOS)
         let screenScale: CGFloat = WKInterfaceDevice.current().screenScale
+        #elseif os(visionOS)
+        let screenScale: CGFloat = UITraitCollection.current.displayScale
         #else
         let screenScale: CGFloat = UIScreen.main.scale
         #endif
@@ -320,7 +324,7 @@ public extension EFIconFontProtocol {
         return image(size: imageSize, attributes: attributesCombine)
     }
     #else
-    func image(size imageSize: CGSize, foregroundColor: UIColor? = nil, backgroundColor: UIColor? = nil) -> UIImage? {
+    @MainActor func image(size imageSize: CGSize, foregroundColor: UIColor? = nil, backgroundColor: UIColor? = nil) -> UIImage? {
         var attributesCombine: [NSAttributedString.Key : Any] = [:]
         if let foregroundColor = foregroundColor {
             attributesCombine.updateValue(foregroundColor, forKey: NSAttributedString.Key.foregroundColor)

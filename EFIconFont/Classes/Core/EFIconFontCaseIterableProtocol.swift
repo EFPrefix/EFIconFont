@@ -13,8 +13,8 @@ import UIKit
 #endif
 
 fileprivate struct Anchor {
-    static var dictionaryDictionaries: [String: [String : EFIconFontProtocol]] = [:]
-    static var attributesDictionaries: [String: [NSAttributedString.Key : Any]] = [:]
+    nonisolated(unsafe) static let dictionaryDictionaries = NSCache<NSString, NSDictionary>()
+    nonisolated(unsafe) static let attributesDictionaries = NSCache<NSString, NSDictionary>()
 }
 
 public protocol EFIconFontCaseIterableProtocol: EFIconFontProtocol, CaseIterable {
@@ -60,12 +60,12 @@ public extension EFIconFontCaseIterableProtocol {
 
     static var dictionary: [String : EFIconFontProtocol] {
         get {
-            let key: String = String(describing: Self.self)
-            if let attributes = Anchor.dictionaryDictionaries[key] {
+            let key: NSString = String(describing: Self.self) as NSString
+            if let attributes = Anchor.dictionaryDictionaries.object(forKey: key) as? [String: EFIconFontProtocol] {
                 return attributes
             }
             let newAttributes: [String : EFIconFontProtocol] = generateDictionary()
-            Anchor.dictionaryDictionaries.updateValue(newAttributes, forKey: key)
+            Anchor.dictionaryDictionaries.setObject(newAttributes as NSDictionary, forKey: key)
             return newAttributes
         }
     }
@@ -88,12 +88,12 @@ public extension EFIconFontCaseIterableProtocol {
 
     static var attributes: [NSAttributedString.Key : Any] {
         get {
-            let key: String = String(describing: Self.self)
-            return Anchor.attributesDictionaries[key] ?? [:]
+            let key: NSString = String(describing: Self.self) as NSString
+            return Anchor.attributesDictionaries.object(forKey: key) as? [NSAttributedString.Key: Any] ?? [:]
         }
         set {
-            let key: String = String(describing: Self.self)
-            Anchor.attributesDictionaries.updateValue(newValue, forKey: key)
+            let key: NSString = String(describing: Self.self) as NSString
+            Anchor.attributesDictionaries.setObject(newValue as NSDictionary, forKey: key)
         }
     }
 

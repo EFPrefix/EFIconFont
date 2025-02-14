@@ -46,10 +46,8 @@ git clone git@github.com:EFPrefix/EFIconFont.git; cd EFIconFont; sh Startup.sh; 
 
 ## Requirements
 
-| Version | Needs                                 |
-|:--------|:--------------------------------------|
-| <0.5    | Xcode 10.0+<br>Swift 4.2+<br>iOS 8.0+ |
-| >=0.5   | Xcode 10.2+<br>Swift 5.0+<br>iOS 8.0+ |
+- Xcode 16+
+- Swift 6.0+
 
 ## Installation
 
@@ -87,7 +85,7 @@ Once you have your Swift package set up, adding EFIconFont as a dependency is as
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/EFPrefix/EFIconFont.git", .upToNextMinor(from: "1.2.1"))
+    .package(url: "https://github.com/EFPrefix/EFIconFont.git", .upToNextMinor(from: "6.0.0.0"))
 ]
 ```
 

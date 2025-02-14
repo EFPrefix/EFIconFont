@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:6.0
 //
 //  Package.swift
 //  EFIconFont
@@ -29,7 +29,7 @@ import PackageDescription
 
 let package = Package(
     name: "EFIconFont",
-    platforms: [.iOS(.v11), .macOS(.v10_13), .tvOS(.v11), .watchOS(.v6)],
+    platforms: [.iOS(.v12), .macOS(.v10_13), .tvOS(.v12), .watchOS(.v6), .visionOS(.v1)],
     products: [
         .library(name: "EFIconFontCore", targets: ["EFIconFontCore"]),
         .library(name: "EFIconFontAliCloudConsole", targets: ["EFIconFontCore", "EFIconFontAliCloudConsole"]),
@@ -105,5 +105,5 @@ let package = Package(
         .target(name: "EFIconFontWeatherIcons", dependencies: ["EFIconFontCore"], path: "EFIconFont/Classes/WeatherIcons", resources: [.process("EFIconFont/Assets/WeatherIcons")]),
         .target(name: "EFIconFontZocial", dependencies: ["EFIconFontCore"], path: "EFIconFont/Classes/Zocial", resources: [.process("EFIconFont/Assets/Zocial")])
     ],
-    swiftLanguageVersions: [.v5]
+    swiftLanguageVersions: [.v6]
 )
